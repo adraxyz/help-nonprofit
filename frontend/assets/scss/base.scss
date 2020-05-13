@@ -1,0 +1,251 @@
+.padding-level-1 {
+  padding-left: $padding-1;
+  padding-right: $padding-1;
+}
+.padding-level-2 {
+  padding-left: $padding-2;
+  padding-right: $padding-2;
+}
+.padding-level-3 {
+  padding-left: $padding-3;
+  padding-right: $padding-3;
+}
+.padding-level-4 {
+  padding-left: $padding-4;
+  padding-right: $padding-4;
+}
+.padding-level-5 {
+  padding-left: $padding-5;
+  padding-right: $padding-5;
+}
+.page-container {
+  align-self: center;
+}
+// Section titles
+.section-title {
+  background-image: linear-gradient(to top, $secondary-color 50%, transparent 0%);
+  font-size: $font-size-50;
+  font-family: "Crossten Bold";
+  letter-spacing: 0.15rem;
+}
+.section-title-left {
+  padding-left: $logo-size;
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+}
+.section-title-right {
+  padding-right: $big-button-width;
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+}
+.section-title-center {
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+}
+.title-number {
+  font-family: "Crossten Ultra";
+  font-size: $font-size-60;
+  letter-spacing: 0.15rem;
+  line-height: 150%;
+}
+.number-title {
+  font-family: "Crossten Ultra";
+  font-size: $font-size-80;
+  letter-spacing: 0.15rem;
+  line-height: 150%;
+  position: absolute;
+}
+.numbered-title {
+  font-family: "Crossten ExtraBold";
+  font-size: $font-size-30;
+  letter-spacing: 0.15rem;
+  line-height: 100%;
+}
+.numbered-subtitle {
+  font-family: "Crossten Thin";
+  font-size: $font-size-30;
+  letter-spacing: 0.15rem;
+  line-height: 100%;
+}
+.text-title {
+  font-family: "Crossten Bold";
+  font-size: $font-size-40;
+  letter-spacing: 0.15rem;
+  line-height: 150%;
+}
+.text-subtitle {
+  font-family: "Crossten Thin";
+  font-size: $font-size-30;
+  letter-spacing: 0.15rem;
+  line-height: 150%;
+}
+.text-content {
+  font-family: "Crossten Light";
+  font-size: $font-size-20;
+  letter-spacing: 0.15rem;
+  line-height: 150%;
+}
+.quote-text {
+  font-family: "Crossten Book";
+  font-size: $font-size-40;
+  letter-spacing: 0.15rem;
+  line-height: 150%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.citation-author {
+  // TODO
+}
+.button-shadow-secondary-left {
+  box-shadow: -$box-shadow-side $box-shadow-bottom $secondary-color !important;
+}
+.button-shadow-secondary-right {
+  box-shadow: $box-shadow-side $box-shadow-bottom $secondary-color !important;
+}
+.button-shadow-primary-right {
+  box-shadow: $box-shadow-side $box-shadow-bottom $primary-color !important;
+}
+.button-shadow-error-right {
+  box-shadow: $box-shadow-side $box-shadow-bottom $error-color !important;
+}
+.section-button {
+  background-color: white !important;
+  text-transform: unset;
+  border: 2px solid black;
+  height: unset !important;
+  padding: 16px !important;
+  font-family: "Crossten Bold";
+  font-size: $font-size-20 !important;
+  letter-spacing: 0.1rem;
+  line-height: 100%;
+  z-index: 1;
+}
+.nav-button {
+  background-color: white !important;
+  text-transform: unset;
+  border: 2px solid black;
+  height: unset !important;
+  padding: 8px !important;
+  font-family: "Crossten Bold";
+  font-size: $font-size-20 !important;
+  letter-spacing: 0.1rem;
+  line-height: 100%;
+  min-width: 180px !important;
+}
+.nav-active {
+  box-shadow: -$box-shadow-side $box-shadow-bottom $primary-color !important;
+}
+.theme--light.v-btn--active:hover::before, .theme--light.v-btn--active::before {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+.drawer-nav-active {
+  box-shadow: -$box-shadow-side $box-shadow-bottom $darken-primary-color !important;
+}
+@media (min-width: $max-width) {
+  .page-container {
+    max-width: $max-width;
+  }
+}
+@media #{map-get($display-breakpoints, 'md-and-down')} {
+  .padding-level-1 {
+    padding-left: $md-padding-1;
+    padding-right: $md-padding-1;
+  }
+  .padding-level-2 {
+    padding-left: $md-padding-2;
+    padding-right: $md-padding-2;
+  }
+  .padding-level-3 {
+    padding-left: $md-padding-3;
+    padding-right: $md-padding-3;
+  }
+  .padding-level-4 {
+    padding-left: $md-padding-4;
+    padding-right: $md-padding-4;
+  }
+  .padding-level-5 {
+    padding-left: $md-padding-5;
+    padding-right: $md-padding-5;
+  }
+  .section-title-left {
+    padding-left: $md-logo-size - $md-logo-margin;
+  }
+  .section-title-right {
+    padding-right: $circle-icon-size - $md-logo-margin;
+  }
+  .section-title {
+    font-size: $font-size-40;
+  }
+  .text-title {
+    font-size: $font-size-30;
+  }
+  .text-subtitle {
+    font-size: $font-size-20;
+  }
+  .quote-text {
+    font-size: $font-size-30;
+  }
+}
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+  .padding-level-3 {
+    padding-left: $sm-padding-3;
+    padding-right: $sm-padding-3;
+  }
+  .padding-level-4 {
+    padding-left: $sm-padding-4;
+    padding-right: $sm-padding-4;
+  }
+  .padding-level-5 {
+    padding-left: $sm-padding-5;
+    padding-right: $sm-padding-5;
+  }
+  .section-title {
+    font-size: $font-size-30;
+  }
+  .text-title {
+    font-size: $font-size-25;
+  }
+  .text-subtitle {
+    font-size: $font-size-18;
+  }
+  .text-content {
+    font-size: $font-size-15;
+  }
+  .section-button {
+    padding: 8px !important;
+    font-size: $font-size-18 !important;
+  }
+  .number-title {
+    font-size: $font-size-50;
+    line-height: 150%;
+  }
+  .numbered-title {
+    font-size: $font-size-20;
+  }
+  .numbered-subtitle {
+    font-size: $font-size-20;
+  }
+}
+@media #{map-get($display-breakpoints, 'xs-only')} {
+  .section-title-left {
+    padding-left: 0px;
+  }
+  .section-title {
+    font-size: $font-size-25;
+  }
+  .section-button {
+    font-size: $font-size-15 !important;
+  }
+  .text-title {
+    font-size: $font-size-20;
+    line-height: 100% !important;
+  }
+  .text-subtitle {
+    font-size: $font-size-15;
+    line-height: 100% !important;
+  }
+  .quote-text {
+    font-size: $font-size-20;
+  }
+}

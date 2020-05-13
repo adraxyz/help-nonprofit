@@ -1,0 +1,82 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+@import '~vuetify/src/styles/settings/_variables';
+
+// Sizing
+//$base-width: 80vw;
+$min-margin-x: 0;
+$min-margin-y: 2vh;
+$min-width: 96vw;
+$max-width: 1440px;
+$logo-margin: 15px;
+$md-down-logo-margin: 10px;
+$square-size: 300px;
+$square-overlap: 50px;
+
+$md-up-top-bar-height: 120px;
+$md-down-top-bar-height: 90px;
+$box-shadow-side: 5px;
+$box-shadow-bottom: 5px;
+$nav-button-width: 145px;
+$big-button-width: 94px;
+$big-button-height: 64px;
+$circle-icon-size: 37px;
+//$nav-button-height: 28px;
+$nav-button-height: $circle-icon-size;
+$bigger-button-width: 200px;
+// Styling
+$body-font-family: 'Crossten Book';
+// Colors
+$primary-color: #3D9D9B;
+$secondary-color: #E99F33;
+$accent-color: #2E637D;
+$error-color: #F06843;
+$success-color: #6A9682;
+$warning-color: #D97827;
+$grey-color: #53626b;
+$darken-primary-color: #0f615e;
+
+/// REFACTORING ///
+$logo-margin: 15px;
+$circle-icon-size: 37px;
+$logo-size: 120px;
+// Fonts
+$font-size-80: 80px;
+$font-size-70: 70px;
+$font-size-60: 60px;
+$font-size-50: 50px;
+$font-size-40: 40px;
+$font-size-30: 30px;
+$font-size-25: 25px;
+$font-size-20: 20px;
+$font-size-18: 18px;
+$font-size-15: 15px;
+$font-size-12: 12px;
+$smaller-font-size: 18px;
+$extra-small-font-size: 15px;
+$big-title-font-size: 48px;
+$medium-title-font-size: 32px;
+$small-title-font-size: 24px;
+// Padding
+$padding-1: $logo-margin;
+$padding-2: $logo-margin + $circle-icon-size/2;
+$padding-3: $logo-size + $logo-margin;
+$padding-4: calc(#{$logo-size} + 3vw);
+$padding-5: calc(#{$logo-size} + 6vw);
+// MEDIA
+// md-and-down
+$md-logo-margin: 10px;
+$md-logo-size: 90px;
+$md-padding-1: $md-logo-margin;
+$md-padding-2: $md-logo-margin + $circle-icon-size/2;
+$md-padding-3: $md-logo-size + $md-logo-margin;
+$md-padding-4: calc(#{$md-logo-size} + 3vw);
+$md-padding-5: calc(#{$md-logo-size} + 6vw);
+// sm-and-down
+$sm-padding-3: calc(#{$md-padding-2} + 2vw);
+$sm-padding-4: $md-logo-size;
+$sm-padding-5: calc(#{$md-logo-size} + 2vw);
+// xs-only

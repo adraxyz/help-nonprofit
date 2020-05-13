@@ -1,0 +1,231 @@
+/*** Fonts ***/
+/* Black */
+@font-face {
+  font-family: 'Crossten Black';
+  src: url('./Crossten Black/Crossten-Black.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Black/Crossten-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Black/Crossten-Black.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Black/Crossten-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Black/Crossten-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-display: swap;
+}
+/* Book */
+@font-face {
+  font-family: 'Crossten Book';
+  src: url('./Crossten Book/Crossten-Book.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Book/Crossten-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Book/Crossten-Book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Book/Crossten-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Book/Crossten-Book.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 300;
+  font-display: swap;
+}
+/* Bold */
+@font-face {
+  font-family: 'Crossten Bold';
+  src: url('./Crossten Bold/Crossten-Bold.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Bold/Crossten-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Bold/Crossten-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Bold/Crossten-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Bold/Crossten-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+  font-display: swap;
+}
+/* SemiBold */
+@font-face {
+  font-family: 'Crossten SemiBold';
+  src: url('./Crossten SemiBold/Crossten-SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten SemiBold/Crossten-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten SemiBold/Crossten-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten SemiBold/Crossten-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten SemiBold/Crossten-SemiBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 600;
+  font-display: swap;
+}
+/* ExtraBold */
+@font-face {
+  font-family: 'Crossten ExtraBold';
+  src: url('./Crossten ExtraBold/Crossten-ExtraBold.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten ExtraBold/Crossten-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten ExtraBold/Crossten-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten ExtraBold/Crossten-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten ExtraBold/Crossten-ExtraBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-display: swap;
+}
+/* Light */
+@font-face {
+  font-family: 'Crossten Light';
+  src: url('./Crossten Light/Crossten-Light.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Light/Crossten-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Light/Crossten-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Light/Crossten-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Light/Crossten-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 200;
+  font-display: swap;
+}
+/* ExtraLight */
+@font-face {
+  font-family: 'Crossten ExtraLight';
+  src: url('./Crossten ExtraLight/Crossten-ExtraLight.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten ExtraLight/Crossten-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten ExtraLight/Crossten-ExtraLight.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten ExtraLight/Crossten-ExtraLight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten ExtraLight/Crossten-ExtraLight.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 100;
+  font-display: swap;
+}
+/* Medium */
+@font-face {
+  font-family: 'Crossten Medium';
+  src: url('./Crossten Medium/Crossten-Medium.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Medium/Crossten-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Medium/Crossten-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Medium/Crossten-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Medium/Crossten-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 500;
+  font-display: swap;
+}
+/* Thin */
+@font-face {
+  font-family: 'Crossten Thin';
+  src: url('./Crossten Thin/Crossten-Thin.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Thin/Crossten-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Thin/Crossten-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Thin/Crossten-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Thin/Crossten-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 200;
+  font-display: swap;
+}
+/* Ultra Black */
+@font-face {
+  font-family: 'Crossten Ultra';
+  src: url('./Crossten Ultra/Crossten-Ultra.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Ultra/Crossten-Ultra.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Ultra/Crossten-Ultra.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Ultra/Crossten-Ultra.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Ultra/Crossten-Ultra.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 900;
+  font-display: swap;
+}
+/* ExtraLightItalic */
+@font-face {
+  font-family: 'Crossten ExtraLight Italic';
+  src: url('./Crossten-ExtraLightItalic/Crossten-ExtraLightItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten-ExtraLightItalic/Crossten-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten-ExtraLightItalic/Crossten-ExtraLightItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten-ExtraLightItalic/Crossten-ExtraLightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten-ExtraLightItalic/Crossten-ExtraLightItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 100;
+  font-display: swap;
+  font-style: italic;
+}
+/* BlackItalic */
+@font-face {
+  font-family: 'Crossten Black Italic';
+  src: url('./Crossten Black Italic/Crossten-BlackItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Black Italic/Crossten-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Black Italic/Crossten-BlackItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Black Italic/Crossten-BlackItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Black Italic/Crossten-BlackItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+/* BoldItalic */
+@font-face {
+  font-family: 'Crossten Bold Italic';
+  src: url('./Crossten Bold Italic/Crossten-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Bold Italic/Crossten-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Bold Italic/Crossten-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Bold Italic/Crossten-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Bold Italic/Crossten-BoldItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+/* BookItalic */
+@font-face {
+  font-family: 'Crossten Book Italic';
+  src: url('./Crossten Book Italic/Crossten-BookItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Book Italic/Crossten-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Book Italic/Crossten-BookItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Book Italic/Crossten-BookItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Book Italic/Crossten-BookItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+/* ExtraBoldItalic */
+@font-face {
+  font-family: 'Crossten ExtraBold Italic';
+  src: url('./Crossten ExtraBold Italic/Crossten-ExtraBoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten ExtraBold Italic/Crossten-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten ExtraBold Italic/Crossten-ExtraBoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten ExtraBold Italic/Crossten-ExtraBoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten ExtraBold Italic/Crossten-ExtraBoldItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+/* LightItalic */
+@font-face {
+  font-family: 'Crossten Light Italic';
+  src: url('./Crossten Light Italic/Crossten-LightItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Light Italic/Crossten-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Light Italic/Crossten-LightItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Light Italic/Crossten-LightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Light Italic/Crossten-LightItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+/* MediumItalic */
+@font-face {
+  font-family: 'Crossten Medium Italic';
+  src: url('./Crossten Medium Italic/Crossten-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Medium Italic/Crossten-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Medium Italic/Crossten-MediumItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Medium Italic/Crossten-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Medium Italic/Crossten-MediumItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+/* SemiBoldItalic */
+@font-face {
+  font-family: 'Crossten SemiBold Italic';
+  src: url('./Crossten SemiBold Italic/Crossten-SemiBoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten SemiBold Italic/Crossten-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten SemiBold Italic/Crossten-SemiBoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten SemiBold Italic/Crossten-SemiBoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten SemiBold Italic/Crossten-SemiBoldItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+/* ThinItalic */
+@font-face {
+  font-family: 'Crossten Thin Italic';
+  src: url('./Crossten Thin Italic/Crossten-ThinItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Thin Italic/Crossten-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Thin Italic/Crossten-ThinItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Thin Italic/Crossten-ThinItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Thin Italic/Crossten-ThinItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+/* UltraItalic */
+@font-face {
+  font-family: 'Crossten Ultra Italic';
+  src: url('./Crossten Ultra Italic/Crossten-UltraItalic.eot'); /* IE9 Compat Modes */
+  src: url('./Crossten Ultra Italic/Crossten-UltraItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Crossten Ultra Italic/Crossten-UltraItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./Crossten Ultra Italic/Crossten-UltraItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Crossten Ultra Italic/Crossten-UltraItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
