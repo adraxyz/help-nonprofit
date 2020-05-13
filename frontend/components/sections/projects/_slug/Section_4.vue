@@ -5,7 +5,7 @@
       <span class="section-title">{{data.title}}</span>
     </div>
 
-    <div class="text-subtitle" v-html="design_description.content"/>
+    <div class="text-content" v-html="design_description.content"/>
     <v-row no-gutters class="pt-5 section-row">
       <v-col cols="12" sm="8">
         <v-img :src="design_image.content" contain/>

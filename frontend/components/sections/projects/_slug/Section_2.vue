@@ -5,7 +5,7 @@
       <span class="section-title">{{data.title}}</span>
     </div>
 
-    <div class="text-subtitle" v-html="context_text.content"/>
+    <div class="text-content" v-html="context_text.content"/>
     <div class="section-gallery">
       <v-row no-gutters class="section-row">
         <span v-if="false">{{context_images}}</span>
