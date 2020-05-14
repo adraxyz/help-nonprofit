@@ -83,9 +83,9 @@
     },
     methods: {
       onScroll (e) {
-        let scrolling_element = e.target.scrollingElement
-        this.small_button = scrolling_element.scrollTop > scrolling_element.clientHeight/4
-          || scrolling_element.scrollTop === 0
+        // let scrolling_element = e.target.scrollingElement
+        // this.small_button = scrolling_element.scrollTop > scrolling_element.clientHeight/4
+        //   || scrolling_element.scrollTop === 0
       },
       onFooterIntersect (entries, observer, isIntersecting) {
         let threshold_over = entries[0].intersectionRatio > 0.5
