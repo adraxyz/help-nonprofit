@@ -65,11 +65,45 @@
       BottomRight,
       Footer
     },
-    // head() {
-    //   return {
-    //     title: 'HELP'
-    //   }
-    // },
+    head() {
+      return {
+        description: 'HELP - Human Evolution for Landscape Protection',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'HELP - Human Evolution for Landscape Protection - ' +
+              'Associazione ONLUS con fini di protezione di ambientale, beneficienza e formazione'
+          },
+          {
+            hid: 'apple-mobile-web-app-title',
+            name: 'apple-mobile-web-app-title',
+            content: 'HELP - Human Evolution for Landscape Protection'
+          },
+          {
+            hid: 'og:type',
+            name: 'og:type',
+            content: 'HELP - Human Evolution for Landscape Protection'
+          },
+          {
+            hid: 'og:title',
+            name: 'og:title',
+            content: 'HELP - Human Evolution for Landscape Protection'
+          },
+          {
+            hid: 'og:site_name',
+            name: 'og:site_name',
+            content: 'HELP - Human Evolution for Landscape Protection'
+          },
+          {
+            hid: 'og:description',
+            name: 'og:description',
+            content: 'HELP - Human Evolution for Landscape Protection - ' +
+              'Associazione ONLUS con fini di protezione di ambientale, beneficienza e formazione'
+          }
+        ]
+      }
+    },
     data: () => ({
       hideBottom: false,
       hideSocialIcons: false,
