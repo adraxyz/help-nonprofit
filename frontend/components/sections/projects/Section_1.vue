@@ -31,6 +31,11 @@
       data: Object,
       categories: Array
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     methods: {
       mdTextOrder(i) {
         if (i%2 === 0) {

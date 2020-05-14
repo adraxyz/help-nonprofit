@@ -42,6 +42,11 @@
     data: () => ({
       section_height: 0
     }),
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       sectionImage() {
         return this.data.images[0].content

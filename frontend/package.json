@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
+  "name": "HELP",
   "version": "1.0.0",
-  "description": "HELP website frontend",
+  "description": "HELP - Human Evolution for Landscape Protection - Non-profit charity organization for social and environmental protection",
   "author": "adraxyz",
   "private": true,
   "scripts": {

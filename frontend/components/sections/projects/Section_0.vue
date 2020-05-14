@@ -30,6 +30,11 @@ export default {
   data: () => ({
     checkRoute: checkRoute
   }),
+  head() {
+    return {
+      meta: this.data.meta_tags
+    }
+  },
   computed: {
     sectionImage() {
       return this.data.images.find(i => i.order === 0)

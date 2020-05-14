@@ -1,5 +1,5 @@
 from modeltranslation.translator import register, TranslationOptions
-from .models import Footer, Page, Button, Layout, Text, Section, Image, Document
+from .models import Footer, Page, Button, Layout, Text, Section, Image, Document, MetaTag
 
 
 @register(Footer)
@@ -42,3 +42,8 @@ class DocumentTranslationOptions(TranslationOptions):
 @register(Layout)
 class LayoutTranslationOptions(TranslationOptions):
     fields = ('privacy_text', )
+
+
+@register(MetaTag)
+class MetaTagTranslationOptions(TranslationOptions):
+    fields = ('content', )

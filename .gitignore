@@ -63,6 +63,8 @@ db.sqlite3-journal
 media-serve/
 static-serve/
 media/
+# To be investigated if ok
+migrations
 #settings.py
 
 # Flask stuff:

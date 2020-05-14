@@ -34,6 +34,11 @@
     data: () => ({
       section_texts: []
     }),
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     components: {
       SmallWhiteCard
     },

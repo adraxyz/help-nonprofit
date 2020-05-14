@@ -12,6 +12,11 @@
     props: {
       data: Object
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       sectionText() {
         let text = this.data.texts.find(t => t.order === 0)

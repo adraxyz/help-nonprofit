@@ -31,6 +31,11 @@
     props: {
       data: Object
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     components: {
       Square
     },

@@ -29,6 +29,11 @@
       subtitle: '',
       show_middle_image: false
     }),
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       texts() {
         let result = []

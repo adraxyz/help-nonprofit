@@ -44,6 +44,11 @@
         dialog_content: ''
       }
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       context_text() {
         return this.project.texts.find(t => t.project_section === "context")

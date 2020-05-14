@@ -32,6 +32,11 @@
       section_height: 0,
       show_image_middle: false
     }),
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       sectionText() {
         return this.data.texts.find(t => t.order === 0)

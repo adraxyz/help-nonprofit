@@ -12,6 +12,11 @@
     props: {
       data: Object
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       sectionText() {
         return this.data.texts[0].content

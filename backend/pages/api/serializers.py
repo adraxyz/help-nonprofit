@@ -1,27 +1,37 @@
 from rest_framework import serializers
 from ..models import (Layout, Page, Section, Text, Image, Video,
-                      Button, Footer, Socials, Document)
+                      Button, Footer, Socials, Document, MetaTag)
+
+
+class MetaTagSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = MetaTag
+        fields = ['hid', 'name', 'content']
 
 
 class TextSerializer(serializers.ModelSerializer):
+    meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Text
-        fields = ['order', 'title', 'subtitle', 'content', 'project_section']
+        fields = ['order', 'title', 'subtitle', 'content', 'project_section', 'meta_tags']
 
 
 class ImageSerializer(serializers.ModelSerializer):
+    meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Image
-        fields = ['order', 'content', 'alt_content', 'alt', 'project_section']
+        fields = ['order', 'content', 'alt_content', 'alt', 'project_section', 'meta_tags']
 
 
 class VideoSerializer(serializers.ModelSerializer):
+    meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Video
-        fields = '__all__'
+        fields = ['order', 'content', 'poster', 'meta_tags']
 
 
 class ButtonSerializer(serializers.ModelSerializer):
@@ -32,10 +42,11 @@ class ButtonSerializer(serializers.ModelSerializer):
 
 
 class DocumentSerializer(serializers.ModelSerializer):
+    meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Document
-        fields = ['order', 'title', 'subtitle', 'description', 'file', 'project_section']
+        fields = ['order', 'title', 'subtitle', 'description', 'file', 'project_section', 'meta_tags']
 
 
 class SectionSerializer(serializers.ModelSerializer):
@@ -44,19 +55,21 @@ class SectionSerializer(serializers.ModelSerializer):
     videos = VideoSerializer(many=True, read_only=True)
     buttons = ButtonSerializer(many=True, read_only=True)
     documents = DocumentSerializer(many=True, read_only=True)
+    meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Section
         fields = ['texts', 'images', 'videos', 'buttons', 'documents',
-                  'order', 'title', 'subtitle']
+                  'order', 'title', 'subtitle', 'meta_tags']
 
 
 class PageSerializer(serializers.ModelSerializer):
     sections = SectionSerializer(many=True, read_only=True)
+    meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Page
-        fields = ['order', 'name', 'title', 'navigation', 'sections']
+        fields = ['order', 'name', 'title', 'navigation', 'sections', 'meta_tags']
         lookup_field = 'name'
 
 
@@ -87,10 +100,11 @@ class LayoutSerializer(serializers.ModelSerializer):
     contact_button = ButtonSerializer(read_only=True)
     footer = FooterSerializer(read_only=True)
     socials = SocialSerializer(read_only=True)
+    meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Layout
-        fields = ['name', 'pages', 'logo', 'donation_button',
+        fields = ['name', 'pages', 'logo', 'donation_button', 'meta_tags',
                   'contact_button', 'footer', 'socials', 'privacy_text']
         lookup_field = 'name'
 

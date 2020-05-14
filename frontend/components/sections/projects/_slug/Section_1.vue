@@ -42,6 +42,11 @@
     props: {
       data: Object,
       project: Object
+    },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
     }
   }
 </script>

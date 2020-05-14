@@ -32,7 +32,8 @@
     },
     head() {
       return {
-        title: ''
+        title: '',
+        meta: this.page_content.meta_tags
       }
     },
     computed: {

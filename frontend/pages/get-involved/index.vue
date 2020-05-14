@@ -20,7 +20,8 @@
     },
     head() {
       return {
-        title: '| ' + this.page_content.title
+        title: '| ' + this.page_content.title,
+        meta: this.page_content.meta_tags
       }
     },
     computed: {

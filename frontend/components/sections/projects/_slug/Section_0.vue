@@ -29,6 +29,11 @@
         alt_img_content: false
       }
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       final_image() {
         return this.project.images.find(

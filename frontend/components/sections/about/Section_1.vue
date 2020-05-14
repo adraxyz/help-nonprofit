@@ -18,6 +18,11 @@
     name: "Section_1",
     props: {
       data: Object
+    },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
     }
   }
 </script>

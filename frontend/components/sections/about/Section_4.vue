@@ -31,6 +31,11 @@
     props: {
       data: Object
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       sectionImage() {
         return this.data.images[0].content

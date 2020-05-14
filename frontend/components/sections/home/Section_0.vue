@@ -69,6 +69,11 @@
       show_alternate: false,
       timeoutID: null
     }),
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       titles () {
         return this.data.texts.filter(t => t.order != 4).sort(

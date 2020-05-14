@@ -24,6 +24,11 @@
     props: {
       data: Object
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     methods: {
       image(index) {
         return this.data.images.find(i => i.order === index)

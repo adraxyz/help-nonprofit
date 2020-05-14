@@ -21,6 +21,11 @@
     data: () => ({
       content_index: 0
     }),
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       contents() {
         return this.data.texts[0].content.split(',')

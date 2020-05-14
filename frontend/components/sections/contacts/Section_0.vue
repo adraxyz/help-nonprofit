@@ -152,6 +152,11 @@
     props: {
       data: Object
     },
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     data: () => ({
       firstname: '',
       lastname: '',

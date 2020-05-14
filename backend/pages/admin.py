@@ -1,8 +1,7 @@
 from django.contrib import admin
 from .models import (Layout, Footer, Socials, Page, Section, Text,
-                     Image, Video, Button, Document)
+                     Image, Video, Button, Document, MetaTag)
 from django.conf import settings
-from django.forms import fields
 from .utils import RoutingUtils
 import os
 
@@ -54,6 +53,14 @@ class ButtonAdmin(PageFeatureModelAdmin):
         return form
 
 
+class MetaTagModelAdmin(admin.ModelAdmin):
+
+    list_display = ('__str__', 'hid', 'layout', 'page',
+                    'section', 'text', 'image', 'video', 'document')
+    list_filter = ('hid', 'layout', 'page', 'section',
+                   'text', 'image', 'video', 'document')
+
+
 admin.site.register(Layout)
 admin.site.register(Footer)
 admin.site.register(Socials)
@@ -64,3 +71,4 @@ admin.site.register(Image, PageFeatureModelAdmin)
 admin.site.register(Video, PageFeatureModelAdmin)
 admin.site.register(Button, ButtonAdmin)
 admin.site.register(Document, PageFeatureModelAdmin)
+admin.site.register(MetaTag, MetaTagModelAdmin)

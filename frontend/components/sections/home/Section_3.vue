@@ -33,6 +33,11 @@
     data: () => ({
       checkRoute: checkRoute
     }),
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       sectionText() {
         return this.data.texts[0].content

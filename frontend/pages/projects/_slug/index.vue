@@ -22,7 +22,8 @@
     name: "project_details_page",
     head() {
       return {
-        title: '| ' + this.project.title
+        title: '| ' + this.project.title,
+        meta: this.page_content.meta_tags
       }
     },
     components: {

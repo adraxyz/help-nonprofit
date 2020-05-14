@@ -40,6 +40,11 @@
       irpef: 0,
       five_x_1000: ''
     }),
+    head() {
+      return {
+        meta: this.data.meta_tags
+      }
+    },
     computed: {
       baseText() {
         return this.data.texts.find(t => t.order === 0)

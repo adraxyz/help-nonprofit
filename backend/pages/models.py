@@ -48,7 +48,7 @@ class Page(models.Model):
     )
     layout = models.ForeignKey(
         to='Layout', on_delete=models.CASCADE, related_name='pages', null=True, blank=True,
-        help_text="The layout to which the page belongs. ."
+        help_text="The layout to which the page belongs."
     )
 
     def __str__(self):
@@ -471,3 +471,64 @@ class Layout(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class MetaTag(models.Model):
+    hid = models.CharField(
+        max_length=50,
+        help_text=_("Tag unique identifier.")
+    )
+    name = models.CharField(
+        max_length=50,
+        help_text=_("Tag name.")
+    )
+    content = models.CharField(
+        max_length=500,
+        help_text=_("Tag content.")
+    )
+    layout = models.ForeignKey(
+        to=Layout, on_delete=models.CASCADE, related_name='meta_tags', null=True, blank=True,
+        help_text="The layout to which the tag will be attached."
+    )
+    page = models.ForeignKey(
+        to=Page, on_delete=models.CASCADE, related_name='meta_tags', null=True, blank=True,
+        help_text="The page to which the tag will be attached."
+    )
+    section = models.ForeignKey(
+        to=Section, on_delete=models.CASCADE, related_name='meta_tags', null=True, blank=True,
+        help_text="The section to which the tag will be attached."
+    )
+    text = models.ForeignKey(
+        to=Text, on_delete=models.CASCADE, related_name='meta_tags', null=True, blank=True,
+        help_text="The text to which the tag will be attached."
+    )
+    image = models.ForeignKey(
+        to=Image, on_delete=models.CASCADE, related_name='meta_tags', null=True, blank=True,
+        help_text="The image to which the tag will be attached."
+    )
+    video = models.ForeignKey(
+        to=Video, on_delete=models.CASCADE, related_name='meta_tags', null=True, blank=True,
+        help_text="The video to which the tag will be attached."
+    )
+    document = models.ForeignKey(
+        to=Document, on_delete=models.CASCADE, related_name='meta_tags', null=True, blank=True,
+        help_text="The document to which the tag will be attached."
+    )
+
+    def __str__(self):
+        string = f"{self.hid}"
+        if self.layout:
+            string = f"{string}_layout_{self.layout}"
+        if self.page:
+            string = f"{string}_page_{self.page}"
+        if self.section:
+            string = f"{string}_section_{self.section}"
+        if self.text:
+            string = f"{string}_text_{self.text}"
+        if self.image:
+            string = f"{string}_image_{self.image}"
+        if self.video:
+            string = f"{string}_video_{self.video}"
+        if self.document:
+            string = f"{string}_document_{self.document}"
+        return string
