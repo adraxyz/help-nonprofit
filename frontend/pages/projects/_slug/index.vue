@@ -1,5 +1,5 @@
 <template>
-  <div v-if="page_content.name === 'projects--' + this.$route.params.slug">
+  <div v-if="page_content.name === 'projects--' + project.slug">
     <Section_0 :data="section_data_0" :project="project"/>
     <Section_1 :data="section_data_1" :project="project"/>
     <Section_2 :data="section_data_2" :project="project"/>
@@ -17,6 +17,7 @@
   import Section_4 from "../../../components/sections/projects/_slug/Section_4";
   import Section_5 from "../../../components/sections/projects/_slug/Section_5";
   import { mapState } from 'vuex';
+
   export default {
     name: "project_details_page",
     head() {
@@ -59,8 +60,12 @@
     //   }
     // },
     async fetch({ store, params }) {
-      await store.dispatch('loadPageContent', {page: 'projects--' + params.slug})
-      await store.dispatch('loadProject', {slug: params.slug})
+      let locale_slug = store.state.project["slug_" + store.state.locale]
+      if (!locale_slug) {
+        locale_slug = params.slug
+      }
+      await store.dispatch('loadPageContent', {page: 'projects--' + locale_slug})
+      await store.dispatch('loadProject', {slug: locale_slug})
       store.dispatch('setLogo', {content_type: false})
     }
   }

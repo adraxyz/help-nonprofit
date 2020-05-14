@@ -17,7 +17,7 @@ class ProjectSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Project
-        fields = ["order", "title", "subtitle", "slug", "thumbnail", "buttons"]
+        fields = ["order", "title", "subtitle", "slug", "slug_it", "slug_en", "thumbnail", "buttons"]
 
 
 class FullProjectSerializer(ProjectSerializer):
@@ -29,6 +29,6 @@ class FullProjectSerializer(ProjectSerializer):
 
     class Meta:
         model = Project
-        fields = ["order", "title", "slug", "subtitle", "description", "thumbnail", "budget",
-                  "category", "country", "region", "city", "address", "latitude", "longitude",
-                  "texts", "images", "videos", "buttons", "documents"]
+        fields = ["order", "title", "slug", "slug_it", "slug_en", "subtitle", "description",
+                  "thumbnail", "budget", "category", "country", "region", "city", "address",
+                  "latitude", "longitude", "texts", "images", "videos", "buttons", "documents"]
