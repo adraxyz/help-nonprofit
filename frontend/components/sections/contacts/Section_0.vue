@@ -147,6 +147,7 @@
   import { required, maxLength, email } from 'vuelidate/lib/validators'
   import {mdiAlert, mdiCheckBold, mdiCloseThick} from '@mdi/js'
   import { mapState } from 'vuex';
+
   export default {
     name: "Section_0",
     props: {
@@ -281,6 +282,10 @@
         if (!this.$v.$invalid) {
           try {
             this.$nuxt.$loading.start()
+            this.$axios.defaults.xsrfCookieName = 'csrftoken';
+            this.$axios.defaults.xsrfHeaderName = 'X-CSRFToken';
+            const csrftoken = this.$cookies.get('csrftoken')
+            this.$axios.setHeader('X-CSRFToken', csrftoken)
             let response = await this.$axios.post(
               this.locale + '/api/contact_form',
               {

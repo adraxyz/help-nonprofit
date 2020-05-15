@@ -59,7 +59,8 @@ export default {
     '@nuxtjs/proxy',
     '@nuxtjs/device',
     'nuxt-i18n',
-    'nuxt-leaflet'
+    'nuxt-leaflet',
+    'cookie-universal-nuxt'
   ],
   i18n: {
     locales: [
@@ -76,7 +77,6 @@ export default {
    */
   axios: {
     baseURL: process.env.API_BASE_URL
-    // proxy: true
   },
   // proxy: {
     // '/api/': process.env.API_BASE_URL,

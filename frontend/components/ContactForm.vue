@@ -170,6 +170,10 @@
         if (!this.$v.$invalid) {
           try {
             this.$nuxt.$loading.start()
+            this.$axios.defaults.xsrfCookieName = 'csrftoken';
+            this.$axios.defaults.xsrfHeaderName = 'X-CSRFToken';
+            const csrftoken = this.$cookies.get('csrftoken')
+            this.$axios.setHeader('X-CSRFToken', csrftoken)
             let response = await this.$axios.post(
               this.locale + '/api/subscribe',
               {
