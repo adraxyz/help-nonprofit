@@ -13,7 +13,8 @@
           <template v-slot:activator="{ on }">
             <v-col v-for="i in context_images" :key="i.order" cols="12"
                    :sm="smCols(i.content)" class="section-col">
-              <v-img :src="i.content" class="project-image" cover v-on="on"
+              <v-img :src="i.alt_content ? i.alt_content : i.content"
+                     class="project-image" cover v-on="on"
                      @click="dialog_content=i.content"></v-img>
             </v-col>
           </template>

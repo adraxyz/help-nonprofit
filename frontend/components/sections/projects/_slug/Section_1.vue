@@ -44,9 +44,12 @@
       project: Object
     },
     head() {
-      return {
-        meta: this.data.meta_tags
+      if (this.data) {
+        return {
+          meta: this.data.meta_tags
+        }
       }
+      return []
     }
   }
 </script>
