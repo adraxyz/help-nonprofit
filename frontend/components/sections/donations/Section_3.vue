@@ -6,7 +6,7 @@
     </div>
 
     <v-row no-gutters v-for="t in data.texts" :key="t.order"
-           class="section-row">
+           class="section-row" align="center">
       <v-col cols="12" :md="image(t.order) ? 6 : 12" :order="t.order" :order-md="mdTextOrder(t.order)"
              class="section-text">
         <div class="text-title" v-html="t.title"/>
