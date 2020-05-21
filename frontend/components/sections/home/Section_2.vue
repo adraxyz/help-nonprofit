@@ -1,7 +1,7 @@
 <template>
   <section id="home-section-2" class="padding-level-1">
     <div class="section-title-center text-center">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
     <div class="image-conatiner">
       <v-img class="section-image" :src="sectionImage" contain></v-img>

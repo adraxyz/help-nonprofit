@@ -3,14 +3,14 @@
 
     <div class="section-text">
 
-      <div class="text-title" v-html="sectionText.content"/>
+      <h1 class="text-title" v-html="sectionText.content"/>
 
       <v-img v-if="show_image_middle" :src="sectionImage.alt_content"
              contain class="section-image"/>
 
       <div class="section-text-titles">
-        <span class="text-subtitle d-block" v-html="sectionText.title"/>
-        <span class="text-content" v-html="sectionText.subtitle"/>
+        <h2 class="text-subtitle d-block" v-html="sectionText.title"/>
+        <h3 class="text-content" v-html="sectionText.subtitle"/>
       </div>
 
     </div>

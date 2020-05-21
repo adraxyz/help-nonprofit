@@ -2,7 +2,7 @@
   <section id="projects-details-section-4" class="padding-level-3">
 
     <div class="section-title-left">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
 
     <div class="text-content" v-html="design_description.content"/>
@@ -16,11 +16,11 @@
             {{t.title}}
           </span>
           <br>
-          <span class="text-subtitle" :style="'color: ' + textColor(t.order) + ';'">
+          <h2 class="text-subtitle" :style="'color: ' + textColor(t.order) + ';'">
             {{t.subtitle}}
-          </span>
+          </h2>
           <br>
-          <span class="text-content">{{t.content}}</span>
+          <h3 class="text-content">{{t.content}}</h3>
         </div>
       </v-col>
     </v-row>

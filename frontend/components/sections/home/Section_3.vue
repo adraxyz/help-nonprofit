@@ -1,7 +1,7 @@
 <template>
   <section id="home-section-3" class="padding-level-2">
     <div class="sm-title text-right" v-show="$vuetify.breakpoint.smAndDown">
-      <span class="section-title">{{ data.title }}</span>
+      <h1 class="section-title">{{ data.title }}</h1>
     </div>
     <v-row no-gutters>
       <v-col cols="12" md="8">
@@ -9,7 +9,7 @@
       </v-col>
       <v-col cols="12" md="4" class="pt-8 pa-md-8 pt-md-0 section-text-col">
         <div class="mb-md-4" v-show="$vuetify.breakpoint.mdAndUp">
-          <span class="section-title">{{ data.title }}</span>
+          <h1 class="section-title">{{ data.title }}</h1>
         </div>
         <div class="pr-lg-6">
           <span v-html="sectionText" class="text-content"/>

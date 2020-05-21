@@ -2,7 +2,7 @@
   <section id="projects-details-section-3" class="padding-level-3">
 
     <div class="section-title-left">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
 
     <div class="text-content" v-html="state_of_art_text.content"/>

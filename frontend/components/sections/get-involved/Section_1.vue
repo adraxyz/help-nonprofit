@@ -4,10 +4,10 @@
            class="section-row">
       <v-col cols="12" md="6" :order="t.order" :order-md="mdTextOrder(t.order)"
              class="section-text">
-        <div class="text-title" v-html="t.title"/>
+        <h1 class="text-title d-block" v-html="t.title"/>
         <v-img v-if="$vuetify.breakpoint.smAndDown"
                class="section-image" :src="image(t.order)" contain></v-img>
-        <div class="text-subtitle pt-2" v-html="t.subtitle"/>
+        <h2 class="text-subtitle d-block pt-2" v-html="t.subtitle"/>
         <div class="text-content pt-2" v-html="t.content"/>
       </v-col>
       <v-col v-if="$vuetify.breakpoint.mdAndUp"

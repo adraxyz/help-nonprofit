@@ -2,12 +2,12 @@
   <section id="projects-details-section-1" class="padding-level-3">
 
     <div class="section-title-left">
-      <span class="section-title">{{project.title}}</span>
+      <h1 class="section-title">{{project.title}}</h1>
     </div>
 
     <v-row no-gutters>
       <v-col cols="12" md="6" class="section-text">
-        <div class="text-subtitle" v-html="project.subtitle"/>
+        <h2 class="text-subtitle d-block" v-html="project.subtitle"/>
         <div class="text-content" v-html="project.description"/>
       </v-col>
       <v-col cols="12" md="6" class="section-map">
@@ -23,9 +23,9 @@
           <span class="coordinates">{{parseFloat(project.latitude)}}</span>,
           <span class="coordinates">{{parseFloat(project.longitude)}}</span>
           <div class="address">
-            <span>{{project.country}}</span> -
-            <span>{{project.region}}</span> -
-            <span>{{project.city}}</span>
+            <h3>{{project.country}}</h3> -
+            <h3>{{project.region}}</h3> -
+            <h3>{{project.city}}</h3>
             <br>
             <span>{{project.address}}</span>
           </div>

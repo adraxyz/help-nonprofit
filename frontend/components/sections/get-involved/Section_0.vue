@@ -3,13 +3,13 @@
            v-resize="onResize">
     <v-row no-gutters class="section-row" align="center">
       <v-col :cols="show_middle_image ? 12 : 6" md="6" class="text-center texts-col">
-        <div class="text-title" v-for="t in texts" :key="t.order">
+        <h1 class="text-title d-block" v-for="t in texts" :key="t.order">
           {{t.text}}
-        </div>
+        </h1>
         <v-img v-if="show_middle_image" class="section-image-middle" :src="image.content" contain/>
-        <div class="text-subtitle">
+        <h2 class="text-subtitle d-block">
           {{subtitle}}
-        </div>
+        </h2>
       </v-col>
       <v-col v-if="!show_middle_image" cols="6" md="6" class="text-center image-col">
         <v-img class="section-image" :src="image.content" contain/>

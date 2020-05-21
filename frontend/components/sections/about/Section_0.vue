@@ -1,7 +1,7 @@
 <template>
   <section id="about-section-0" class="padding-level-2" v-resize="onResize">
     <div class="section-title-container">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
     <div>
       <v-img class="section-image" :src="sectionImage" contain/>
@@ -10,23 +10,23 @@
       <v-row no-gutters>
         <v-col class="text-center pa-3 team-col">
           <span class="text-title error--text d-block">{{teamMember(0).title}}</span>
-          <span class="text-subtitle">{{teamMember(0).content}}</span>
+          <h2 class="text-subtitle">{{teamMember(0).content}}</h2>
         </v-col>
         <v-col class="text-center pa-3 team-col">
           <span class="text-title success--text d-block">{{teamMember(1).title}}</span>
-          <span class="text-subtitle">{{teamMember(1).content}}</span>
+          <h2 class="text-subtitle">{{teamMember(1).content}}</h2>
         </v-col>
         <v-col class="text-center pa-3 team-col">
           <span class="text-title info--text d-block">{{teamMember(2).title}}</span>
-          <span class="text-subtitle">{{teamMember(2).content}}</span>
+          <h2 class="text-subtitle">{{teamMember(2).content}}</h2>
         </v-col>
         <v-col class="text-center pa-3 team-col">
           <span class="text-title primary--text d-block">{{teamMember(3).title}}</span>
-          <span class="text-subtitle">{{teamMember(3).content}}</span>
+          <h2 class="text-subtitle">{{teamMember(3).content}}</h2>
         </v-col>
         <v-col class="text-center pa-3 team-col">
           <span class="text-title secondary--text d-block">{{teamMember(4).title}}</span>
-          <span class="text-subtitle">{{teamMember(4).content}}</span>
+          <h2 class="text-subtitle">{{teamMember(4).content}}</h2>
         </v-col>
       </v-row>
     </div>

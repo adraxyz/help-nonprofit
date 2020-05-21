@@ -1,13 +1,13 @@
 <template>
   <div class="white-card pa-5">
     <div>
-      <span :class="'number-title ' + intro_opt_class">{{ intro }}</span>
+      <h2 :class="'number-title ' + intro_opt_class">{{ intro }}</h2>
       <span :class="'numbered-title d-block ' + title_opt_class" v-html="title"/>
     </div>
     <div class="relative-div">
       <div :class="'content-container ' + content_opt_class">
-        <span class="text-subtitle" v-html="subtitle"/>
-        <span class="text-content" v-html="content"/>
+        <h3 class="text-subtitle" v-html="subtitle"/>
+        <h4 class="text-content" v-html="content"/>
       </div>
     </div>
     <v-btn :class="'donate-button error-button error ' + button_opt_class"

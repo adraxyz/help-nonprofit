@@ -1,13 +1,13 @@
 <template>
   <section id="about-section-3" class="padding-level-2" v-resize="onResize">
     <div class="section-title-center text-center">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
     <div class="relative-div">
       <v-img class="section-image" :src="sectionImage" contain></v-img>
       <div class="first-address">
-        <span class="d-block">{{text(0).title}}</span>
-        <span class="address d-block">{{text(0).subtitle}}</span>
+        <h2 class="d-block">{{text(0).title}}</h2>
+        <h3 class="address d-block">{{text(0).subtitle}}</h3>
       </div>
       <div class="second-address">
         <span class="d-block">{{text(1).title}}</span>

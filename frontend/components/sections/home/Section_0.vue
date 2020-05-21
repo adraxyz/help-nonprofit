@@ -13,14 +13,14 @@
             <v-col cols="12" class="data-col-text">
               <div>
                 <span class="title-number" v-html="t.title"/>
-                <span class="text-subtitle" v-html="t.subtitle"/>
+                <h1 class="text-subtitle" v-html="t.subtitle"/>
               </div>
 <!--            </v-col>-->
 <!--            <v-col cols="6" sm="12" :class="{-->
 <!--              'small-title-col': true,-->
 <!--              'pl-2 text-left': $vuetify.breakpoint.xsOnly-->
 <!--            }">-->
-              <span class="text-content" v-html="t.content"/>
+              <h2 class="text-content" v-html="t.content"/>
             </v-col>
           </v-row>
         </v-col>
@@ -31,7 +31,7 @@
           <v-row no-gutters class="action-row padding-level-2 mb-md-1">
             <v-col cols="12" class="text-title" v-html="actionText.title"/>
           </v-row>
-          <v-row no-gutters class="action-row padding-level-2 mb-1 mb-md-3 md-down-white-bg">
+          <v-row no-gutters class="action-row padding-level-2 mb-1 mb-md-4 md-down-white-bg">
             <v-col cols="12" class="text-content" v-html="actionText.content"/>
           </v-row>
           <v-row no-gutters class="action-row padding-level-2 md-down-white-bg button-row">

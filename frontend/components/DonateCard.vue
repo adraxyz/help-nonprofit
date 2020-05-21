@@ -2,11 +2,11 @@
   <div class="donate-card">
     <div>
       <span :class="'number-title ' + intro_opt_class">{{ intro }}</span>
-      <span :class="'numbered-title d-block ' + title_opt_class" v-html="title"/>
+      <h1 :class="'numbered-title d-block ' + title_opt_class" v-html="title"/>
     </div>
     <div :class="'content-container ' + content_opt_class">
-      <span class="text-subtitle d-block" v-html="subtitle"/>
-      <span class="text-content" v-html="content"/>
+      <h2 class="text-subtitle d-block" v-html="subtitle"/>
+      <h3 class="text-content" v-html="content"/>
     </div>
     <v-btn :class="'card-button error-button error ' + button_opt_class"
            v-if="button && !paypal" tile :target="button.target" nuxt

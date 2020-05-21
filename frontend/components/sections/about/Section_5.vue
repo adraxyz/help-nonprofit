@@ -1,7 +1,7 @@
 <template>
   <section id="about-section-5" class="padding-level-3">
     <div class="section-title-center text-center">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
     <v-row no-gutters>
       <v-col class="section-col py-5 pa-sm-10"

@@ -2,7 +2,7 @@
   <section id="about-section-1" class="padding-level-5">
 
     <div class="section-title-center text-center">
-      <span class="section-title">{{ data.title }}</span>
+      <h1 class="section-title">{{ data.title }}</h1>
     </div>
 
     <div class="text-content text-center">

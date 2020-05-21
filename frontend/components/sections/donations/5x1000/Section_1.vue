@@ -2,7 +2,7 @@
   <section id="fivepermille-section-1" class="padding-level-3">
 
     <div class="section-title-center text-center">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
 
     <v-row no-gutters class="section-row">
@@ -13,7 +13,7 @@
             <v-img :src="image(t.order)" contain class="col-image"/>
           </v-col>
           <v-col cols="12" sm="6" md="12" order="0" class="text-title">
-            <div v-html="t.title"/>
+            <h2 v-html="t.title"/>
           </v-col>
           <v-col cols="12" order="2" class="text-content">
             <div v-html="t.content"/>

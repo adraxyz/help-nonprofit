@@ -2,8 +2,8 @@
   <section id="projects-section-0" class="padding-level-3" v-resize="onResize">
       <v-row no-gutters class="section-row" align-content="center">
         <v-col cols="12" md="4" order="1" order-md="0" align-self="center" class="section-text">
-          <div class="text-title" v-html="baseProject.title"/>
-          <div class="text-subtitle" v-html="baseProject.subtitle"/>
+          <h1 class="text-title d-block" v-html="baseProject.title"/>
+          <h2 class="text-subtitle d-block" v-html="baseProject.subtitle"/>
           <v-btn :to="localePath(checkRoute('/projects/' + baseProject.slug))"
                  class="section-button button-shadow-error-right"
                  nuxt tile active-class="no-active">

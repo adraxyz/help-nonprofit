@@ -60,7 +60,7 @@
     </v-row>
 
     <!-- Bottom line -->
-    <v-row no-gutters>
+    <v-row no-gutters class="bottom-row">
       <v-col cols="12" class="last-footer-cols pb-0">
         <span>@{{ new Date().getFullYear() }} <b>{{ data.corporate_short_name }}</b></span>
       </v-col>
@@ -189,6 +189,9 @@
     .doc-link {
       font-family: "Crossten Bold";
     }
+    .bottom-row {
+      margin-top: 5vh;
+    }
   }
   #emailField {
     height: $nav-button-height;
@@ -204,6 +207,9 @@
   .footer-title {
     margin-bottom: 10px;
     letter-spacing: 0.15rem;
+    font-family: "Crossten SemiBold";
+    font-size: $font-size-30;
+    display: block;
   }
   .trasparenza {
     margin-top: 2vh;
@@ -228,6 +234,9 @@
     #footer-container {
       .footer-col {
         margin-bottom: 4vh;
+      }
+      .footer-title {
+        font-size: $font-size-25;
       }
     }
   }

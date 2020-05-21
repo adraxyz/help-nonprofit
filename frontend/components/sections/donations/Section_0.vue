@@ -2,11 +2,11 @@
   <section id="donations-section-0" class="padding-level-3" v-resize="onResize">
 
     <div class="section-text text-center">
-      <span class="text-title" v-html="sectionText.title"/>
+      <h2 class="text-title" v-html="sectionText.title"/>
       <br>
-      <span class="title-number">
+      <h1 class="title-number">
         {{ variableContent }}
-      </span>
+      </h1>
     </div>
 
   </section>

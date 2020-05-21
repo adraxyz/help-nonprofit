@@ -2,7 +2,7 @@
   <section id="about-section-2" class="padding-level-3">
 
     <div class="section-title-left">
-      <span class="section-title">{{ data.title }}</span>
+      <h1 class="section-title">{{ data.title }}</h1>
     </div>
 
     <v-row no-gutters class="section-row" v-for="t in section_texts" :key="t.order">

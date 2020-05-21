@@ -2,7 +2,7 @@
   <section id="fivepermille-section-3" class="padding-level-3">
 
     <div class="section-title-center text-center">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
 
     <div class="text-center">

@@ -1,11 +1,5 @@
 <template>
   <div v-if="page_content.name === 'home'">
-<!--    <div class="page-content-container error" v-if="page_content.name === 'home'">-->
-<!--    <Section_0 :data="section_data(0)"/>-->
-<!--    <Section_1 :data="section_data(1)"/>-->
-<!--    <Section_2 :data="section_data(2)"/>-->
-<!--    <Section_3 :data="section_data(3)"/>-->
-<!--    <Section_4 :data="section_data(4)"/>-->
     <Section_0 :data="section_data_0"/>
     <Section_1 :data="section_data_1"/>
     <Section_2 :data="section_data_2"/>

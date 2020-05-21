@@ -2,11 +2,11 @@
   <div :class="'square-div ' + backg_color" :style="'border: ' + border + ';'">
     <div class="square-content">
       <span :class="'number-title ' + number_color + '--text'">{{ number }}</span>
-      <span class="numbered-title">{{ black_title }}</span>
+      <h2 class="numbered-title">{{ black_title }}</h2>
       <div class="numbered-subtitle">
-        <span>{{ first_light_title }}</span>
+        <h2>{{ first_light_title }}</h2>
 <!--&lt;!&ndash;      <br v-if="$vuetify.breakpoint.mdAndUp">&ndash;&gt;-->
-        <span>{{ second_light_title }}</span>
+        <h2>{{ second_light_title }}</h2>
       </div>
     </div>
   </div>

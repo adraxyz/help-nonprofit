@@ -2,17 +2,17 @@
   <section id="donations-section-3" class="padding-level-3">
 
     <div class="section-title-center text-center">
-      <span class="section-title">{{ data.title }}</span>
+      <h1 class="section-title">{{ data.title }}</h1>
     </div>
 
     <v-row no-gutters v-for="t in data.texts" :key="t.order"
            class="section-row" align="center">
       <v-col cols="12" :md="image(t.order) ? 6 : 12" :order="t.order" :order-md="mdTextOrder(t.order)"
              class="section-text">
-        <div class="text-title" v-html="t.title"/>
+        <h2 class="text-title" v-html="t.title"/>
         <v-img v-show="$vuetify.breakpoint.smAndDown && image(t.order)"
-               class="section-image" :src="image(t.order)" contain></v-img>
-        <div class="text-subtitle pt-2" v-html="t.subtitle"/>
+               class="section-image mt-3" :src="image(t.order)" contain></v-img>
+        <h3 class="text-subtitle pt-2" v-html="t.subtitle"/>
         <div class="text-content pt-2" v-html="t.content"/>
       </v-col>
       <v-col v-show="$vuetify.breakpoint.mdAndUp && image(t.order)"

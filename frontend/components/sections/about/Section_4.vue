@@ -1,7 +1,7 @@
 <template>
   <section id="about-section-4" class="padding-level-3">
     <div class="section-title-center text-center">
-      <span class="section-title">{{data.title}}</span>
+      <h1 class="section-title">{{data.title}}</h1>
     </div>
     <v-row no-gutters>
       <v-col cols="12" lg="6">
@@ -9,15 +9,15 @@
       </v-col>
       <v-col cols="12" lg="6" class="pl-lg-5">
         <div class="section-part first-part">
-          <span class="d-block text-title">{{text(0).title}}</span>
+          <h2 class="d-block text-title">{{text(0).title}}</h2>
           <span class="text-content d-block" v-html="text(0).content"/>
         </div>
         <div class="section-part second-part">
-          <span class="d-block text-title">{{text(1).title}}</span>
+          <h2 class="d-block text-title">{{text(1).title}}</h2>
           <span class="text-content d-block" v-html="text(1).content"/>
         </div>
         <div class="section-part third-part">
-          <span class="d-block text-title">{{text(2).title}}</span>
+          <h2 class="d-block text-title">{{text(2).title}}</h2>
           <span class="text-content d-block" v-html="text(2).content"/>
         </div>
       </v-col>

@@ -2,11 +2,11 @@
   <div class="small-white-card">
     <div>
       <span class="number-title">{{ number }}</span>
-      <span class="numbered-title d-block" v-html="title"/>
+      <h2 class="numbered-title d-block" v-html="title"/>
     </div>
     <div class="relative-div">
       <div class="content-container">
-        <span class="numbered-subtitle d-block" v-html="subtitle"/>
+        <h3 class="numbered-subtitle d-block" v-html="subtitle"/>
         <span class="text-content mt-2 d-block" v-html="content"/>
       </div>
     </div>

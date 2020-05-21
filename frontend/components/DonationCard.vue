@@ -6,8 +6,8 @@
 <!--           transition="fade" contain></v-img>-->
     <div class="donation-texts button-shadow-secondary-right">
       <span class="text-subtitle" v-html="intro"/>
-      <span class="title-number" v-html="title"/>
-      <span class="text-content d-block" v-html="content"/>
+      <h1 class="title-number" v-html="title"/>
+      <h2 class="text-content d-block" v-html="content"/>
     </div>
 <!--    <v-img v-if="!$vuetify.breakpoint.smAndDown"-->
 <!--           class="donation-image" :src="image.content" :key="image.order"-->

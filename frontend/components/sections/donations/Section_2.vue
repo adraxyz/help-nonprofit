@@ -2,7 +2,7 @@
   <section id="donations-section-2" class="padding-level-2">
 
     <div class="section-title-center text-center">
-      <span class="section-title">{{ data.title }}</span>
+      <h1 class="section-title">{{ data.title }}</h1>
     </div>
 
     <v-row no-gutters class="donation-section-row">
