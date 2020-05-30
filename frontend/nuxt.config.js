@@ -60,7 +60,22 @@ export default {
     '@nuxtjs/device',
     'nuxt-i18n',
     'nuxt-leaflet',
-    'cookie-universal-nuxt'
+    ['@nuxtjs/google-analytics', {
+      id: process.env.GA_ID || '',
+      enabled: false,
+      // debug: {
+      //   enabled: true, // default value
+      //   trace: true, // default value
+      //   sendHitTask: true // default value
+      // },
+      set: [
+        { field: 'anonymizeIp', value: true }
+      ]
+    }],
+    ['nuxt-facebook-pixel-module', {
+      pixelId: process.env.FB_PIXEL_ID,
+      disabled: true
+    }]
   ],
   i18n: {
     locales: [
