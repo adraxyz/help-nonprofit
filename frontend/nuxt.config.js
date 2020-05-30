@@ -62,7 +62,7 @@ export default {
     'nuxt-leaflet',
     ['@nuxtjs/google-analytics', {
       id: process.env.GA_ID || '',
-      enabled: false,
+      disabled: true,
       // debug: {
       //   enabled: true, // default value
       //   trace: true, // default value
