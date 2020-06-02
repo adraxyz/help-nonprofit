@@ -4,7 +4,7 @@ export const checkRoute = function(route) {
   } else if (route && route.includes('--')) {
     route = route.replace('--', '/')
   }
-  if (!route.startsWith('/')) {
+  if (route && !route.startsWith('/')) {
     route = '/' + route
   }
   return route
