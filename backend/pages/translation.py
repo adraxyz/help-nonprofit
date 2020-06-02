@@ -1,5 +1,6 @@
 from modeltranslation.translator import register, TranslationOptions
-from .models import Footer, Page, Button, Layout, Text, Section, Image, Document, MetaTag
+from .models import (Footer, Page, Button, Text, Section, Image, Document,
+                     MetaTag, CookiesSnackbar, CookiesPreferences)
 
 
 @register(Footer)
@@ -36,14 +37,20 @@ class ImageTranslationOptions(TranslationOptions):
 
 @register(Document)
 class DocumentTranslationOptions(TranslationOptions):
-    fields = ('title', 'subtitle', 'description')
-
-
-@register(Layout)
-class LayoutTranslationOptions(TranslationOptions):
-    fields = ('privacy_text', )
+    fields = ('title', 'subtitle', 'description', 'file')
 
 
 @register(MetaTag)
 class MetaTagTranslationOptions(TranslationOptions):
     fields = ('content', )
+
+
+@register(CookiesSnackbar)
+class CookiesSnackbarTranslationOptions(TranslationOptions):
+    fields = ('title', 'info_text', 'accept_button_label', 'cookies_preferences_link_label')
+
+
+@register(CookiesPreferences)
+class CookiesPreferencesTranslationOptions(TranslationOptions):
+    fields = ('title', 'info_text', 'save_button_label',
+              'reject_all_button_label', 'accept_all_button_label')

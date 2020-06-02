@@ -5,10 +5,10 @@ from rest_framework import viewsets
 from rest_framework import permissions
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
-from ..models import Message, Label
+from ..models import Message, Label, CookiesCategory
 from django.conf import settings
 from django.core.mail import send_mail
-from .serializers import MessageSerializer, LabelSerializer
+from .serializers import MessageSerializer, LabelSerializer, CookiesCategorySerializer
 from ..mailchimp import MailChimpManager
 from mailchimp3.mailchimpclient import MailChimpError
 from smtplib import SMTPException
@@ -140,3 +140,10 @@ class LabelViewSet(viewsets.ModelViewSet):
         if topic is not None:
             queryset = self.queryset.filter(topic=topic.lower())
         return queryset
+
+
+class CookiesCategoryViewSet(viewsets.ModelViewSet):
+    serializer_class = CookiesCategorySerializer
+    queryset = CookiesCategory.objects.all()
+    lookup_field = 'name'
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, ]

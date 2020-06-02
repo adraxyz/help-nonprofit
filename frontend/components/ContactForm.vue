@@ -44,23 +44,24 @@
         @input="$v.email.$touch()"
         @blur="$v.email.$touch()"
       ></v-text-field>
-      <v-checkbox class="mt-0 pt-0"
-        v-model="privacy_agreement"
-        :error-messages="privacyAgreementErrors"
-        :dense="$vuetify.breakpoint.xsOnly"
-        title=""
-        outlined
-        @change="$v.privacy_agreement.$touch()"
-        @blur="$v.privacy_agreement.$touch()"
-      >
-        <template v-slot:label>
-          <div>
-            <span>{{getLabel('privacy_agreement')}}</span>
-            <span>(<a @click="privacy_dialog=true">Privacy Policy</a>)</span>
-          </div>
-        </template>
-      </v-checkbox>
-      <div class="mt-1 mt-sm-5">
+      <v-row no-gutters align="center">
+        <v-checkbox class="mt-0 pt-0"
+          v-model="privacy_agreement"
+          :error-messages="privacyAgreementErrors"
+          :dense="$vuetify.breakpoint.xsOnly"
+          :hide-details="true"
+          title=""
+          outlined
+          @change="$v.privacy_agreement.$touch()"
+          @blur="$v.privacy_agreement.$touch()"
+        />
+        <span class="policy-text">
+          {{getLabel('privacy_agreement')}}
+          (<a :href="privacy_policy.file" target="_blank">Privacy Policy</a> &
+          <a :href="terms_of_use.file" target="_blank">Terms of use</a>)
+        </span>
+      </v-row>
+      <div class="mt-5">
         <v-btn type="submit" tile class="button-shadow-secondary-right section-button mr-4">
           {{getLabel('submit')}}
         </v-btn>
@@ -72,20 +73,6 @@
       <v-icon large :color="response.color" class="mr-3">{{ response.icon }}</v-icon>
       <span class="response-message">{{ response.message }}</span>
     </div>
-
-    <!-- Privacy Policy dialog -->
-    <v-dialog v-model="privacy_dialog" class="white" scrollable persistent max-width="90vw">
-      <v-card tile>
-        <v-card-title>
-          <v-icon class="close-icon ma-2" @click="privacy_dialog=false">
-            {{ close_icon }}
-          </v-icon>
-        </v-card-title>
-        <v-card-text class="pa-3">
-          <span v-html="privacy_text"/>
-        </v-card-text>
-      </v-card>
-    </v-dialog>
 
   </div>
 
@@ -118,7 +105,7 @@
       await this.$store.dispatch('loadContactFormMessages')
     },
     computed: {
-      ...mapState(['locale', 'privacy_text', 'contact_form_labels', 'contact_form_messages']),
+      ...mapState(['locale', 'privacy_policy', 'terms_of_use', 'contact_form_labels', 'contact_form_messages']),
       privacyAgreementErrors () {
         const errors = []
         if (!this.$v.privacy_agreement.$dirty) return errors
@@ -235,6 +222,9 @@
   }
   .v-text-field--outlined {
     border-radius: 0px !important;
+  }
+  .policy-text {
+    max-width: calc(100% - 40px);
   }
   fieldset {
     border: 2px solid black !important;

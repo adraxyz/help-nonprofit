@@ -47,7 +47,7 @@
           <v-col cols="12" md="6" order="0" order-md="1" class="footer-col">
             <h1 class="footer-title">{{ data.donation_title }}</h1>
             <div>
-              <v-btn :to="localePath(donation_button.to)" class="rounded-btn white"
+              <v-btn :to="localePath(checkRoute(donation_button.to))" class="rounded-btn white"
                      fab dark outlined nuxt active-class="no-active">
                 <v-icon id="small-icon" color="error">mdi-heart</v-icon>
               </v-btn>
@@ -67,9 +67,12 @@
       <v-col cols="12" class="last-footer-cols pt-1 pb-4">
         <v-row no-gutters>
           <v-col cols="auto">
-          <a @click="privacy_dialog=true">Privacy Policy</a> |
+          <a :href="privacy_policy.file" target="_blank">Privacy Policy</a> |
+          <a :href="cookies_policy.file" target="_blank">Cookies Policy</a> |
+          <a @click="showCookiesPreferences">Cookies preferences</a> |
+          <a :href="terms_of_use.file" target="_blank">Terms of Use</a> |
           <span>{{ data.email }}</span> |
-          <nuxt-link :to="localePath(contact_button.to)">{{ contact_button.text_1 }}</nuxt-link> |
+          <nuxt-link :to="localePath(checkRoute(contact_button.to))">{{ contact_button.text_1 }}</nuxt-link> |
           <span>CF: {{ data.fiscal_code }}</span> |
           <span>{{ data.registered_office }}</span>
           </v-col>
@@ -89,22 +92,9 @@
 
     </v-row>
 
-    <!-- Privacy Policy dialog -->
-    <v-dialog v-model="privacy_dialog" class="white" scrollable persistent max-width="90vw">
-      <v-card tile>
-        <v-card-title>
-          <v-icon class="close-icon ma-2" @click="privacy_dialog=false">
-            {{ close_icon }}
-          </v-icon>
-        </v-card-title>
-        <v-card-text class="pa-3">
-          <span v-html="privacy_text"/>
-        </v-card-text>
-      </v-card>
-    </v-dialog>
-
     <!-- Subscribe dialog -->
-    <v-dialog v-model="subscribe_dialog" class="white" scrollable persistent max-width="800px">
+    <v-dialog v-model="subscribe_dialog" class="white subscribe-dialog"
+              scrollable persistent max-width="800px">
       <div class="white dialog-container">
         <v-icon class="float-right ma-2" @click="subscribe_dialog=false">
           {{ close_icon }}
@@ -122,6 +112,7 @@
 <script>
   import SocialIcons from "./layouts/default/SocialIcons";
   import ContactForm from "./ContactForm";
+  import { checkRoute } from "../utils/route.utils";
   import { mdiCloseThick } from '@mdi/js'
   import { mapState } from 'vuex';
   export default {
@@ -130,7 +121,6 @@
       data: Object,
       donation_button: Object,
       contact_button: Object,
-      privacy_text: String
     },
     components: {
       ContactForm,
@@ -138,13 +128,18 @@
     },
     data: () => ({
       subscriber_email: '',
-      privacy_dialog: false,
       subscribe_dialog: false,
-      close_icon: mdiCloseThick
+      close_icon: mdiCloseThick,
+      checkRoute: checkRoute
     }),
     computed: {
-      ...mapState(['locale', 'locales'])
+      ...mapState(['locale', 'locales', 'privacy_policy', 'cookies_policy', 'terms_of_use'])
     },
+    methods: {
+      showCookiesPreferences() {
+        this.$store.dispatch('showHideCookiesPreferences', {show: true})
+      }
+    }
   }
 </script>
 
@@ -197,6 +192,9 @@
     height: $nav-button-height;
     width: $nav-button-width * 1.5;
     color: black;
+  }
+  .subscribe-dialog {
+    z-index: 1001;
   }
   .dialog-form-container {
     margin-top: 50px;

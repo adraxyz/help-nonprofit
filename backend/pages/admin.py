@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import (Layout, Footer, Socials, Page, Section, Text,
-                     Image, Video, Button, Document, MetaTag)
+from .models import (Layout, Footer, Socials, Page, Section, Text, Image, Video,
+                     Button, Document, MetaTag, CookiesSnackbar, CookiesPreferences)
 from django.conf import settings
 from .utils import RoutingUtils
 import os
@@ -61,6 +61,18 @@ class MetaTagModelAdmin(admin.ModelAdmin):
                    'text', 'image', 'video', 'document')
 
 
+class CookiesSnackbarModelAdmin(admin.ModelAdmin):
+
+    list_display = ('__str__', 'title')
+    list_filter = ('title', )
+
+
+class CookiesPreferencesModelAdmin(admin.ModelAdmin):
+
+    list_display = ('__str__', 'title')
+    list_filter = ('title',)
+
+
 admin.site.register(Layout)
 admin.site.register(Footer)
 admin.site.register(Socials)
@@ -72,3 +84,5 @@ admin.site.register(Video, PageFeatureModelAdmin)
 admin.site.register(Button, ButtonAdmin)
 admin.site.register(Document, PageFeatureModelAdmin)
 admin.site.register(MetaTag, MetaTagModelAdmin)
+admin.site.register(CookiesSnackbar, CookiesSnackbarModelAdmin)
+admin.site.register(CookiesPreferences, CookiesPreferencesModelAdmin)

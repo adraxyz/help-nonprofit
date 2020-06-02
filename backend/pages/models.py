@@ -28,6 +28,14 @@ PROJECT_SECTION_CHOICES = [
     ("context", "context"),
     ("design", "design")
 ]
+DOC_TYPE_CHOICES = [
+    ("statute", "state of art"),
+    ("financial_balance", "financial balance"),
+    ("social_balance", "social balance"),
+    ("privacy_policy", "privacy policy"),
+    ("cookies_policy", "cookies policy"),
+    ("terms_of_use", "terms of use")
+]
 
 
 class Page(models.Model):
@@ -333,9 +341,15 @@ class Document(models.Model):
     file = models.FileField(
         help_text=_("The document file.")
     )
+    type = models.CharField(
+        max_length=100, choices=DOC_TYPE_CHOICES, null=True, blank=True,
+        help_text=_("Document type.")
+    )
 
     def __str__(self):
         s = f"document_{str(self.order)}"
+        if self.type:
+            s = f"{s}_type_{self.type}"
         if self.section:
             s = f"{s}_section_{self.section}"
         if self.project:
@@ -464,10 +478,6 @@ class Layout(models.Model):
         to=Socials, on_delete=models.CASCADE, related_name='socials_layouts', null=True, blank=True,
         help_text="Layout socials."
     )
-    privacy_text = models.TextField(
-        max_length=5000, null=True, blank=True,
-        help_text=_("Privacy policy text.")
-    )
 
     def __str__(self):
         return self.name
@@ -532,3 +542,51 @@ class MetaTag(models.Model):
         if self.document:
             string = f"{string}_document_{self.document}"
         return string
+
+
+class CookiesSnackbar(models.Model):
+    title = models.CharField(
+        max_length=100,
+        help_text=_("Snackbar title.")
+    )
+    info_text = models.TextField(
+        max_length=1000,
+        help_text=_("Snackbar info text.")
+    )
+    accept_button_label = models.CharField(
+        max_length=50,
+        help_text=_("Accept button label.")
+    )
+    cookies_preferences_link_label = models.CharField(
+        max_length=100,
+        help_text=_("Cookies preferences link label.")
+    )
+
+    def __str__(self):
+        return f"{self.title}"
+
+
+class CookiesPreferences(models.Model):
+    title = models.CharField(
+        max_length=100,
+        help_text=_("Cookies preferences dialog title.")
+    )
+    info_text = models.TextField(
+        max_length=1000,
+        help_text=_("Cookies preferences dialog info text.")
+    )
+    save_button_label = models.CharField(
+        max_length=50,
+        help_text=_("Save preferences button label.")
+    )
+    reject_all_button_label = models.CharField(
+        max_length=50,
+        help_text=_("Reject all button label.")
+    )
+    accept_all_button_label = models.CharField(
+        max_length=50,
+        help_text=_("Accept all button label.")
+    )
+
+    def __str__(self):
+        return f"{self.title}"

@@ -2,7 +2,7 @@
   <div>
     <div id="top-right">
       <!-- Donation button -->
-      <v-btn id="top-right-donation-button" :to="localePath(donation_button.to)"
+      <v-btn id="top-right-donation-button" :to="localePath(checkRoute(donation_button.to))"
              class="d-none d-lg-inline-flex error-button big-button error"
              tile dark outlined nuxt active-class="no-active">
         {{ donation_button.text_1 }}
@@ -25,7 +25,7 @@
           </v-btn>
         </v-col>
         <v-col cols="12" class="text-center" align-self="center">
-          <v-btn id="drawer-donation-button" :to="localePath(donation_button.to)"
+          <v-btn id="drawer-donation-button" :to="localePath(checkRoute(donation_button.to))"
                  class="nav-button error"
                  tile dark nuxt active-class="no-active">
             {{ donation_button.text_1 }}
@@ -43,13 +43,20 @@
           </div>
         </v-col>
         <v-col cols="12" class="drawer-footer-col mt-3">
-          <div class="privacy-parent-div d-inline-block">
-            <div class="privacy-div">
-              <a class="link-text" @click="privacy_dialog=true">Privacy</a>
-            </div>
-          </div>
+<!--          <div class="privacy-parent-div d-inline-block">-->
+<!--            <div class="privacy-div">-->
+<!--              <a class="link-text" :href="privacy_policy.file" target="_blank">Privacy Policy</a>-->
+<!--            </div>-->
+<!--            <div class="privacy-div">-->
+<!--              <a class="link-text" :href="cookies_policy.file" target="_blank">Cookies Policy</a>-->
+<!--            </div>-->
+<!--            <div class="privacy-div">-->
+<!--              <a class="link-text" :href="terms_of_use.file" target="_blank">Terms of use</a>-->
+<!--            </div>-->
+<!--          </div>-->
           <div class="d-inline-block float-right ml-3">
-            <v-btn fab outlined color="white" class="rounded-btn" :to="localePath(contact_button.to)">
+            <v-btn fab outlined color="white" class="rounded-btn"
+                   :to="localePath(checkRoute(contact_button.to))">
               <i class="contact-icon"/>
             </v-btn>
           </div>
@@ -58,28 +65,14 @@
 
     </v-navigation-drawer>
 
-    <!-- Privacy Policy dialog -->
-    <v-dialog v-model="privacy_dialog" class="white" scrollable persistent max-width="90vw">
-      <v-card tile>
-        <v-card-title>
-          <v-icon class="close-icon ma-2" @click="privacy_dialog=false">
-            {{ close_icon }}
-          </v-icon>
-        </v-card-title>
-        <v-card-text class="pa-3">
-          <span v-html="privacy_text"/>
-        </v-card-text>
-      </v-card>
-    </v-dialog>
-
   </div>
 </template>
 
 <script>
-import {checkRoute} from "../../../utils/route.utils";
+import { checkRoute } from "../../../utils/route.utils";
 import SocialIcons from "./SocialIcons";
 import LanguagesSwitcher from "./LanguagesSwitcher";
-import {mdiCloseThick} from "@mdi/js";
+import { mapState } from 'vuex';
 
 export default {
   name: "TopLeft",
@@ -87,7 +80,7 @@ export default {
     navs: Array,
     contact_button: Object,
     donation_button: Object,
-    privacy_text: String
+
   },
   components: {
     LanguagesSwitcher,
@@ -96,10 +89,11 @@ export default {
   data: () => ({
     drawer: false,
     drawer_height: 0,
-    checkRoute: checkRoute,
-    privacy_dialog: false,
-    close_icon: mdiCloseThick
+    checkRoute: checkRoute
   }),
+  computed: {
+    ...mapState(['privacy_policy', 'cookies_policy', 'terms_of_use'])
+  },
   methods: {
     onResize () {
       this.drawer_height = window.innerHeight

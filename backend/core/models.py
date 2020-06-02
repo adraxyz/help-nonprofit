@@ -63,3 +63,77 @@ class Label(models.Model):
 
     def __str__(self):
         return f"{self.topic} {self.item} label"
+
+
+class CookiesCategory(models.Model):
+    name = models.CharField(
+        max_length=50,
+        help_text=_("Cookies category name.")
+    )
+    title = models.CharField(
+        max_length=50,
+        help_text=_("Cookies category title.")
+    )
+    description = models.TextField(
+        max_length=750,
+        help_text=_("Cookies category description.")
+    )
+
+    def __str__(self):
+        return f"{self.name} cookies category"
+
+
+class CookiesProvider(models.Model):
+    name = models.CharField(
+        max_length=50,
+        help_text=_("Cookies provider name.")
+    )
+    title = models.CharField(
+        max_length=50,
+        help_text=_("Cookies provider title.")
+    )
+    description = models.TextField(
+        max_length=500,
+        help_text=_("Cookies provider description.")
+    )
+    default = models.BooleanField(
+        default=False,
+        help_text=_("Are cookies of this provider enabled by default?")
+    )
+    readonly = models.BooleanField(
+        default=False,
+        help_text=_("Are cookies of this provider readonly?")
+    )
+    category = models.ForeignKey(
+        to=CookiesCategory, on_delete=models.CASCADE, related_name='cookies_providers',
+        help_text="The category to which the provider belongs."
+    )
+
+    def __str__(self):
+        return f"{self.category} - {self.name} cookies provider"
+
+
+class Cookie(models.Model):
+    name = models.CharField(
+        max_length=50,
+        help_text=_("Cookie name.")
+    )
+    title = models.CharField(
+        max_length=50, null=True, blank=True,
+        help_text=_("Cookie title.")
+    )
+    purpose = models.TextField(
+        max_length=750,
+        help_text=_("Cookie purpose.")
+    )
+    provider = models.ForeignKey(
+        to=CookiesProvider, on_delete=models.CASCADE, related_name='cookies',
+        help_text="The provider to which the cookie belongs."
+    )
+    duration = models.CharField(
+        max_length=20, null=True, blank=True,
+        help_text=_("Cookie duration (es. 1 year, 1 day, 3 months, etc).")
+    )
+
+    def __str__(self):
+        return f"{self.provider} - {self.name} cookie"

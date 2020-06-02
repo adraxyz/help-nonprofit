@@ -2,6 +2,9 @@
 
   <v-app>
 
+    <CookiesSnackbar/>
+    <CookiesPreferences/>
+
     <TopLeft :logo="logo"/>
 
     <NavBar :navs="default_layout.pages"/>
@@ -35,8 +38,7 @@
       <Footer v-intersect="{handler: onFooterIntersect, options: {threshold: [0, 0.5, 1.0]}}"
               :data="default_layout.footer"
               :donation_button="default_layout.donation_button"
-              :contact_button="default_layout.contact_button"
-              :privacy_text="default_layout.privacy_text"/>
+              :contact_button="default_layout.contact_button"/>
 
     </v-content>
 
@@ -53,10 +55,14 @@
   import BottomRight from "../components/layouts/default/BottomRight";
   import Footer from "../components/Footer";
   import { mapState } from 'vuex';
+  import CookiesSnackbar from "../components/layouts/default/CookiesSnackbar";
+  import CookiesPreferences from "../components/layouts/default/CookiesPreferences";
 
   export default {
     name: 'default_layout',
     components: {
+      CookiesSnackbar,
+      CookiesPreferences,
       TopLeft,
       NavBar,
       TopRight,

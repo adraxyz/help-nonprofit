@@ -115,7 +115,7 @@
             this.show_alternate = true
           }
         },
-        5000
+        8000
       );
     }
   }

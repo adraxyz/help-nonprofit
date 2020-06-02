@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from ..models import (Layout, Page, Section, Text, Image, Video,
-                      Button, Footer, Socials, Document, MetaTag)
+from ..models import (Layout, Page, Section, Text, Image, Video, Button, Footer,
+                      Socials, Document, MetaTag, CookiesSnackbar, CookiesPreferences)
 
 
 class MetaTagSerializer(serializers.ModelSerializer):
@@ -46,7 +46,8 @@ class DocumentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Document
-        fields = ['order', 'title', 'subtitle', 'description', 'file', 'project_section', 'meta_tags']
+        fields = ['order', 'title', 'subtitle', 'description',
+                  'file', 'project_section', 'meta_tags', 'type']
 
 
 class SectionSerializer(serializers.ModelSerializer):
@@ -105,7 +106,7 @@ class LayoutSerializer(serializers.ModelSerializer):
     class Meta:
         model = Layout
         fields = ['name', 'pages', 'logo', 'donation_button', 'meta_tags',
-                  'contact_button', 'footer', 'socials', 'privacy_text']
+                  'contact_button', 'footer', 'socials']
         lookup_field = 'name'
 
     def to_representation(self, instance):
@@ -126,3 +127,18 @@ class LayoutSerializer(serializers.ModelSerializer):
 
     def _order_sort(self, val):
         return val["order"]
+
+
+class CookiesSnackbarSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = CookiesSnackbar
+        fields = ['title', 'info_text', 'accept_button_label', 'cookies_preferences_link_label']
+
+
+class CookiesPreferencesSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = CookiesPreferences
+        fields = ['title', 'info_text', 'save_button_label',
+                  'reject_all_button_label', 'accept_all_button_label']

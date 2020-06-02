@@ -4,13 +4,24 @@ export const state = () => ({
   locale: '',
   default_layout: {},
   logo: {},
-  privacy_text: '',
   page_content: {},
   projects: [],
   project: {},
   projects_categories: [],
   contact_form_messages: [],
-  contact_form_labels: {}
+  contact_form_labels: {},
+  privacy_policy: {file: ''},
+  cookies_policy: {file: ''},
+  terms_of_use: {file: ''},
+  cookies_snackbar: {
+    show: true,
+    content: null
+  },
+  cookies_preferences: {
+    show: false,
+    content: null
+  },
+  cookies_categories: []
 })
 // MUTATIONS
 export const mutations = {
@@ -29,9 +40,6 @@ export const mutations = {
   SET_LOGO(state, logo) {
     state.logo = logo
   },
-  SET_PRIVACY_TEXT(state, text) {
-    state.privacy_text = text
-  },
   SET_PROJECTS(state, projects) {
     state.projects = projects
   },
@@ -46,6 +54,30 @@ export const mutations = {
   },
   SET_CONTACT_FORM_LABELS(state, labels) {
     state.contact_form_labels = labels
+  },
+  SET_PRIVACY_POLICY(state, doc) {
+    state.privacy_policy = doc
+  },
+  SET_COOKIES_POLICY(state, doc) {
+    state.cookies_policy = doc
+  },
+  SET_TERMS_OF_USE(state, doc) {
+    state.terms_of_use = doc
+  },
+  SHOW_HIDE_COOKIES_SNACKBAR(state, show) {
+    state.cookies_snackbar.show = show
+  },
+  SHOW_HIDE_COOKIES_PREFERENCES(state, show) {
+    state.cookies_preferences.show = show
+  },
+  SET_COOKIES_CATEGORIES(state, cookies_categories) {
+    state.cookies_categories = cookies_categories
+  },
+  SET_COOKIES_SNACKBAR(state, content) {
+    state.cookies_snackbar.content = content[0]
+  },
+  SET_COOKIES_PREFERENCES(state, content) {
+    state.cookies_preferences.content = content[0]
   }
 }
 // ACTIONS
@@ -54,13 +86,19 @@ export const actions = {
     commit('SET_LOCALE', locale)
   },
   setLogo({commit, state}, {content_type}) {
-    if (state.default_layout) {
+    if (state.default_layout && state.default_layout.logo) {
       let logo = state.default_layout.logo.content
       if (content_type && content_type === 'alt') {
         logo = state.default_layout.logo.alt_content
       }
       commit('SET_LOGO', {content: logo, content_type: content_type})
     }
+  },
+  showHideCookiesSnackbar({commit, state}, {show}) {
+    commit('SHOW_HIDE_COOKIES_SNACKBAR', show)
+  },
+  showHideCookiesPreferences({commit, state}, {show}) {
+    commit('SHOW_HIDE_COOKIES_PREFERENCES', show)
   },
   async loadDefaultLayout({commit, state}) {
     let response = await this.$axios.get(state.locale + '/api/layouts/default')
@@ -82,7 +120,7 @@ export const actions = {
     commit('SET_PROJECT', response.data)
   },
   async loadProjectsCategories({ commit, state }) {
-    let response = await this.$axios.get(state.locale + '/api/projects-categories/')
+    let response = await this.$axios.get(state.locale + '/api/projects-categories')
     commit('SET_PROJECTS_CATEGORIES', response.data)
   },
   async loadContactFormMessages({ commit, state }) {
@@ -96,14 +134,39 @@ export const actions = {
     )
     commit('SET_CONTACT_FORM_LABELS', response.data)
   },
-  async nuxtServerInit({ commit, state }, { app }) {
+  async loadPrivacyPolicy({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/documents/privacy_policy')
+    commit('SET_PRIVACY_POLICY', response.data)
+  },
+  async loadCookiesPolicy({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/documents/cookies_policy')
+    commit('SET_COOKIES_POLICY', response.data)
+  },
+  async loadTermsOfUse({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/documents/terms_of_use')
+    commit('SET_TERMS_OF_USE', response.data)
+  },
+  async loadCookiesCategories({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/cookies_categories')
+    commit('SET_COOKIES_CATEGORIES', response.data)
+  },
+  async loadCookiesSnackbar({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/cookies_snackbar')
+    commit('SET_COOKIES_SNACKBAR', response.data)
+  },
+  async loadCookiesPreferences({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/cookies_preferences')
+    commit('SET_COOKIES_PREFERENCES', response.data)
+  },
+  async nuxtServerInit({ commit, state, dispatch }, { app }) {
     commit('SET_LOCALE', app.i18n.locale)
     commit('SET_LOCALES', app.i18n.locales)
     try {
       let response = await this.$axios.get(state.locale + '/api/layouts/default')
       commit('SET_DEFAULT_LAYOUT', response.data)
-      commit('SET_PRIVACY_TEXT', response.data.privacy_text)
-      // commit('SET_LOGO', {content: response.data.logo.content, content_type: ''})
+      await dispatch('loadPrivacyPolicy')
+      await dispatch('loadCookiesPolicy')
+      await dispatch('loadTermsOfUse')
     } catch (e) {
       // console.log(e)
     }

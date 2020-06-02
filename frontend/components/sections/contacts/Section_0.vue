@@ -2,7 +2,7 @@
   <section id="contacts-section-0" class="padding-level-3" v-resize="onResize">
     <v-row class="section-row" no-gutters align="center" align-content="center" justify="center">
       <v-col cols="12" md="7" class="">
-        <v-form class="section-form text-content" @submit.prevent="submit" method="post">
+        <v-form class="section-form" @submit.prevent="submit" method="post">
 
           <v-text-field
             v-model="firstname"
@@ -67,28 +67,25 @@
             @change="$v.news_agreement.$touch()"
             @blur="$v.news_agreement.$touch()"
           ></v-checkbox>
-          <v-checkbox class="mt-0 pt-0"
-            v-model="privacy_agreement"
-            :error-messages="privacyAgreementErrors"
-            :dense="$vuetify.breakpoint.smAndDown"
-            title=""
-            outlined
-            @change="$v.privacy_agreement.$touch()"
-            @blur="$v.privacy_agreement.$touch()"
-          >
-            <template v-slot:label>
-              <v-row no-gutters>
-                <v-col cols="12">
-                  <span>{{privacyAgreementCheckBoxField.title}}</span>
-                  <span>(<a @click="privacy_dialog=true">Privacy Policy</a>)</span>
-                </v-col>
-<!--                <v-col cols="12" sm="4"><span>( <a @click="privacy_dialog=true">Privacy Policy</a> )</span></v-col>-->
-              </v-row>
-            </template>
-          </v-checkbox>
-
+          <v-row no-gutters align="start">
+            <v-checkbox class="mt-0 pt-0"
+              v-model="privacy_agreement"
+              :error-messages="privacyAgreementErrors"
+              :dense="$vuetify.breakpoint.smAndDown"
+              :hide-details="true"
+              title=""
+              outlined
+              @change="$v.privacy_agreement.$touch()"
+              @blur="$v.privacy_agreement.$touch()"
+            />
+            <span class="policy-text">
+              {{privacyAgreementCheckBoxField.title}}
+              (<a :href="privacy_policy.file" target="_blank">Privacy Policy</a> &
+              <a :href="terms_of_use.file" target="_blank">Terms of use</a>)
+            </span>
+          </v-row>
           <!-- Buttons -->
-          <div class="mt-1 mt-md-5">
+          <div class="mt-5">
             <v-btn type="submit" tile class="button-shadow-primary-right section-button mr-4">
               {{submitButton.text_0}}
             </v-btn>
@@ -105,20 +102,6 @@
       </v-col>
 
     </v-row>
-
-    <!-- Privacy Policy dialog -->
-    <v-dialog v-model="privacy_dialog" class="white" scrollable persistent max-width="90vw">
-      <v-card tile>
-        <v-card-title>
-          <v-icon class="close-icon ma-2" @click="privacy_dialog=false">
-            {{ close_icon }}
-          </v-icon>
-        </v-card-title>
-        <v-card-text class="pa-3">
-          <span v-html="privacy_text"/>
-        </v-card-text>
-      </v-card>
-    </v-dialog>
 
     <!-- Response messages dialog -->
     <v-dialog class="white" v-model="show_response_dialog" persistent max-width="600">
@@ -198,7 +181,7 @@
       }
     },
     computed: {
-      ...mapState(['locale', 'contact_form_messages', 'privacy_text']),
+      ...mapState(['locale', 'contact_form_messages', 'privacy_policy', 'terms_of_use']),
       submitButton() {
         return this.data.buttons.find(b => b.order === 0)
       },
@@ -364,6 +347,21 @@
     margin-bottom: 5vh;
     min-height: var(--100vh);
     .section-form {
+      font-family: "Crossten Book" !important;
+      letter-spacing: 0.15rem !important;
+      .v-input {
+        font-family: "Crossten Book" !important;
+        letter-spacing: 0.15rem !important;
+        color: black !important;
+      }
+      .v-label {
+        font-family: "Crossten Book" !important;
+        letter-spacing: 0.15rem !important;
+        color: black !important;
+      }
+      .policy-text {
+        max-width: calc(100% - 40px);
+      }
       .v-text-field--outlined {
         border-radius: 0px !important;
       }

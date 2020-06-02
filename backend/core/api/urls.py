@@ -1,9 +1,10 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import SubscribeView, ContactFormView, LabelViewSet
+from .views import SubscribeView, ContactFormView, LabelViewSet, CookiesCategoryViewSet
 
 router = DefaultRouter()
 router.register(r"labels", LabelViewSet, basename='label')
+router.register(r"cookies_categories", CookiesCategoryViewSet, basename='cookies_categories')
 
 
 urlpatterns = [
