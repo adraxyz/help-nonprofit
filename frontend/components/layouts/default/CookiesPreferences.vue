@@ -32,7 +32,7 @@
                   </v-col>
                 </v-row>
                 <div v-for="c in provider.cookies" :key="c.name">
-                <div class="cookies-description d-inline-block">
+                <div class="cookies-description d-inline-block mb-3">
                   <span class="d-block pb-2 cookies-name">{{c.name}}</span>
                   <span>{{c.purpose}}</span>
                 </div>
