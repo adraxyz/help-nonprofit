@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from ..models import (Layout, Page, Section, Text, Image, Video, Button, Footer,
-                      Socials, Document, MetaTag, CookiesSnackbar, CookiesPreferences)
+                      Social, Document, MetaTag, CookiesSnackbar, CookiesPreferences)
 
 
 class MetaTagSerializer(serializers.ModelSerializer):
@@ -90,8 +90,8 @@ class FooterSerializer(serializers.ModelSerializer):
 class SocialSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Socials
-        fields = '__all__'
+        model = Social
+        fields = ['order', 'platform', 'link']
 
 
 class LayoutSerializer(serializers.ModelSerializer):
@@ -100,13 +100,12 @@ class LayoutSerializer(serializers.ModelSerializer):
     donation_button = ButtonSerializer(read_only=True)
     contact_button = ButtonSerializer(read_only=True)
     footer = FooterSerializer(read_only=True)
-    socials = SocialSerializer(read_only=True)
     meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Layout
         fields = ['name', 'pages', 'logo', 'donation_button', 'meta_tags',
-                  'contact_button', 'footer', 'socials']
+                  'contact_button', 'footer']
         lookup_field = 'name'
 
     def to_representation(self, instance):

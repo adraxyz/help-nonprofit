@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import (Layout, Footer, Socials, Page, Section, Text, Image, Video,
+from .models import (Layout, Footer, Social, Page, Section, Text, Image, Video,
                      Button, Document, MetaTag, CookiesSnackbar, CookiesPreferences)
 from django.conf import settings
 from .utils import RoutingUtils
@@ -53,6 +53,12 @@ class ButtonAdmin(PageFeatureModelAdmin):
         return form
 
 
+class SocialModelAdmin(admin.ModelAdmin):
+
+    list_display = ('__str__', 'platform')
+    list_filter = ('platform', )
+
+
 class MetaTagModelAdmin(admin.ModelAdmin):
 
     list_display = ('__str__', 'hid', 'layout', 'page',
@@ -75,7 +81,7 @@ class CookiesPreferencesModelAdmin(admin.ModelAdmin):
 
 admin.site.register(Layout)
 admin.site.register(Footer)
-admin.site.register(Socials)
+admin.site.register(Social, SocialModelAdmin)
 admin.site.register(Page, PageAdmin)
 admin.site.register(Section, SectionModelAdmin)
 admin.site.register(Text, PageFeatureModelAdmin)

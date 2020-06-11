@@ -1,8 +1,8 @@
 from rest_framework import viewsets
 from rest_framework import permissions
-from .serializers import (LayoutSerializer, PageSerializer, DocumentSerializer,
+from .serializers import (LayoutSerializer, PageSerializer, DocumentSerializer, SocialSerializer,
                           CookiesSnackbarSerializer, CookiesPreferencesSerializer)
-from ..models import Layout, Page, Document, CookiesSnackbar, CookiesPreferences
+from ..models import Layout, Page, Document, CookiesSnackbar, CookiesPreferences, Social
 
 
 class PageViewSet(viewsets.ModelViewSet):
@@ -23,6 +23,13 @@ class DocumentViewSet(viewsets.ModelViewSet):
     serializer_class = DocumentSerializer
     queryset = Document.objects.all()
     lookup_field = 'type'
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, ]
+
+
+class SocialViewSet(viewsets.ModelViewSet):
+    serializer_class = SocialSerializer
+    queryset = Social.objects.all()
+    lookup_field = 'platform'
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, ]
 
 

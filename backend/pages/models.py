@@ -36,6 +36,12 @@ DOC_TYPE_CHOICES = [
     ("cookies_policy", "cookies policy"),
     ("terms_of_use", "terms of use")
 ]
+SOCIAL_CHOICES = [
+    ("facebook", "facebook"),
+    ("instagram", "instagram"),
+    ("linkedin", "linkedin"),
+    ("youtube", "youtube")
+]
 
 
 class Page(models.Model):
@@ -434,23 +440,24 @@ class Footer(models.Model):
         return "footer"
 
 
-class Socials(models.Model):
-    facebook_link = models.CharField(
-        max_length=250, null=True, blank=True,
-        help_text=_("Link to the facebook page.")
+class Social(models.Model):
+    order = models.PositiveSmallIntegerField(
+        help_text=_("Position of the social link.")
     )
-    instagram_link = models.CharField(
-        max_length=250, null=True, blank=True,
-        help_text=_("Link to the instagram page.")
+    platform = models.CharField(
+        max_length=100, choices=SOCIAL_CHOICES,
+        help_text=_("Social network platform.")
     )
-    linkedin_link = models.CharField(
-        max_length=250, null=True, blank=True,
-        help_text=_("Link to the linkedin page.")
-    )
-    youtube_link = models.CharField(
+    link = models.CharField(
         max_length=250, null=True, blank=True,
         help_text=_("Link to the youtube page.")
     )
+
+    class Meta:
+        ordering = ["order"]
+
+    def __str__(self):
+        return self.platform
 
 
 class Layout(models.Model):
@@ -473,10 +480,6 @@ class Layout(models.Model):
     footer = models.ForeignKey(
         to=Footer, on_delete=models.CASCADE, related_name='footer_layouts', null=True, blank=True,
         help_text="Layout footer."
-    )
-    socials = models.ForeignKey(
-        to=Socials, on_delete=models.CASCADE, related_name='socials_layouts', null=True, blank=True,
-        help_text="Layout socials."
     )
 
     def __str__(self):

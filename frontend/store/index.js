@@ -21,7 +21,8 @@ export const state = () => ({
     show: false,
     content: null
   },
-  cookies_categories: []
+  cookies_categories: [],
+  socials: []
 })
 // MUTATIONS
 export const mutations = {
@@ -78,6 +79,9 @@ export const mutations = {
   },
   SET_COOKIES_PREFERENCES(state, content) {
     state.cookies_preferences.content = content[0]
+  },
+  SET_SOCIALS(state, socials) {
+    state.socials = socials
   }
 }
 // ACTIONS
@@ -157,6 +161,10 @@ export const actions = {
   async loadCookiesPreferences({ commit, state }) {
     let response = await this.$axios.get(state.locale + '/api/cookies_preferences')
     commit('SET_COOKIES_PREFERENCES', response.data)
+  },
+  async loadSocials({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/socials')
+    commit('SET_SOCIALS', response.data)
   },
   async nuxtServerInit({ commit, state, dispatch }, { app }) {
     commit('SET_LOCALE', app.i18n.locale)

@@ -3,43 +3,31 @@
       'vertical-align-icons': vertical,
       'horizontal-align-icons': !vertical
     }]">
-    <v-btn :class="[{
-      'social-btn white': true,
-      'icon-shadow': shadow
-    }, icon_custom_class]"
-           target="_blank"
-           href="https://www.facebook.com/helpnoprofit">
-<!--      <v-icon class="social-icon">{{ facebookPath }}</v-icon>-->
-      <i id="facebook-icon" class="social-icon"/>
+
+    <v-btn v-for="social in socials" :key="social.order"
+      :class="[{'social-btn white': true,'icon-shadow': shadow}, icon_custom_class]"
+      target="_blank"
+      :href="social.link">
+      <i :id="`${social.platform}-icon`" class="social-icon"/>
     </v-btn>
-    <v-btn :class="[{
-      'social-btn white': true,
-      'icon-shadow': shadow
-    }, icon_custom_class]"
-           target="_blank"
-           href="https://www.instagram.com/help_noprofit">
-<!--      <v-icon class="social-icon">{{ instagramPath }}</v-icon>-->
-      <i id="instagram-icon" class="social-icon"/>
-    </v-btn>
-    <v-btn :class="[{
-      'social-btn white': true,
-      'icon-shadow': shadow
-    }, icon_custom_class]"
-           target="_blank"
-           href="https://it.linkedin.com/company/helpnoprofit">
-<!--      <v-icon class="social-icon">{{ linkedinPath }}</v-icon>-->
-      <i id="linkedin-icon" class="social-icon"/>
-    </v-btn>
+
   </div>
 </template>
 
 <script>
+  import { mapState } from 'vuex';
   export default {
     name: "SocialIcons",
     props: {
       vertical: Boolean,
       shadow: Boolean,
       icon_custom_class: String
+    },
+    async fetch() {
+      await this.$store.dispatch('loadSocials')
+    },
+    computed: {
+      ...mapState(['socials'])
     }
   }
 </script>
