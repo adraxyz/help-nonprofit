@@ -60,6 +60,7 @@ export default {
     '@nuxtjs/device',
     'nuxt-i18n',
     'nuxt-leaflet',
+    'cookie-universal-nuxt',
     ['@nuxtjs/google-analytics', {
       id: process.env.GA_ID || '',
       disabled: true,

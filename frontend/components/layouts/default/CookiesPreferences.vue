@@ -27,8 +27,9 @@
                     <span class="cookie-provider-title">{{provider.title}}</span>
                   </v-col>
                   <v-col>
-                  <v-switch @change="onSwitch(provider)" class="float-right"
-                            :input-value="provider.default" :readonly="provider.readonly"/>
+                  <v-switch v-model="accept" @change="onSwitch" class="float-right"
+                            :input-value="provider.default" :value="provider.name"
+                            :readonly="provider.readonly"/>
                   </v-col>
                 </v-row>
                 <div v-for="c in provider.cookies" :key="c.name">
@@ -74,11 +75,18 @@
   export default {
     name: "Cookies",
     computed: {
-      ...mapState(['cookies_preferences', 'cookies_policy', 'cookies_categories'])
+      ...mapState(['cookies_preferences', 'cookies_policy', 'cookies_categories']),
+      providers_cookies() {
+        let providers_cookies = []
+        this.cookies_categories
+          .filter(cc => cc.name !== 'essential' )
+          .forEach(cc => providers_cookies.push(cc.cookies_providers))
+        return providers_cookies
+      }
     },
     data: () => ({
       close_icon: mdiCloseThick,
-      accept: false
+      accept: []
     }),
     async fetch() {
       await this.$store.dispatch('loadCookiesCategories')
@@ -104,30 +112,36 @@
         this.hideCookiesSnackbar()
         this.hideCookiesPreferences()
         this.$ga.disable()
-        // this.$cookies.removeAll()
-        this.cookies_categories.forEach(
-          cc => cc.cookies_providers.forEach(
-            cp => cp.cookies.forEach(
-              c => this.$cookies.remove(c.name)
-            )
-          )
-        )
+        this.$cookies.removeAll()
       },
-      onSwitch(provider) {
-        this.accept = !this.accept
-        if (this.accept) {
-          if (provider.name === 'google_analytics') {
+      onSwitch() {
+        // Enable selected cookies
+        let provider
+        for (provider of this.accept) {
+          if (provider.toLowerCase().includes('google')) {
             this.$ga.enable()
-          } else if (provider.name === 'facebook') {
+          } else {
+            this.$ga.disable()
+          }
+          if (provider.toLowerCase().includes('facebook')) {
             this.$fb.enable()
           }
-        } else {
-          if (provider.name === 'google_analytics') {
-            this.$ga.disable()
-          } else if (provider.name === 'facebook') {
-            provider.cookies.forEach(
-              c => this.$cookies.remove(c.name)
-            )
+        }
+        // Remove cookies not wanted
+        let pc
+        for (pc of this.providers_cookies) {
+          let provider
+          for (provider of pc) {
+            if (!this.accept.includes(provider.name)) {
+              let c
+              for (c of provider.cookies) {
+                this.$cookies.remove(
+                  c.name, {
+                    path: '/'
+                  }
+                )
+              }
+            }
           }
         }
       }
