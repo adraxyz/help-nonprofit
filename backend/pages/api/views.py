@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 from rest_framework import permissions
 from .serializers import (LayoutSerializer, PageSerializer, DocumentSerializer, SocialSerializer,
-                          CookiesSnackbarSerializer, CookiesPreferencesSerializer)
+                          CookiesSnackbarSerializer, CookiesPreferencesSerializer, PageSitemapSerializer)
 from ..models import Layout, Page, Document, CookiesSnackbar, CookiesPreferences, Social
 
 
@@ -10,6 +10,12 @@ class PageViewSet(viewsets.ModelViewSet):
     queryset = Page.objects.all()
     lookup_field = 'name'
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, ]
+
+    def get_serializer_class(self):
+        sitemap = self.request.query_params.get('sitemap', None)
+        if sitemap:
+            return PageSitemapSerializer
+        return self.serializer_class
 
 
 class LayoutViewSet(viewsets.ModelViewSet):

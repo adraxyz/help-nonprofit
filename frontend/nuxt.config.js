@@ -1,4 +1,6 @@
 require('dotenv').config()
+const axios = require('axios')
+import { checkRoute } from "./utils/route.utils";
 
 export default {
   mode: 'universal',
@@ -59,6 +61,7 @@ export default {
     '@nuxtjs/proxy',
     '@nuxtjs/device',
     'nuxt-i18n',
+    '@nuxtjs/sitemap',
     'nuxt-leaflet',
     'cookie-universal-nuxt',
     ['@nuxtjs/google-analytics', {
@@ -97,6 +100,12 @@ export default {
   // proxy: {
     // '/api/': process.env.API_BASE_URL,
   // },
+  sitemap: {
+    routes: async () => {
+      let response = await axios.get(process.env.API_BASE_URL + '/api/pages?sitemap=true')
+      return response.data.map(r => `/${checkRoute(r.name)}`)
+    }
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

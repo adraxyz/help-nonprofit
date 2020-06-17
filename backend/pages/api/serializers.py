@@ -74,6 +74,14 @@ class PageSerializer(serializers.ModelSerializer):
         lookup_field = 'name'
 
 
+class PageSitemapSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Page
+        fields = ['name', ]
+        lookup_field = 'name'
+
+
 class FooterSerializer(serializers.ModelSerializer):
     document_0 = DocumentSerializer(read_only=True)
     document_1 = DocumentSerializer(read_only=True)
