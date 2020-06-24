@@ -67,7 +67,8 @@
       font-family: "Crossten Book";
       color: $primary-color;
       font-size: 40px;
-      margin-left: 15vw;
+      /*margin-left: 15vw;*/
+      right: 15vw;
       padding-bottom: 20vh;
     }
   }
