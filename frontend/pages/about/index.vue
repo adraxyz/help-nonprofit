@@ -4,7 +4,7 @@
     <Section_1 :data="section_data_1"/>
     <Section_2 :data="section_data_2"/>
     <Section_3 :data="section_data_3"/>
-    <Section_4 :data="section_data_4"/>
+    <!--<Section_4 :data="section_data_4"/>-->
     <Section_5 :data="section_data_5"/>
   </div>
 </template>
