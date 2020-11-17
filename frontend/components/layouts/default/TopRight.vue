@@ -1,17 +1,44 @@
 <template>
   <div>
-    <div id="top-right">
+    <div id="top-right" class="text-right">
       <!-- Donation button -->
       <v-btn id="top-right-donation-button" :to="localePath(checkRoute(donation_button.to))"
              class="d-none d-lg-inline-flex error-button big-button error"
              tile dark outlined nuxt active-class="no-active">
         {{ donation_button.text_1 }}
       </v-btn>
+      <div class="d-block"></div>
+      <!-- Christmas button -->
+      <v-btn id="top-right-christmas-button"
+             :to="localePath(checkRoute(christmas_button.to))"
+             v-if="$nuxt.$route.path!=localePath('/donations/christmas-2020') && christmas_button.active"
+             class="mt-4 d-none d-lg-inline-flex error-button"
+             tile dark outlined nuxt active-class="no-active">
+        {{ christmas_button.text_1 }}
+      </v-btn>
+
       <!-- Burger button -->
       <v-app-bar-nav-icon id="burger-button"
                           class="d-lg-none white-button"
                           @click="drawer=true" outlined/>
+
+      <!-- Christmas button mobile -->
+      <v-btn id="top-right-christmas-button-md"
+             :to="localePath(checkRoute(christmas_button.to))"
+             v-if="$nuxt.$route.path!=localePath('/donations/christmas-2020') && christmas_button.active"
+             class="mt-4 d-block d-lg-none error-button button-shadow-error-left"
+             fab dark nuxt small active-class="no-active"
+             width="37" height="37" color="primary">
+        <v-icon size="20" class="christmas-button-icon">{{ gift_icon }}</v-icon>
+      </v-btn>
+
+      <!-- Christmas shopping cart -->
+      <keep-alive> <!-- It should cache the content during the session -->
+        <ShoppingCart v-if="$nuxt.$route.path==localePath('/donations/christmas-2020')"/>
+      </keep-alive>
+
     </div>
+
     <!-- Navigation drawer -->
     <v-navigation-drawer id="nav-drawer" color="primary" v-model="drawer" temporary right app
                          v-resize="onResize" :style="`height: ${drawer_height}px;`">
@@ -24,13 +51,23 @@
             {{ nav.title }}
           </v-btn>
         </v-col>
-        <v-col cols="12" class="text-center" align-self="center">
+        <v-col cols="12" class="text-center extra-button-col" align-self="center">
           <v-btn id="drawer-donation-button" :to="localePath(checkRoute(donation_button.to))"
                  class="nav-button error"
                  tile dark nuxt active-class="no-active">
             {{ donation_button.text_1 }}
           </v-btn>
         </v-col>
+        <v-col cols="12" class="text-center extra-button-col" align-self="center">
+          <v-btn id="drawer-christmas-button"
+                 :to="localePath(checkRoute(christmas_button.to))"
+                 v-if="$nuxt.$route.path!=localePath('/donations/christmas-2020')"
+                 class="nav-button white"
+                 tile nuxt active-class="no-active">
+            {{ christmas_button.text_1 }}
+          </v-btn>
+        </v-col>
+
       </v-row>
 
       <v-row class="drawer-navigation-row d-inline-block" no-gutters>
@@ -43,17 +80,6 @@
           </div>
         </v-col>
         <v-col cols="12" class="drawer-footer-col mt-3">
-<!--          <div class="privacy-parent-div d-inline-block">-->
-<!--            <div class="privacy-div">-->
-<!--              <a class="link-text" :href="privacy_policy.file" target="_blank">Privacy Policy</a>-->
-<!--            </div>-->
-<!--            <div class="privacy-div">-->
-<!--              <a class="link-text" :href="cookies_policy.file" target="_blank">Cookies Policy</a>-->
-<!--            </div>-->
-<!--            <div class="privacy-div">-->
-<!--              <a class="link-text" :href="terms_of_use.file" target="_blank">Terms of use</a>-->
-<!--            </div>-->
-<!--          </div>-->
           <div class="d-inline-block float-right ml-3">
             <v-btn fab outlined color="white" class="rounded-btn"
                    :to="localePath(checkRoute(contact_button.to))">
@@ -72,7 +98,9 @@
 import { checkRoute } from "../../../utils/route.utils";
 import SocialIcons from "./SocialIcons";
 import LanguagesSwitcher from "./LanguagesSwitcher";
+import ShoppingCart from "./ShoppingCart";
 import { mapState } from 'vuex';
+import { mdiGift } from "@mdi/js"
 
 export default {
   name: "TopLeft",
@@ -80,16 +108,18 @@ export default {
     navs: Array,
     contact_button: Object,
     donation_button: Object,
-
+    christmas_button: Object
   },
   components: {
+    ShoppingCart,
     LanguagesSwitcher,
     SocialIcons
   },
   data: () => ({
     drawer: false,
     drawer_height: 0,
-    checkRoute: checkRoute
+    checkRoute: checkRoute,
+    gift_icon: mdiGift
   }),
   computed: {
     ...mapState(['privacy_policy', 'cookies_policy', 'terms_of_use'])
@@ -111,8 +141,21 @@ export default {
       margin-top: $logo-size/2 - $big-button-height/2;
       font-size: large;
     }
+    #top-right-christmas-button {
+      background-color: $primary-color !important;
+      box-shadow: -$box-shadow-side $box-shadow-bottom $error-color !important;
+      font-size: large;
+      border-width: 0px !important;
+    }
+    .christmas-button-icon {
+      width: $circle-icon-size !important;
+      height: $circle-icon-size !important;
+    }
     #burger-button {
       margin-top: $logo-size/2 - $circle-icon-size/2;
+    }
+    #shopping-cart {
+      width: 100%;
     }
   }
   .v-navigation-drawer {
@@ -133,6 +176,11 @@ export default {
     #drawer-donation-button {
       box-shadow: -$box-shadow-side $box-shadow-bottom $darken-primary-color !important;
       font-family: "Crossten ExtraBold";
+    }
+    #drawer-christmas-button {
+      box-shadow: -$box-shadow-side $box-shadow-bottom $error-color !important;
+      font-family: "Crossten ExtraBold";
+      border: 2px solid black !important;
     }
     .mail-button {
       width: $circle-icon-size !important;
@@ -244,6 +292,16 @@ export default {
         }
         .drawer-navigation-row {
           margin-bottom: $md-logo-margin !important;
+        }
+        .extra-button-col {
+          max-width: 50%;
+          display: inline;
+        }
+        #drawer-donation-button {
+          margin-left: 10px !important;
+        }
+        #drawer-christmas-button {
+          margin-left: 15px !important;
         }
       }
     }

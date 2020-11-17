@@ -49,10 +49,13 @@ class RoutingUtils:
         return route
 
 
-class LayoutUtils:
+class PageUtils:
 
     def __init__(self, path):
         self._path = path
+
+
+class LayoutUtils(PageUtils):
 
     def get_layouts(self, nested_path=None):
         path = nested_path if nested_path else self._path
@@ -64,6 +67,21 @@ class LayoutUtils:
             elif os.path.isdir(e):
                 layouts.extend(self.get_layouts(e))
         return layouts
+
+
+class ButtonUtils(PageUtils):
+
+    def get_icons(self, nested_path=None):
+        path = nested_path if nested_path else self._path
+        icons = []
+        for icon in os.listdir(path):
+            e = os.path.join(path, icon)
+            if os.path.isfile(e):
+                icon_name = icon[:-4]
+                icons.append((icon_name, icon_name))
+            elif os.path.isdir(e):
+                icons.extend(self.get_icons(e))
+        return icons
 
 
 if __name__ == "__main__":

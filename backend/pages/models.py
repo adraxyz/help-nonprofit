@@ -3,7 +3,7 @@ from django.db import models
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
-from .utils import LayoutUtils
+from .utils import LayoutUtils, ButtonUtils
 from projects.models import Project
 
 # ru = RoutingUtils(os.path.join(settings.FRONTEND_DIR, "pages"))
@@ -17,6 +17,7 @@ ROUTE_CHOICES = [("/", "/"), ]
 PAGE_CHOICES = [("home",  "home"), ]
 pu = LayoutUtils(os.path.join(settings.FRONTEND_DIR, "layouts"))
 LAYOUT_CHOICES = [(sl, sl) for sl in pu.get_layouts()]
+ICON_CHOICES = ButtonUtils(os.path.join(settings.FRONTEND_DIR, "assets/icons")).get_icons()
 TARGET_CHOICES = [
     ("_blank", "blank"),
     ("_parent", "parent"),
@@ -240,6 +241,14 @@ class Button(models.Model):
         max_length=50, null=True, blank=True,
         help_text=_("Additional text shown inside the button.")
     )
+    icon = models.CharField(
+        max_length=50, choices=ICON_CHOICES, null=True, blank=True,
+        help_text=_("Button icon.")
+    )
+    active = models.BooleanField(
+        null=True, blank=True, default=False,
+        help_text=_("Is the button visible or not?")
+    )
 
     def __str__(self):
         s = f"button_{str(self.order)}"
@@ -450,7 +459,7 @@ class Social(models.Model):
     )
     link = models.CharField(
         max_length=250, null=True, blank=True,
-        help_text=_("Link to the youtube page.")
+        help_text=_("Link to the platform page.")
     )
 
     class Meta:
@@ -472,6 +481,10 @@ class Layout(models.Model):
     donation_button = models.ForeignKey(
         to=Button, on_delete=models.CASCADE, related_name='donation_button_layouts', null=True, blank=True,
         help_text="Layout donation button."
+    )
+    christmas_button = models.ForeignKey(
+        to=Button, on_delete=models.CASCADE, related_name='christmas_button_layouts', null=True, blank=True,
+        help_text="Layout christmas button."
     )
     contact_button = models.ForeignKey(
         to=Button, on_delete=models.CASCADE, related_name='contact_button_layouts', null=True, blank=True,

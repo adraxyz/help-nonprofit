@@ -1,5 +1,7 @@
 <template>
   <div id="bottom-right">
+
+    <!-- Contact button -->
     <v-btn id="contact-button" v-if="$nuxt.$route.path!=localePath('/contacts')"
            color="primary" :to="localePath(checkRoute(contact_button.to))"
            :tile="bigger_button" :fab="!bigger_button"
@@ -12,6 +14,8 @@
       <span v-if="bigger_button">{{ contact_button.text_1 }}</span>
       <i class="contact-icon"/>
     </v-btn>
+
+    <!-- Donate button -->
     <v-btn id="donate-button" v-if="$nuxt.$route.path!=localePath('/donations')"
            :to="localePath(checkRoute(donation_button.to))"
            fab dark outlined nuxt active-class="no-active"
@@ -21,8 +25,9 @@
              'small-button': !bigger_button
            }]">
       <span v-if="bigger_button">{{ donation_button.text_1 }}</span>
-      <v-icon id="small-icon">mdi-heart</v-icon>
+      <v-icon class="small-icon">mdi-heart</v-icon>
     </v-btn>
+
   </div>
 </template>
 
@@ -113,7 +118,7 @@
       height: $circle-icon-size !important;
       max-width: 60vw;
     }
-    #small-icon {
+    .small-icon {
       font-size: 20px;
     }
   }

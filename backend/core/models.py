@@ -2,13 +2,22 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 TOPIC_CHOICES = [
-    ("contact_form", _("Contact form"))
+    ("contact_form", _("Contact form")),
+    ("shipment_form", _("Shipment form")),
+    ("shopping_cart", _("Shopping cart"))
 ]
 ITEM_CHOICES = [
     ("first_name", _("First name")),
     ("last_name", _("Last name")),
     ("email", _("email")),
     ("where_from", _("Where from")),
+    ("country", _("Country")),
+    ("province", _("Province")),
+    ("city", _("City")),
+    ("address", _("Address")),
+    ("address_number", _("Address number")),
+    ("cap", _("Postal code")),
+    ("phone", _("Phone number")),
     ("age", _("Age")),
     ("object", _("Object")),
     ("message", _("Message")),
@@ -16,6 +25,14 @@ ITEM_CHOICES = [
     ("privacy_agreement", _("Agreement to the privacy policy")),
     ("submit", _("Submit button")),
     ("clear", _("Clear form")),
+    ("title", _("Title")),
+    ("purchase_order", _("Purchase order")),
+    ("reset_cart", _("Reset cart")),
+    ("minimum_donation", _("Minimum donation")),
+    ("continue", _("Continue")),
+    ("shipping_fees", _("Shipping fees")),
+    ("total_price", _("Total price")),
+    ("summary", _("Summary"))
 ]
 
 

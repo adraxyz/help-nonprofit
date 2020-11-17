@@ -38,7 +38,8 @@ class ButtonSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Button
-        fields = ['order', 'to', 'text_0', 'text_1', 'href', 'target', 'project_section']
+        fields = ['order', 'to', 'text_0', 'text_1', 'href', 'target',
+                  'project_section', 'icon', 'active']
 
 
 class DocumentSerializer(serializers.ModelSerializer):
@@ -106,14 +107,15 @@ class LayoutSerializer(serializers.ModelSerializer):
     pages = PageSerializer(many=True, read_only=True)
     logo = ImageSerializer(read_only=True)
     donation_button = ButtonSerializer(read_only=True)
+    christmas_button = ButtonSerializer(read_only=True)
     contact_button = ButtonSerializer(read_only=True)
     footer = FooterSerializer(read_only=True)
     meta_tags = MetaTagSerializer(many=True, read_only=True)
 
     class Meta:
         model = Layout
-        fields = ['name', 'pages', 'logo', 'donation_button', 'meta_tags',
-                  'contact_button', 'footer']
+        fields = ['name', 'pages', 'logo', 'donation_button', 'christmas_button',
+                  'contact_button', 'meta_tags', 'footer']
         lookup_field = 'name'
 
     def to_representation(self, instance):

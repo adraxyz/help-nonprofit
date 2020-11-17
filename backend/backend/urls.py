@@ -23,7 +23,8 @@ urlpatterns = i18n_patterns(
     path('backend-admin/', admin.site.urls),
     path("api/", include("core.api.urls")),
     path("api/", include("pages.api.urls")),
-    path("api/", include("projects.api.urls"))
+    path("api/", include("projects.api.urls")),
+    path("api/", include("shop.api.urls"))
 )
 
 if settings.DEBUG:

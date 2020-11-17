@@ -8,8 +8,16 @@ export const state = () => ({
   projects: [],
   project: {},
   projects_categories: [],
+  products: [],
+  product: {},
+  shopping_cart: [],
+  shopping_cart_labels: {},
+  paypal_free_shop: {},
   contact_form_messages: [],
   contact_form_labels: {},
+  shipment_form_messages: [],
+  shipment_form_labels: {},
+  shipment_form_dialog: false,
   privacy_policy: {file: ''},
   cookies_policy: {file: ''},
   terms_of_use: {file: ''},
@@ -50,11 +58,59 @@ export const mutations = {
   SET_PROJECTS_CATEGORIES(state, categories) {
     state.projects_categories = categories
   },
+  SET_PRODUCTS(state, products) {
+    state.products = products
+  },
+  SET_PRODUCT(state, product) {
+    state.product = product
+  },
+  RESET_SHOPPING_CART(state) {
+    state.shopping_cart.forEach(i => i.products = [])
+  },
+  SET_SHOPPING_CART(state, shopping_cart) {
+    state.shopping_cart = shopping_cart
+  },
+  SET_PAYPAL_FREE_SHOP(state, shop) {
+    state.paypal_free_shop = shop
+  },
+  SET_SHOPPING_CART_LABELS(state, labels) {
+    state.shopping_cart_labels = labels
+  },
+  ADD_TO_SHOPPING_CART(state, product) {
+    state.shopping_cart.find(pc =>
+      (pc.order === product.category.order)
+      &&
+      (pc.products.filter(p => p.order === product.order).length < product.availability)
+      &&
+      (pc.products.push(product))
+    )
+  },
+  REMOVE_FROM_SHOPPING_CART(state, product) {
+    state.shopping_cart.find(pc =>
+      (pc.order === product.category.order)
+      &&
+      (pc.products.find(p => p.order === product.order))
+      &&
+      (pc.products.splice(
+        pc.products.findIndex(p => p.order === product.order),
+        1
+      ))
+    )
+  },
   SET_CONTACT_FORM_MESSAGES(state, messages) {
     state.contact_form_messages = messages
   },
   SET_CONTACT_FORM_LABELS(state, labels) {
     state.contact_form_labels = labels
+  },
+  SET_SHIPMENT_FORM_MESSAGES(state, messages) {
+    state.shipment_form_messages = messages
+  },
+  SET_SHIPMENT_FORM_LABELS(state, labels) {
+    state.shipment_form_labels = labels
+  },
+  SET_SHIPMENT_FORM_DIALOG(state, show) {
+    state.shipment_form_dialog = show
   },
   SET_PRIVACY_POLICY(state, doc) {
     state.privacy_policy = doc
@@ -98,6 +154,12 @@ export const actions = {
       commit('SET_LOGO', {content: logo, content_type: content_type})
     }
   },
+  setShipmentFormDialog({commit}, {show}) {
+    commit('SET_SHIPMENT_FORM_DIALOG', show)
+  },
+  resetShoppingCart({ commit }) {
+    commit('RESET_SHOPPING_CART')
+  },
   showHideCookiesSnackbar({commit, state}, {show}) {
     commit('SHOW_HIDE_COOKIES_SNACKBAR', show)
   },
@@ -127,6 +189,37 @@ export const actions = {
     let response = await this.$axios.get(state.locale + '/api/projects-categories')
     commit('SET_PROJECTS_CATEGORIES', response.data)
   },
+  async loadProducts({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/shop/products')
+    commit('SET_PRODUCTS', response.data)
+  },
+  async loadProduct({ commit, state }, { slug }) {
+    let response = await this.$axios.get(state.locale + '/api/shop/products/' + slug)
+    commit('SET_PROJECT', response.data)
+  },
+  async loadShoppingCart({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/shop/products-categories')
+    let shopping_cart = response.data.filter(pc => pc.internal === true)
+    shopping_cart.forEach(i => i.products = [])
+    commit('SET_SHOPPING_CART', shopping_cart)
+  },
+  async loadShoppingCartLabels({ commit, state }) {
+    let response = await this.$axios.get(
+      state.locale + '/api/labels',
+      {params: {topic: 'shopping_cart'}}
+    )
+    commit('SET_SHOPPING_CART_LABELS', response.data)
+  },
+  async addProductToShoppingCart({ commit }, { product }) {
+    commit('ADD_TO_SHOPPING_CART', product)
+  },
+  async removeProductToShoppingCart({ commit }, { product }) {
+    commit('REMOVE_FROM_SHOPPING_CART', product)
+  },
+  async loadPaypalFreeShop({commit, state}) {
+    let response = await this.$axios.get(state.locale + '/api/shop/shops/paypal_free_shop')
+    commit('SET_PAYPAL_FREE_SHOP', response.data)
+  },
   async loadContactFormMessages({ commit, state }) {
     let response = await this.$axios.get(state.locale + '/api/contact_form')
     commit('SET_CONTACT_FORM_MESSAGES', response.data)
@@ -137,6 +230,17 @@ export const actions = {
       {params: {topic: 'contact_form'}}
     )
     commit('SET_CONTACT_FORM_LABELS', response.data)
+  },
+  async loadShipmentFormMessages({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/shipment_form')
+    commit('SET_SHIPMENT_FORM_MESSAGES', response.data)
+  },
+  async loadShipmentFormLabels({ commit, state }) {
+    let response = await this.$axios.get(
+      state.locale + '/api/labels',
+      {params: {topic: 'shipment_form'}}
+    )
+    commit('SET_SHIPMENT_FORM_LABELS', response.data)
   },
   async loadPrivacyPolicy({ commit, state }) {
     let response = await this.$axios.get(state.locale + '/api/documents/privacy_policy')

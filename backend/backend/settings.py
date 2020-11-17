@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     # Backend apps
     'core',
     'pages',
-    'projects'
+    'projects',
+    'shop'
 ]
 
 MIDDLEWARE = [

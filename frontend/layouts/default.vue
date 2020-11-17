@@ -11,6 +11,7 @@
 
     <TopRight :navs="default_layout.pages"
               :donation_button="default_layout.donation_button"
+              :christmas_button="default_layout.christmas_button"
               :contact_button="default_layout.contact_button"/>
 
     <transition name="fade">
