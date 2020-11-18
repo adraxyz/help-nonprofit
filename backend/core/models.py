@@ -4,7 +4,8 @@ from django.utils.translation import ugettext_lazy as _
 TOPIC_CHOICES = [
     ("contact_form", _("Contact form")),
     ("shipment_form", _("Shipment form")),
-    ("shopping_cart", _("Shopping cart"))
+    ("shopping_cart", _("Shopping cart")),
+    ("shop_item", _("Shop item"))
 ]
 ITEM_CHOICES = [
     ("first_name", _("First name")),
@@ -32,7 +33,8 @@ ITEM_CHOICES = [
     ("continue", _("Continue")),
     ("shipping_fees", _("Shipping fees")),
     ("total_price", _("Total price")),
-    ("summary", _("Summary"))
+    ("summary", _("Summary")),
+    ("available", _("Available on"))
 ]
 
 

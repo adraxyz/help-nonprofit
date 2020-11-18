@@ -13,6 +13,7 @@ export const state = () => ({
   shopping_cart: [],
   shopping_cart_labels: {},
   paypal_free_shop: {},
+  shop_item_labels: {},
   contact_form_messages: [],
   contact_form_labels: {},
   shipment_form_messages: [],
@@ -75,6 +76,9 @@ export const mutations = {
   },
   SET_SHOPPING_CART_LABELS(state, labels) {
     state.shopping_cart_labels = labels
+  },
+  SET_SHOP_ITEM_LABELS(state, labels) {
+    state.shop_item_labels = labels
   },
   ADD_TO_SHOPPING_CART(state, product) {
     state.shopping_cart.find(pc =>
@@ -209,6 +213,13 @@ export const actions = {
       {params: {topic: 'shopping_cart'}}
     )
     commit('SET_SHOPPING_CART_LABELS', response.data)
+  },
+  async loadShopItemLabels({ commit, state }) {
+    let response = await this.$axios.get(
+      state.locale + '/api/labels',
+      {params: {topic: 'shop_item'}}
+    )
+    commit('SET_SHOP_ITEM_LABELS', response.data)
   },
   async addProductToShoppingCart({ commit }, { product }) {
     commit('ADD_TO_SHOPPING_CART', product)
