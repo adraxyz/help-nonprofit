@@ -29,12 +29,23 @@
   #christmas-section-2 {
     margin-top: 7vh;
     margin-bottom: 10vh;
+    .quote-text {
+      font-size: $font-size-60;
+    }
+  }
+  @media #{map-get($display-breakpoints, 'md-and-down')} {
+    #christmas-section-2 {
+      .quote-text {
+        font-size: $font-size-40;
+      }
+    }
   }
   @media #{map-get($display-breakpoints, 'xs-only')} {
     #christmas-section-2 {
       .quote-text {
         padding-left: 0px;
         padding-right: 0px;
+        font-size: $font-size-30;
       }
     }
   }
