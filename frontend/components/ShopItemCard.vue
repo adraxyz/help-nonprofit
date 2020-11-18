@@ -1,5 +1,5 @@
 <template>
-  <div class="shop-item-card text-center align-center">
+  <div class="shop-item-card">
 
     <v-img v-if="!product.video" class="shop-item-image" :src="product.thumbnail"
            :key="product.order" transition="fade" contain/>
