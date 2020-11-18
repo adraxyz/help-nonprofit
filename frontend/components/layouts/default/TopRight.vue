@@ -61,7 +61,7 @@
         <v-col cols="12" class="text-center extra-button-col" align-self="center">
           <v-btn id="drawer-christmas-button"
                  :to="localePath(checkRoute(christmas_button.to))"
-                 v-if="$nuxt.$route.path!=localePath('/donations/christmas-2020')"
+                 v-if="$nuxt.$route.path!=localePath('/donations/christmas-2020') && christmas_button.active"
                  class="nav-button white"
                  tile nuxt active-class="no-active">
             {{ christmas_button.text_1 }}
