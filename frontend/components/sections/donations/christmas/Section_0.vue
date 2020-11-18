@@ -85,15 +85,15 @@
       }
       .text-title {
         margin-bottom: 1.5vh;
-        font-size: $font-size-18;
+        font-size: $font-size-20;
       }
       .text-subtitle {
         margin-top: 3vh;
-        font-size: $font-size-15;
+        font-size: $font-size-18;
       }
       .section-image-middle {
         margin-top: 3vh !important;
-        max-height: 40vh;
+        max-height: 28vh;
       }
     }
   }
@@ -104,11 +104,11 @@
       }
       .text-title {
         margin-bottom: 1vh;
-        font-size: $font-size-15;
+        font-size: $font-size-18;
       }
       .text-subtitle {
         margin-top: 3vh;
-        font-size: $font-size-12;
+        font-size: $font-size-15;
       }
     }
   }
