@@ -81,6 +81,9 @@
     computed: {
       ...mapState(['shop_item_labels', 'clear_cart']),
       available_quantity() {
+        if (this.clear_cart) {
+          this.products_in_the_cart = 0
+        }
         return this.clear_cart ? this.product.availability :
           this.product.availability - this.products_in_the_cart
       }
