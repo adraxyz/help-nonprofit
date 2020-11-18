@@ -12,6 +12,7 @@ export const state = () => ({
   product: {},
   shopping_cart: [],
   shopping_cart_labels: {},
+  clear_cart: false,
   paypal_free_shop: {},
   shop_item_labels: {},
   contact_form_messages: [],
@@ -66,6 +67,7 @@ export const mutations = {
     state.product = product
   },
   RESET_SHOPPING_CART(state) {
+    state.clear_cart = true
     state.shopping_cart.forEach(i => i.products = [])
   },
   SET_SHOPPING_CART(state, shopping_cart) {
@@ -81,6 +83,7 @@ export const mutations = {
     state.shop_item_labels = labels
   },
   ADD_TO_SHOPPING_CART(state, product) {
+    state.clear_cart = false
     state.shopping_cart.find(pc =>
       (pc.order === product.category.order)
       &&

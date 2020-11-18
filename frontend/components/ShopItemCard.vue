@@ -79,9 +79,10 @@
       await this.$store.dispatch('loadShopItemLabels')
     },
     computed: {
-      ...mapState(['shop_item_labels']),
+      ...mapState(['shop_item_labels', 'clear_cart']),
       available_quantity() {
-        return this.product.availability - this.products_in_the_cart
+        return this.clear_cart ? this.product.availability :
+          this.product.availability - this.products_in_the_cart
       }
     },
     methods: {
