@@ -90,6 +90,8 @@
       .text-subtitle {
         margin-top: 3vh;
         font-size: $font-size-18;
+        line-height: 110% !important;
+        font-family: "Crossten Light" !important;
       }
       .section-image-middle {
         margin-top: 3vh !important;
