@@ -196,7 +196,8 @@
     </v-card-actions>
 
     <!-- Response messages dialog -->
-    <v-dialog class="white" v-model="show_response_dialog" max-width="600">
+    <v-dialog class="white" v-model="show_response_dialog" max-width="600"
+              scrollable persistent>
       <v-card tile>
 
         <v-card-title class="pa-3 cart-summary">
@@ -243,6 +244,7 @@
         </v-card-text>
 
         <v-card-actions class="card-section-content-end">
+          <v-spacer></v-spacer>
           <v-btn tile @click="closeDialog"
                  class="button-shadow-secondary-right nav-button ma-2">
             {{getLabel('continue')}}
