@@ -3,13 +3,9 @@
            v-resize="onResize">
     <v-row no-gutters class="section-row" align="center">
       <v-col :cols="show_middle_image ? 12 : 6" md="6" class="text-center texts-col">
-        <h1 class="text-title d-block">
-          {{data.title}}
-        </h1>
+        <h1 class="text-title d-block" v-html="data.title"/>
         <v-img v-if="show_middle_image" class="section-image-middle" :src="image.content" contain/>
-        <h2 class="text-subtitle d-block">
-          {{data.subtitle}}
-        </h2>
+        <h2 class="text-subtitle d-block" v-html="data.subtitle"/>
       </v-col>
       <v-col v-if="!show_middle_image" cols="6" md="6" class="text-center image-col">
         <v-img class="section-image" :src="image.content" contain/>
