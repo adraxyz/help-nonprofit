@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import Section_0 from "../../components/sections/donations/christmas/Section_0";
+  import Section_0 from "@/components/sections/donations/christmas/Section_0";
   import Section_1 from "@/components/sections/donations/christmas/Section_1";
   import Section_2 from "@/components/sections/donations/christmas/Section_2";
   import { mapState } from 'vuex';
