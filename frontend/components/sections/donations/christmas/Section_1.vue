@@ -2,12 +2,10 @@
   <section id="christmas-section-1" v-resize="onResize">
 
     <v-row no-gutters class="donation-row padding-level-3" align="center">
-
       <v-col cols="12" sm="4" class="donation-col" :order="p.order"
              v-for="p in products" :key="p.order">
         <ShopItemCard :product="p" :texts="texts"/>
       </v-col>
-
     </v-row>
 
   </section>

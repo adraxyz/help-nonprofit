@@ -34,7 +34,10 @@ ITEM_CHOICES = [
     ("shipping_fees", _("Shipping fees")),
     ("total_price", _("Total price")),
     ("summary", _("Summary")),
-    ("available", _("Available on"))
+    ("available", _("Available on")),
+    ("product_availability", _("Product availability")),
+    ("back_to_store", _("Back to the store")),
+    ("go_to_store", _("Go to the store")),
 ]
 
 

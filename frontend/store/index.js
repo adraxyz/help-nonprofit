@@ -12,7 +12,6 @@ export const state = () => ({
   product: {},
   shopping_cart: [],
   shopping_cart_labels: {},
-  clear_cart: false,
   paypal_free_shop: {},
   shop_item_labels: {},
   contact_form_messages: [],
@@ -67,7 +66,6 @@ export const mutations = {
     state.product = product
   },
   RESET_SHOPPING_CART(state) {
-    state.clear_cart = true
     state.shopping_cart.forEach(i => i.products = [])
   },
   SET_SHOPPING_CART(state, shopping_cart) {
@@ -83,11 +81,12 @@ export const mutations = {
     state.shop_item_labels = labels
   },
   ADD_TO_SHOPPING_CART(state, product) {
-    state.clear_cart = false
     state.shopping_cart.find(pc =>
       (pc.order === product.category.order)
       &&
       (pc.products.filter(p => p.order === product.order).length < product.availability)
+      &&
+      (product.availability -= 1)
       &&
       (pc.products.push(product))
     )
@@ -97,6 +96,8 @@ export const mutations = {
       (pc.order === product.category.order)
       &&
       (pc.products.find(p => p.order === product.order))
+      &&
+      (product.availability += 1)
       &&
       (pc.products.splice(
         pc.products.findIndex(p => p.order === product.order),
@@ -164,7 +165,11 @@ export const actions = {
   setShipmentFormDialog({commit}, {show}) {
     commit('SET_SHIPMENT_FORM_DIALOG', show)
   },
-  resetShoppingCart({ commit }) {
+  async resetShoppingCart({ commit, state }) {
+    let response = await this.$axios.get(state.locale + '/api/shop/products')
+    let products = response.data
+    products.forEach(p => p.count = p.availability)
+    commit('SET_PRODUCTS', response.data)
     commit('RESET_SHOPPING_CART')
   },
   showHideCookiesSnackbar({commit, state}, {show}) {
@@ -198,11 +203,14 @@ export const actions = {
   },
   async loadProducts({ commit, state }) {
     let response = await this.$axios.get(state.locale + '/api/shop/products')
-    commit('SET_PRODUCTS', response.data)
+    let products = response.data
+    products.forEach(p => p.count = p.availability)
+    commit('SET_PRODUCTS', products)
   },
   async loadProduct({ commit, state }, { slug }) {
     let response = await this.$axios.get(state.locale + '/api/shop/products/' + slug)
-    commit('SET_PROJECT', response.data)
+    response.data.count = response.data.availability
+    commit('SET_PRODUCT', response.data)
   },
   async loadShoppingCart({ commit, state }) {
     let response = await this.$axios.get(state.locale + '/api/shop/products-categories')

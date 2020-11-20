@@ -8,6 +8,7 @@ class RoutingUtils:
 
     def get_nuxt_routes(self, nested_path=None):
         from projects.models import Project
+        from shop.models import Product
         path = nested_path if nested_path else self._path
         routes = []
         for p in os.listdir(path):
@@ -16,7 +17,10 @@ class RoutingUtils:
                 # recursion
                 routes.extend(self.get_nuxt_routes(e))
             elif e.endswith("_slug") or e.endswith("_id"):
-                routes.extend(self._generate_details_routes(e, Project))
+                if "projects" in e:
+                    routes.extend(self._generate_details_routes(e, Project))
+                elif "christmas" in e:
+                    routes.extend(self._generate_details_routes(e, Product))
             elif os.path.isfile(e) and e.endswith(".vue"):
                 if e.endswith("index.vue"):
                     route = e[:-9].replace(self._path, "")
@@ -29,16 +33,15 @@ class RoutingUtils:
         return routes
 
     def _generate_details_routes(self, route, _class):
-        routes_list = []
         list_name = os.path.basename(os.path.dirname(route))
-        if list_name == f"{_class.__name__.lower()}s":
-            projects = _class.objects.all()
-            routes_list = [
-                self._adjust_route(f"/{list_name}/{p.slug_it}") for p in projects
-            ]
-            routes_list.extend([
-                self._adjust_route(f"/{list_name}/{p.slug_en}") for p in projects
-            ])
+        objects = _class.objects.all()
+        #if list_name == f"{_class.__name__.lower()}s":
+        routes_list = [
+            self._adjust_route(f"/{list_name}/{p.slug_it}") for p in objects
+        ]
+        routes_list.extend([
+            self._adjust_route(f"/{list_name}/{p.slug_en}") for p in objects
+        ])
         return routes_list
 
     def _adjust_route(self, route):

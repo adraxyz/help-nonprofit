@@ -1,6 +1,7 @@
 <template>
   <div>
     <div id="top-right" class="text-right">
+
       <!-- Donation button -->
       <v-btn id="top-right-donation-button" :to="localePath(checkRoute(donation_button.to))"
              class="d-none d-lg-inline-flex error-button big-button error"
@@ -8,10 +9,12 @@
         {{ donation_button.text_1 }}
       </v-btn>
       <div class="d-block"></div>
+
       <!-- Christmas button -->
       <v-btn id="top-right-christmas-button"
              :to="localePath(checkRoute(christmas_button.to))"
-             v-if="$nuxt.$route.path!=localePath('/donations/christmas-2020') && christmas_button.active"
+             v-if="(!$nuxt.$route.path.includes(localePath('/donations/christmas-2020'))) &&
+             christmas_button.active"
              class="mt-4 d-none d-lg-inline-flex error-button"
              tile dark outlined nuxt active-class="no-active">
         {{ christmas_button.text_1 }}
@@ -25,7 +28,8 @@
       <!-- Christmas button mobile -->
       <v-btn id="top-right-christmas-button-md"
              :to="localePath(checkRoute(christmas_button.to))"
-             v-if="$nuxt.$route.path!=localePath('/donations/christmas-2020') && christmas_button.active"
+             v-if="(!$nuxt.$route.path.includes(localePath('/donations/christmas-2020'))) &&
+             christmas_button.active"
              class="mt-4 d-block d-lg-none error-button button-shadow-error-left"
              fab dark nuxt small active-class="no-active"
              width="37" height="37" color="primary">
@@ -33,9 +37,21 @@
       </v-btn>
 
       <!-- Christmas shopping cart -->
-      <keep-alive> <!-- It should cache the content during the session -->
-        <ShoppingCart v-if="$nuxt.$route.path==localePath('/donations/christmas-2020')"/>
+      <keep-alive> <!-- It should cache the content during the "session" -->
+        <ShoppingCart v-if="$nuxt.$route.path.includes(localePath('/donations/christmas-2020'))"/>
       </keep-alive>
+
+      <!-- Back to the store button -->
+      <div v-if="$nuxt.$route.path.includes(localePath('/donations/christmas-2020')) &&
+                 $nuxt.$route.path!=localePath('/donations/christmas-2020')"
+           class="back-to-store mt-4 text-left">
+        <v-btn class="button-shadow-secondary-left circle-button"
+               fab text width="37" height="37"
+               :to="localePath(checkRoute(christmas_button.to))">
+          <v-icon>{{ left_arrow_icon }}</v-icon>
+        </v-btn>
+        <span v-show="$vuetify.breakpoint.mdAndUp" class="mr-2">{{ getLabel('back_to_store') }}</span>
+      </div>
 
     </div>
 
@@ -61,7 +77,8 @@
         <v-col cols="12" class="text-center extra-button-col" align-self="center">
           <v-btn id="drawer-christmas-button"
                  :to="localePath(checkRoute(christmas_button.to))"
-                 v-if="$nuxt.$route.path!=localePath('/donations/christmas-2020') && christmas_button.active"
+                 v-if="(!$nuxt.$route.path.includes(localePath('/donations/christmas-2020'))) &&
+                 christmas_button.active"
                  class="nav-button white"
                  tile nuxt active-class="no-active">
             {{ christmas_button.text_1 }}
@@ -100,7 +117,7 @@ import SocialIcons from "./SocialIcons";
 import LanguagesSwitcher from "./LanguagesSwitcher";
 import ShoppingCart from "./ShoppingCart";
 import { mapState } from 'vuex';
-import { mdiGift } from "@mdi/js"
+import { mdiGift, mdiArrowLeft } from "@mdi/js"
 
 export default {
   name: "TopLeft",
@@ -119,14 +136,24 @@ export default {
     drawer: false,
     drawer_height: 0,
     checkRoute: checkRoute,
-    gift_icon: mdiGift
+    gift_icon: mdiGift,
+    left_arrow_icon: mdiArrowLeft
   }),
   computed: {
-    ...mapState(['privacy_policy', 'cookies_policy', 'terms_of_use'])
+    ...mapState(['privacy_policy', 'cookies_policy', 'terms_of_use', 'shopping_cart_labels'])
   },
   methods: {
     onResize () {
       this.drawer_height = window.innerHeight
+    },
+    getLabel(item) {
+      if (this.shopping_cart_labels instanceof Array) {
+        let label = this.shopping_cart_labels.find(l => l.item === item)
+        if (label) {
+          return label.label
+        }
+      }
+      return ''
     }
   }
 }
@@ -156,6 +183,13 @@ export default {
     }
     #shopping-cart {
       width: 100%;
+    }
+    .circle-button {
+      border: 2px solid black !important;
+    }
+    .back-to-store {
+      font-family: "Crossten Book";
+      letter-spacing: 0.15rem !important;
     }
   }
   .v-navigation-drawer {

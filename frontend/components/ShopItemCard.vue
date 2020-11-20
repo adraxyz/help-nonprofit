@@ -1,10 +1,14 @@
 <template>
   <div class="shop-item-card">
 
-    <v-img v-if="!product.video" class="shop-item-image" :src="product.thumbnail"
-           :key="product.order" transition="fade" contain/>
+    <a>
+      <v-img v-if="!product.video" class="shop-item-image"
+           :src="product.thumbnail" :key="product.order" transition="fade" contain
+           @click="toProductPage()"/>
 
-    <img class="shop-item-image" v-if="product.video" :src="product.video"/>
+      <img class="shop-item-image" v-if="product.video"
+           :src="product.video" @click="toProductPage()"/>
+    </a>
 
     <div class="shop-item-texts button-shadow-secondary-right">
       <div v-if="product.category.internal">
@@ -60,6 +64,7 @@
   import { mdiArrowRight, mdiPlus, mdiMinus } from "@mdi/js";
   import VideoPlayer from "@/components/VideoPlayer";
   import { mapState } from 'vuex';
+
   export default {
     name: "ShopItemCard",
     props: {
@@ -70,25 +75,31 @@
       VideoPlayer
     },
     data: () => ({
-      products_in_the_cart: 0,
       arrow_right_icon: mdiArrowRight,
       plus_icon: mdiPlus,
-      minus_icon: mdiMinus,
+      minus_icon: mdiMinus
     }),
     async fetch() {
       await this.$store.dispatch('loadShopItemLabels')
     },
     computed: {
-      ...mapState(['shop_item_labels', 'clear_cart']),
+      ...mapState(['shop_item_labels', 'locale', 'shopping_cart']),
       available_quantity() {
-        if (this.clear_cart) {
-          this.products_in_the_cart = 0
-        }
-        return this.clear_cart ? this.product.availability :
-          this.product.availability - this.products_in_the_cart
+        let products_in_the_cart = 0
+        this.shopping_cart.forEach(pc => pc.products.forEach(
+          p => (p.order === this.product.order) && (products_in_the_cart +=1)))
+        return this.product.count - products_in_the_cart
       }
     },
     methods: {
+      async toProductPage() {
+        if (this.product.details_active) {
+          let locale_slug = this.product["slug_" + this.locale]
+          await this.$store.dispatch('loadProduct', {slug: locale_slug})
+          this.$router.push(this.$route.path + '/' + locale_slug)
+
+        }
+      },
       getLabel(item) {
         if (this.shop_item_labels instanceof Array) {
           let label = this.shop_item_labels.find(l => l.item === item)
@@ -99,20 +110,16 @@
         return ''
       },
       addToShoppingCart(product) {
-        if (this.available_quantity > 0) {
-          this.products_in_the_cart += 1
+        if (this.product.availability > 0) {
           this.$store.dispatch('addProductToShoppingCart', {
             product: product
           })
         }
       },
       removeFromShoppingCart(product) {
-        if (this.available_quantity < this.product.availability) {
-          this.products_in_the_cart -= 1
-          this.$store.dispatch('removeProductToShoppingCart', {
-            product: product
-          })
-        }
+        this.$store.dispatch('removeProductToShoppingCart', {
+          product: product
+        })
       }
     }
   }

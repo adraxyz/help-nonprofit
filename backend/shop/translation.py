@@ -3,10 +3,10 @@ from .models import Product, ProductCategory
 
 
 @register(ProductCategory)
-class ProjectCategoryTranslationOptions(TranslationOptions):
+class ProductCategoryTranslationOptions(TranslationOptions):
     fields = ("title", "subtitle", "description")
 
 
 @register(Product)
-class ProjectTranslationOptions(TranslationOptions):
+class ProductTranslationOptions(TranslationOptions):
     fields = ("title", "slug", "subtitle", "description")

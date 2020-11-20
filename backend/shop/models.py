@@ -86,6 +86,10 @@ class Product(models.Model):
         null=True, blank=True,
         help_text=_("The third image of the product.")
     )
+    image_3 = models.ImageField(
+        null=True, blank=True,
+        help_text=_("The fourth image of the product.")
+    )
     video = models.FileField(
         null=True, blank=True,
         help_text=_("The product video file.")
@@ -105,6 +109,10 @@ class Product(models.Model):
     active = models.BooleanField(
         default=False,
         help_text=_("Is the product visible or not?")
+    )
+    details_active = models.BooleanField(
+        default=False,
+        help_text=_("Is the product details visible or not?")
     )
     category = models.ForeignKey(
         to=ProductCategory, on_delete=models.CASCADE, related_name='products', null=True, blank=True,
