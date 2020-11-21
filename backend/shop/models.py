@@ -90,6 +90,10 @@ class Product(models.Model):
         null=True, blank=True,
         help_text=_("The fourth image of the product.")
     )
+    image_4 = models.ImageField(
+        null=True, blank=True,
+        help_text=_("The fifth image of the product.")
+    )
     video = models.FileField(
         null=True, blank=True,
         help_text=_("The product video file.")

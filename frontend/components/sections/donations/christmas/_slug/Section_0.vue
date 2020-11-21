@@ -60,6 +60,9 @@
       <v-col cols="12" md="6">
         <v-img class="section-image" :src="product.image_3 ? product.image_3 : ''" contain/>
       </v-col>
+      <v-col cols="12" md="6">
+        <v-img class="section-image" :src="product.image_4 ? product.image_4 : ''" contain/>
+      </v-col>
     </v-row>
 
   </section>
