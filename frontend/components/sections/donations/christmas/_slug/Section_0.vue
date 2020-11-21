@@ -6,8 +6,10 @@
     <v-row no-gutters class="section-row" align="center">
       <v-col :cols="show_middle_image ? 12 : 6" md="6" class="text-center texts-col pa-2">
         <h1 class="text-title d-block" v-html="product.title"/>
-        <v-img v-if="show_middle_image" class="section-image-middle"
+        <v-img v-if="show_middle_image && !product.video" class="section-image-middle"
                :src="product.image_0 ? product.image_0 : ''" contain/>
+        <img v-if="show_middle_image && product.video" class="section-gif-middle"
+           :src="product.video ? product.video : ''" width="100%"/>
         <h2 class="text-subtitle d-block" v-html="product.subtitle"/>
         <h3 class="text-content d-block" v-html="product.description"/>
 
@@ -46,7 +48,10 @@
 
       </v-col>
       <v-col v-if="!show_middle_image" cols="6" md="6" class="text-center image-col pa-2">
-        <v-img class="section-image" :src="product.image_0 ? product.image_0 : ''" contain/>
+        <v-img class="section-image" v-if="!product.video"
+               :src="product.image_0 ? product.image_0 : ''" contain/>
+        <img class="section-image px-2" v-if="product.video"
+           :src="product.video ? product.video : ''" width="100%"/>
       </v-col>
     </v-row>
 
@@ -178,6 +183,10 @@
     .info-text {
       font-family: "Crossten Thin" !important;
     }
+    .section-gif-middle {
+      padding-left: 7vw;
+      padding-right: 7vw;
+    }
   }
   @media #{map-get($display-breakpoints, 'md-and-down')} {
     #product-details-section-0 {
@@ -202,7 +211,7 @@
         margin-top: 3vh;
         font-size: $font-size-18;
         line-height: 110% !important;
-        font-family: "Crossten Light" !important;
+        //font-family: "Crossten Light" !important;
       }
       .section-image-middle {
         margin-top: 3vh !important;
