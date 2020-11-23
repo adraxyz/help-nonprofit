@@ -34,11 +34,11 @@
       data: Object,
       project: Object
     },
-    head() {
+    /*head() {
       return {
         meta: this.data.meta_tags
       }
-    },
+    },*/
     computed: {
       design_texts() {
         return this.project.texts.filter(

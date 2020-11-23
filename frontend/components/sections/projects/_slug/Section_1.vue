@@ -43,14 +43,14 @@
       data: Object,
       project: Object
     },
-    head() {
+    /*head() {
       if (this.data) {
         return {
           meta: this.data.meta_tags
         }
       }
       return []
-    }
+    }*/
   }
 </script>
 

@@ -44,11 +44,11 @@
         dialog_content: ''
       }
     },
-    head() {
+    /*head() {
       return {
         meta: this.data.meta_tags
       }
-    },
+    },*/
     computed: {
       state_of_art_text() {
         return this.project.texts.find(t => t.project_section === "state_of_art")

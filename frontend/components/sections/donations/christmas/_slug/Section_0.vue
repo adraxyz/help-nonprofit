@@ -90,11 +90,6 @@
       minus_icon: mdiMinus,
       arrow_right_icon: mdiArrowRight
     }),
-    head() {
-      return {
-        meta: this.data ? this.data.meta_tags : ''
-      }
-    },
     async fetch() {
       await this.$store.dispatch('loadShopItemLabels')
     },
