@@ -12,12 +12,12 @@
       </v-col>
       <v-col cols="12" md="6" class="section-map">
         <div id="map-wrap">
-          <no-ssr>
+          <client-only>
             <l-map :center="[project.longitude, project.latitude]" :zoom="15">
               <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>
               <l-marker :lat-lng="[project.longitude, project.latitude]"></l-marker>
             </l-map>
-          </no-ssr>
+          </client-only>
         </div>
         <div class="coordinates-address text-right">
           <span class="coordinates">{{parseFloat(project.latitude)}}</span>,

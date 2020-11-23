@@ -11,11 +11,11 @@
              class="section-text section-col" align-self="center">
         <h2 class="text-title d-block" v-html="c.title"/>
         <h3 class="text-subtitle d-block" v-html="c.subtitle"/>
-        <v-img v-if="$vuetify.breakpoint.smAndDown"
+        <v-img v-show="$vuetify.breakpoint.smAndDown"
                class="section-image" :src="c.image" contain></v-img>
         <div class="text-content pt-2" v-html="c.description"/>
       </v-col>
-      <v-col v-if="!$vuetify.breakpoint.smAndDown"
+      <v-col v-show="!$vuetify.breakpoint.smAndDown"
              cols="12" md="6" :order="c.order+1" :order-md="mdImageOrder(c.order)"
              align-self="center" class="section-col">
         <v-img class="section-image" :src="c.image" contain></v-img>

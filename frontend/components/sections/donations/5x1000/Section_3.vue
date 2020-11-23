@@ -11,7 +11,7 @@
         <input type="number" step="0.01" class="text-center input-text" placeholder="_______"
                v-model="ral" v-on:input="calc5x1000"/>
       </div>
-      <div class="text-title result text-center" v-if="five_x_1000">
+      <div class="text-title result text-center" v-show="five_x_1000">
         <span>{{baseText.subtitle}}</span>
         <span class="result-number">{{five_x_1000}}</span>€
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="text-right">
+  <div class="text-right" v-if="page_content.name === 'christmas-2020--' + product.slug">
     <Section_0 :data="section_data(0)" :product="product"/>
   </div>
 </template>

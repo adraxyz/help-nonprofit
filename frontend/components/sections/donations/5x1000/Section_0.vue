@@ -5,7 +5,7 @@
 
       <h1 class="text-title" v-html="sectionText.content"/>
 
-      <v-img v-if="show_image_middle" :src="sectionImage.alt_content"
+      <v-img v-show="show_image_middle" :src="sectionImage.alt_content"
              contain class="section-image"/>
 
       <div class="section-text-titles">
@@ -15,7 +15,7 @@
 
     </div>
 
-    <v-img v-if="!show_image_middle"
+    <v-img v-show="!show_image_middle"
            :src="$vuetify.breakpoint.smAndDown ? sectionImage.alt_content : sectionImage.content"
            contain class="section-image"/>
 

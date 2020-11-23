@@ -5,12 +5,12 @@
       <v-col cols="12" md="6" :order="t.order" :order-md="mdTextOrder(t.order)"
              class="section-text">
         <h1 class="text-title" v-html="t.title"/>
-        <v-img v-if="$vuetify.breakpoint.smAndDown"
+        <v-img v-show="$vuetify.breakpoint.smAndDown"
                class="section-image" :src="image(t.order).content" contain></v-img>
         <h2 class="text-subtitle" v-html="t.subtitle"/>
         <div class="text-content pt-2" v-html="t.content"/>
       </v-col>
-      <v-col v-if="!$vuetify.breakpoint.smAndDown"
+      <v-col v-show="!$vuetify.breakpoint.smAndDown"
              cols="12" md="6" :order="t.order+1" :order-md="mdImageOrder(t.order)">
         <v-img class="section-image" :src="image(t.order).content" contain></v-img>
       </v-col>
