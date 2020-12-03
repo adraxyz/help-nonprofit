@@ -3,5 +3,6 @@ export default function ({ app, store }) {
   app.i18n.beforeLanguageSwitch = (oldLocale, newLocale) => {
     store.dispatch('setLanguage', { locale: newLocale })
     store.dispatch('loadDefaultLayout')
+    store.dispatch('loadShoppingCartLabels')
   }
 }
