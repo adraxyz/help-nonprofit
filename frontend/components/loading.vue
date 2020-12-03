@@ -32,7 +32,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 300;
+  z-index: 5000;
   .v-progress-circular {
     color: $error-color !important;
     align-self: center;
