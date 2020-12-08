@@ -5,7 +5,7 @@
       <h1 class="section-title">{{ data.title }}</h1>
     </div>
 
-    <v-row no-gutters v-for="c in categories" :key="c.order"
+    <v-row no-gutters v-for="c in sortedCategories" :key="c.order"
            class="section-row pb-5 pb-md-10" align-content="center">
       <v-col cols="12" md="6" :order="c.order" :order-md="mdTextOrder(c.order)"
              class="section-text section-col" align-self="center">
@@ -30,6 +30,11 @@
     props: {
       data: Object,
       categories: Array
+    },
+    computed: {
+      sortedCategories() {
+        return this.categories.sort((a, b) => (a.order > b.order) ? 1 : -1)
+      }
     },
     head() {
       return {
