@@ -184,6 +184,10 @@ class Shipment(models.Model):
         max_length=30, null=True, blank=True, choices=SHIPMENT_STATE_CHOICES,
         help_text=_("Shipment state.")
     )
+    notes = models.TextField(
+        max_length=500, null=True, blank=True,
+        help_text=_("Shipment notes.")
+    )
 
     def __str__(self):
         return f"Shipment  - {self.email} - {self.timestamp}"

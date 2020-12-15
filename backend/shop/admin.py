@@ -11,7 +11,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class ShipmentAdmin(admin.ModelAdmin):
-    list_display = ('first_name', 'last_name', 'email', 'timestamp', 'state')
+    list_display = ('first_name', 'last_name', 'email', 'timestamp', 'state', 'notes')
     list_filter = ('email', 'timestamp', 'state')
 
 
