@@ -10,7 +10,7 @@
       </v-btn>
       <div class="d-block"></div>
 
-      <!-- Christmas button -->
+      <!-- Christmas button
       <v-btn id="top-right-christmas-button"
              :to="localePath(checkRoute(christmas_button.to))"
              v-if="(!$nuxt.$route.path.includes(localePath('/donations/christmas-2020'))) &&
@@ -18,14 +18,14 @@
              class="mt-4 d-none d-lg-inline-flex error-button"
              tile dark outlined nuxt active-class="no-active">
         {{ christmas_button.text_1 }}
-      </v-btn>
+      </v-btn>-->
 
       <!-- Burger button -->
       <v-app-bar-nav-icon id="burger-button"
                           class="d-lg-none white-button"
                           @click="drawer=true" outlined/>
 
-      <!-- Christmas button mobile -->
+      <!-- Christmas button mobile
       <v-btn id="top-right-christmas-button-md"
              :to="localePath(checkRoute(christmas_button.to))"
              v-if="(!$nuxt.$route.path.includes(localePath('/donations/christmas-2020'))) &&
@@ -34,14 +34,14 @@
              fab dark nuxt small active-class="no-active"
              width="37" height="37" color="primary">
         <v-icon size="20" class="christmas-button-icon">{{ gift_icon }}</v-icon>
-      </v-btn>
+      </v-btn>-->
 
-      <!-- Christmas shopping cart -->
-      <keep-alive> <!-- It should cache the content during the "session" -->
+      <!-- Christmas shopping cart
+      <keep-alive>
         <ShoppingCart v-if="$nuxt.$route.path.includes(localePath('/donations/christmas-2020'))"/>
-      </keep-alive>
+      </keep-alive>-->
 
-      <!-- Back to the store button -->
+      <!-- Back to the store button
       <div v-if="$nuxt.$route.path.includes(localePath('/donations/christmas-2020')) &&
                  $nuxt.$route.path!=localePath('/donations/christmas-2020')"
            class="back-to-store mt-4 text-left">
@@ -51,7 +51,7 @@
           <v-icon>{{ left_arrow_icon }}</v-icon>
         </v-btn>
         <span v-show="$vuetify.breakpoint.mdAndUp" class="mr-2">{{ getLabel('back_to_store') }}</span>
-      </div>
+      </div>-->
 
     </div>
 
@@ -74,6 +74,7 @@
             {{ donation_button.text_1 }}
           </v-btn>
         </v-col>
+        <!--
         <v-col cols="12" class="text-center extra-button-col" align-self="center">
           <v-btn id="drawer-christmas-button"
                  :to="localePath(checkRoute(christmas_button.to))"
@@ -83,7 +84,7 @@
                  tile nuxt active-class="no-active">
             {{ christmas_button.text_1 }}
           </v-btn>
-        </v-col>
+        </v-col>-->
 
       </v-row>
 

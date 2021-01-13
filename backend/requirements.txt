@@ -8,4 +8,4 @@ pytz==2019.3
 sqlparse==0.3.0
 mailchimp3==3.0.13
 psycopg2==2.8.5
-django-modeltranslation==0.14.4
+django-modeltranslation==0.16.1

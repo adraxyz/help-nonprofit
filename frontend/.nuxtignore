@@ -1,0 +1,3 @@
+# ignore page inside donations/christmas folder
+pages/donations/christmas-2020/*.vue
+pages/donations/christmas-2020/_slug/*.vue
