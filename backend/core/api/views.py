@@ -93,7 +93,7 @@ class ContactFormView(UserDataForm):
                                 f"(first_name {first_name}, last_name {last_name}).")
                     send_mail(
                         data["object"],
-                        f'{data["message"]}\n\n{first_name} {last_name}',
+                        f'{data["message"]}\n\n{first_name} {last_name}\n\n{email}',
                         email,
                         [settings.EMAIL_HOST_USER],
                         fail_silently=False
