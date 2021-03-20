@@ -8,7 +8,7 @@
     python3-venv >= 3.8.6
     Postgres >= 12.5
     npm >= 6.14.8
-### Database
+### Database setup
     sudo -u postgres psql
     CREATE DATABASE <your_database_name>;
     CREATE USER <your_database_user> WITH PASSWORD '<your_database_password>';
