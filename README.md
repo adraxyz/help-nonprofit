@@ -10,12 +10,12 @@
     npm >= 6.14.8
 ### Database
     sudo -u postgres psql
-    CREATE DATABASE help_nonprofit;
-    CREATE USER <your_user> WITH PASSWORD '<your_password>';
-    ALTER ROLE adrax SET client_encoding TO 'utf8';
-    ALTER ROLE adrax SET default_transaction_isolation TO 'read committed';
-    ALTER ROLE adrax SET timezone TO 'UTC';
-    GRANT ALL PRIVILEGES ON DATABASE help_nonprofit TO <your_user>;
+    CREATE DATABASE <your_database_name>;
+    CREATE USER <your_database_user> WITH PASSWORD '<your_database_password>';
+    ALTER ROLE <your_database_user> SET client_encoding TO 'utf8';
+    ALTER ROLE <your_database_user> SET default_transaction_isolation TO 'read committed';
+    ALTER ROLE <your_database_user> SET timezone TO 'UTC';
+    GRANT ALL PRIVILEGES ON DATABASE <your_database_name> TO <your_user>;
 ### Backend setup
 #### Virtual environment
     python3 -m venv help_nonprofit
