@@ -11,11 +11,11 @@
 ### Database
     sudo -u postgres psql
     CREATE DATABASE help_nonprofit;
-    CREATE USER adrax WITH PASSWORD 'capocchia';
+    CREATE USER <your_user> WITH PASSWORD '<your_password>';
     ALTER ROLE adrax SET client_encoding TO 'utf8';
     ALTER ROLE adrax SET default_transaction_isolation TO 'read committed';
     ALTER ROLE adrax SET timezone TO 'UTC';
-    GRANT ALL PRIVILEGES ON DATABASE help_nonprofit TO adrax;
+    GRANT ALL PRIVILEGES ON DATABASE help_nonprofit TO <your_user>;
 ### Backend
 #### Virtual environment
     python3 -m venv help_nonprofit
