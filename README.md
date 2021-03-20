@@ -16,7 +16,7 @@
     ALTER ROLE adrax SET default_transaction_isolation TO 'read committed';
     ALTER ROLE adrax SET timezone TO 'UTC';
     GRANT ALL PRIVILEGES ON DATABASE help_nonprofit TO <your_user>;
-### Backend
+### Backend setup
 #### Virtual environment
     python3 -m venv help_nonprofit
     . help_nonprofit/bin/activate
@@ -32,7 +32,7 @@
 #### Run backend server
     python3 manage.py runserver
 Visit *localhost:8000* for APIs calls or the Django admin 
-### Frontend
+### Frontend setup
 #### Packages installation
     cd help-nonprofit/frontend
     npm install
