@@ -7,7 +7,7 @@ class MetaTagSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MetaTag
-        fields = ['hid', 'name', 'content']
+        fields = ['hid', 'name', 'content', 'property']
 
 
 class TextSerializer(serializers.ModelSerializer):

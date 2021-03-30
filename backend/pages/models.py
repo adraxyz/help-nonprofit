@@ -504,6 +504,12 @@ class MetaTag(models.Model):
         max_length=50,
         help_text=_("Tag unique identifier.")
     )
+    property = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True,
+        help_text=_("Tag property.")
+    )
     name = models.CharField(
         max_length=50,
         help_text=_("Tag name.")
