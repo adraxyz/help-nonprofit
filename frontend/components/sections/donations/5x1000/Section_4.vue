@@ -2,11 +2,11 @@
   <section id="fivepermille-section-4" class="padding-level-3 accent">
 
     <div class="section-title-center text-center">
-      <h1 class="section-title">{{data.title}}</h1>
+      <h1 class="section-title">{{data ? data.title : ''}}</h1>
     </div>
 
     <div class="text-content text-center">
-      <h3>{{data.subtitle}}</h3>
+      <h3>{{data ? data.subtitle : ''}}</h3>
     </div>
 
     <div class="text-center btn-container">
@@ -135,6 +135,14 @@
     #fivepermille-section-4 {
       .text-subtitle {
         font-size: $font-size-18;
+      }
+      .custom-btn {
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        .v-btn__content {
+          height: $big-button-height * 0.7 !important;
+          width: $big-button-height * 0.7 !important;
+        }
       }
     }
   }
