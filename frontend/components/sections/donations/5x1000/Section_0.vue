@@ -3,19 +3,19 @@
 
     <div class="section-text">
 
-      <h1 class="text-title" v-html="sectionText.content"/>
+      <h1 class="text-title" v-html="sectionText ? sectionText.content : ''"/>
+      <h3 class="text-subtitle d-block pt-3" v-html="sectionText ? sectionText.subtitle : ''"/>
 
-      <v-img v-show="show_image_middle" :src="sectionImage.alt_content"
+      <v-img v-show="show_image_middle" :src="sectionImage ? sectionImage.alt_content : ''"
              contain class="section-image"/>
 
       <div class="section-text-titles">
-        <h2 class="text-subtitle d-block" v-html="sectionText.title"/>
-        <h3 class="text-content" v-html="sectionText.subtitle"/>
+        <h2 class="text-content d-block" v-html="sectionText ? sectionText.title : ''"/>
       </div>
 
     </div>
 
-    <v-img v-show="!show_image_middle"
+    <v-img v-show="!show_image_middle && sectionImage"
            :src="$vuetify.breakpoint.smAndDown ? sectionImage.alt_content : sectionImage.content"
            contain class="section-image"/>
 
@@ -67,15 +67,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .section-text {
+      text-align: right;
+      right: 0;
+      padding-right: inherit;
+      .red-text {
+        color: $error-color;
+      }
+      .big-text {
+        font-family: "Crossten Bold";
+        font-size: $font-size-40;
+      }
+    }
     .section-image {
       max-height: calc(var(--100vh) - #{$logo-size} - #{$logo-margin});
+      max-width: 70%;
     }
     .section-text-titles {
       margin-top: 5vh;
     }
     .text-content {
-      font-family: "Crossten Bold";
-      font-size: $font-size-40;
+      font-family: "Crossten Light";
+      font-size: $font-size-30;
     }
   }
   @media (min-aspect-ratio: 1/1) {
@@ -83,7 +96,7 @@
       .section-text {
         position: absolute;
         top: calc(#{$logo-size} + #{$logo-margin} + 5vh);
-        max-width: 40%;
+        max-width: 50%;
       }
     }
   }
@@ -103,6 +116,7 @@
         max-width: 100%;
         left: unset;
         max-height: 50vh;
+        margin-top: 2vh;
       }
     }
   }
@@ -110,9 +124,26 @@
     #fivepermille-section-0 {
       margin-top: $md-logo-size;
       min-height: calc(var(--100vh) - #{$md-logo-size});
+      .big-text {
+        font-size: $font-size-20 !important;
+      }
+      .text-content {
+        font-size: $font-size-18 !important;
+      }
+      .text-subtitle {
+        font-size: $font-size-18 !important;
+      }
       @media (min-aspect-ratio: 1/1) {
         .section-image {
           max-height: calc(var(--100vh) - #{$md-logo-size} - #{$md-logo-margin});
+        }
+        .section-text {
+          padding-right: $circle-icon-size * 1.5;
+        }
+      }
+      @media (max-aspect-ratio: 1/1) {
+        .section-text {
+          padding-right: 0px !important;
         }
       }
       @media (max-height: 700px) {
@@ -136,7 +167,7 @@
       @media (min-aspect-ratio: 1/1) {
         .section-image {
           max-width: 50%;
-          left: 50%;
+          //left: 50%;
         }
       }
     }
@@ -153,7 +184,10 @@
       }
       @media (max-aspect-ratio: 1/1) {
         .section-image {
-          max-height: 50vh;
+          max-height: 40vh;
+        }
+        .section-text-titles {
+          margin-top: 2vh;
         }
       }
     }

@@ -1,20 +1,35 @@
 <template>
-  <section id="fivepermille-section-2" class="padding-level-3">
-    <v-row no-gutters v-for="t in data.texts" :key="t.order"
-           class="section-row pb-5 pb-md-10">
-      <v-col cols="12" md="6" :order="t.order" :order-md="mdTextOrder(t.order)"
-             class="section-text">
-        <h1 class="text-title" v-html="t.title"/>
-        <v-img v-show="$vuetify.breakpoint.smAndDown"
-               class="section-image" :src="image(t.order).content" contain></v-img>
-        <h2 class="text-subtitle" v-html="t.subtitle"/>
-        <div class="text-content pt-2" v-html="t.content"/>
+  <section id="fivepermille-section-2" class="padding-level-3 error">
+
+    <v-row no-gutters>
+      <v-col class="text-center pa-3" v-if="document(0)">
+        <div class="text-content">{{document(0).subtitle}}</div>
+        <h1 class="text-title">{{document(0).title}}</h1>
+        <br>
+        <v-btn text
+               v-ripple="{class: 'no-effects-on-btn-click'}"
+               class="custom-btn mt-2"
+               id="module-btn"
+               data-action="share/whatsapp/share"
+               target="_blank"
+               :href="document(0).file">
+      </v-btn>
       </v-col>
-      <v-col v-show="!$vuetify.breakpoint.smAndDown"
-             cols="12" md="6" :order="t.order+1" :order-md="mdImageOrder(t.order)">
-        <v-img class="section-image" :src="image(t.order).content" contain></v-img>
+      <v-col class="text-center pa-3" v-if="document(1)">
+        <div class="text-content">{{document(1).subtitle}}</div>
+        <h1 class="text-title">{{document(1).title}}</h1>
+        <br>
+        <v-btn text
+               v-ripple="{class: 'no-effects-on-btn-click'}"
+               class="custom-btn mt-2"
+               id="communication-kit-btn"
+               data-action="share/whatsapp/share"
+               target="_blank"
+               :href="document(1).file">
+      </v-btn>
       </v-col>
     </v-row>
+
   </section>
 </template>
 
@@ -26,24 +41,15 @@
     },
     head() {
       return {
-        meta: this.data.meta_tags
+        meta: this.data ? this.data.meta_tags : null
       }
     },
     methods: {
-      image(index) {
-        return this.data.images.find(i => i.order === index)
+      button(index) {
+        return this.data ? this.data.buttons.find(b => b.order === index) : null
       },
-      mdTextOrder(i) {
-        if (i%2 === 0) {
-          return i
-        }
-        return i + 1
-      },
-      mdImageOrder(i) {
-        if (i%2 === 0) {
-          return i + 1
-        }
-        return i
+      document(index) {
+        return this.data ? this.data.documents.find(t => t.order === index) : null
       }
     }
   }
@@ -51,32 +57,40 @@
 
 <style lang="scss">
   #fivepermille-section-2 {
-    margin-top: 15vh;
-    .section-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    .text-content {
+      font-family: "Crossten SemiBold";
+      color: white;
     }
-  }
-  @media #{map-get($display-breakpoints, 'md-and-down')} {
-    #fivepermille-section-2 {
-      .section-image {
-        max-height: calc(100vh - #{$md-down-top-bar-height} - #{$md-down-logo-margin});
+    .text-title {
+      color: white;
+    }
+    .no-effects-on-btn-click {
+      color: transparent !important;
+    }
+    .custom-btn:hover:before, .custom-btn:focus:before {
+        background-color: unset !important;
+    }
+    .custom-btn {
+      height: $big-button-height !important;
+      width: $big-button-height !important;
+      width: auto !important;
+      padding: 0 !important;
+      .v-btn__content {
+        background-size: contain !important;
+        height: 100% !important;
+        width: 100% !important;
       }
     }
-  }
-  @media #{map-get($display-breakpoints, 'sm-and-down')} {
-    #fivepermille-section-2 {
-      .section-text {
-        text-align: center;
-        margin-bottom: 7vh;
+    #module-btn {
+      .v-btn__content {
+        background: url('~assets/icons/module-icon.png') center center no-repeat;
       }
-      .text-title {
-        margin-bottom: 2vh;
-      }
-      .section-image {
-        margin-bottom: 5vh;
-        max-height: 50vh;
+    }
+    #communication-kit-btn {
+      .v-btn__content {
+        background: url('~assets/icons/communication-kit-icon.png') center center no-repeat;
       }
     }
   }

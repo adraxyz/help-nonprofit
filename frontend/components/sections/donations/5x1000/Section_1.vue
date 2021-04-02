@@ -2,11 +2,11 @@
   <section id="fivepermille-section-1" class="padding-level-3">
 
     <div class="section-title-center text-center">
-      <h1 class="section-title">{{data.title}}</h1>
+      <h1 class="section-title">{{data ? data.title : ''}}</h1>
     </div>
 
     <v-row no-gutters class="section-row">
-      <v-col v-for="t in data.texts" :key="t.order"
+      <v-col v-for="t in texts" :key="t.order"
              cols="12" md="4" class="text-center section-col">
         <v-row no-gutters>
           <v-col cols="12" sm="6" md="12" order="1">
@@ -34,6 +34,11 @@
     head() {
       return {
         meta: this.data.meta_tags
+      }
+    },
+    computed: {
+      texts() {
+        return this.data ? this.data.texts : []
       }
     },
     methods: {

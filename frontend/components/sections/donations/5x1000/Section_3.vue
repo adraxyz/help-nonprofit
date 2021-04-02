@@ -1,24 +1,20 @@
 <template>
   <section id="fivepermille-section-3" class="padding-level-3">
-
-    <div class="section-title-center text-center">
-      <h1 class="section-title">{{data.title}}</h1>
-    </div>
-
-    <div class="text-center">
-      <div>
-        <span class="text-subtitle input-title d-block" v-html="baseText.title"/>
-        <input type="number" step="0.01" class="text-center input-text" placeholder="_______"
-               v-model="ral" v-on:input="calc5x1000"/>
-      </div>
-      <div class="text-title result text-center" v-show="five_x_1000">
-        <span>{{baseText.subtitle}}</span>
-        <span class="result-number">{{five_x_1000}}</span>€
-      </div>
-      <div class="reward">
-        <span class="text-title reward-content" v-html="reward(five_x_1000)"/>
-      </div>
-    </div>
+    <v-row no-gutters v-for="t in texts" :key="t.order"
+           class="section-row pb-5 pb-md-10">
+      <v-col cols="12" md="6" :order="t.order" :order-md="mdTextOrder(t.order)"
+             class="section-text">
+        <h1 class="text-title" v-html="t.title"/>
+        <v-img v-show="$vuetify.breakpoint.smAndDown"
+               class="section-image" :src="image(t.order).content" contain></v-img>
+        <h2 class="text-subtitle" v-html="t.subtitle"/>
+        <div class="text-content pt-2" v-html="t.content"/>
+      </v-col>
+      <v-col v-show="!$vuetify.breakpoint.smAndDown"
+             cols="12" md="6" :order="t.order+1" :order-md="mdImageOrder(t.order)">
+        <v-img class="section-image" :src="image(t.order).content" contain></v-img>
+      </v-col>
+    </v-row>
   </section>
 </template>
 
@@ -28,60 +24,35 @@
     props: {
       data: Object
     },
-    data: () => ({
-      ranges: [
-        {index: 1, ral: 0, coeff: 0.23},
-        {index: 2, ral: 15000, coeff: 0.27},
-        {index: 3, ral: 28000, coeff: 0.38},
-        {index: 4, ral: 55000, coeff: 0.41},
-        {index: 5, ral: 75000, coeff: 0.43}
-      ],
-      ral: '',
-      irpef: 0,
-      five_x_1000: ''
-    }),
     head() {
       return {
         meta: this.data.meta_tags
       }
     },
     computed: {
-      baseText() {
-        return this.data.texts.find(t => t.order === 0)
+      texts() {
+        return this.data ? this.data.texts : []
       }
     },
     methods: {
-      calc5x1000() {
-        this.irpef = 0
-        this.five_x_1000 = ''
-        if (this.ral > 0) {
-          this.ranges.forEach(
-            range => this.irpef += (
-              range.coeff * Math.max(0, Math.min(this.ral, this.nextRal(range.index)) - range.ral)
-            )
-          )
-          this.five_x_1000 = (this.irpef / 1000 * 5).toFixed(2)
+      image(index) {
+        let img = this.data.images.find(i => i.order === index)
+        if (img) {
+          return img.content
         }
+        return ''
       },
-      nextRal(index) {
-        let next_ral = this.ranges.find(r => r.index === index + 1)
-        if (next_ral) {
-          return next_ral.ral
+      mdTextOrder(i) {
+        if (i%2 === 0) {
+          return i
         }
-        return Infinity
+        return i + 1
       },
-      reward(donation) {
-        let reward_msg = ''
-        let texts = this.data.texts.filter(t => t.order > 0)
-        let sup = texts.filter(t => parseFloat(t.title) > donation)
-        let max = sup.length > 0 ? Math.min.apply(Math, sup.map(function(o) { return parseFloat(o.title); })) : Infinity
-        let inf = texts.filter(t => parseFloat(t.title) <= donation)
-        let min = inf.length > 0 ? Math.max.apply(Math, inf.map(function(o) { return parseFloat(o.title); })) : 0
-        let reward = texts.find(t => parseFloat(t.title) >= min && parseFloat(t.title) < max)
-        if (reward) {
-          reward_msg = reward.content
+      mdImageOrder(i) {
+        if (i%2 === 0) {
+          return i + 1
         }
-        return reward_msg
+        return i
       }
     }
   }
@@ -89,64 +60,32 @@
 
 <style lang="scss">
   #fivepermille-section-3 {
-    margin-bottom: 10vh;
-    .section-title {
-      margin-bottom: 5vh;
+    margin-top: 15vh;
+    .section-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .input-title {
-      margin-right: 1vw;
-    }
-    .input-text {
-      background-color: white;
-      border: 2px solid black;
-      height: 60px;
-      margin-top: 1vh;
-      margin-bottom: 2vh;
-      font-family: "Crossten Book";
-      font-size: 25px;
-    }
-    .result-number {
-      color: $error-color;
-    }
-    .reward {
-      color: $error-color;
-      margin-top: 2vh;
-      width: 100%;
-    }
-    .reward-content {
-      max-width: 600px;
-      display: inline-block;
-    }
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-    /* Firefox */
-    input[type=number] {
-      -moz-appearance: textfield;
+  }
+  @media #{map-get($display-breakpoints, 'md-and-down')} {
+    #fivepermille-section-3 {
+      .section-image {
+        max-height: calc(100vh - #{$md-down-top-bar-height} - #{$md-down-logo-margin});
+      }
     }
   }
   @media #{map-get($display-breakpoints, 'sm-and-down')} {
     #fivepermille-section-3 {
-      .input-text {
-        max-width: calc(100vw - #{$md-down-logo-margin}*2);
-        height: 50px;
-        font-size: 20px;
+      .section-text {
+        text-align: center;
+        margin-bottom: 7vh;
       }
-      .reward-content {
-        max-width: 450px;
+      .text-title {
+        margin-bottom: 2vh;
       }
-      .text-subtitle {
-        font-size: $font-size-18;
-      }
-    }
-  }
-  @media #{map-get($display-breakpoints, 'xs-only')} {
-    #fivepermille-section-3 {
-      .reward-content {
-        max-width: calc(100vw - #{$circle-icon-size}*2);
+      .section-image {
+        margin-bottom: 5vh;
+        max-height: 50vh;
       }
     }
   }

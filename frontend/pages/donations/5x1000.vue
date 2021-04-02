@@ -5,6 +5,7 @@
     <Section_2 :data="section_data(2)"/>
     <Section_3 :data="section_data(3)"/>
     <Section_4 :data="section_data(4)"/>
+    <Section_5 :data="section_data(5)"/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@
   import Section_2 from "../../components/sections/donations/5x1000/Section_2";
   import Section_3 from "../../components/sections/donations/5x1000/Section_3";
   import Section_4 from "../../components/sections/donations/5x1000/Section_4";
+  import Section_5 from "../../components/sections/donations/5x1000/Section_5";
   import { mapState } from 'vuex';
   export default {
     name: 'CinquePerMille',
@@ -22,7 +24,8 @@
       Section_1,
       Section_2,
       Section_3,
-      Section_4
+      Section_4,
+      Section_5
     },
     head() {
       return {
