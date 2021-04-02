@@ -6,13 +6,13 @@
              class="section-text">
         <h1 class="text-title" v-html="t.title"/>
         <v-img v-show="$vuetify.breakpoint.smAndDown"
-               class="section-image" :src="image(t.order).content" contain></v-img>
+               class="section-image" :src="image(t.order)" contain></v-img>
         <h2 class="text-subtitle" v-html="t.subtitle"/>
         <div class="text-content pt-2" v-html="t.content"/>
       </v-col>
       <v-col v-show="!$vuetify.breakpoint.smAndDown"
              cols="12" md="6" :order="t.order+1" :order-md="mdImageOrder(t.order)">
-        <v-img class="section-image" :src="image(t.order).content" contain></v-img>
+        <v-img class="section-image" :src="image(t.order)" contain></v-img>
       </v-col>
     </v-row>
   </section>
