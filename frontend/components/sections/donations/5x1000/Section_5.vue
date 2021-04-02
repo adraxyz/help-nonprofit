@@ -146,4 +146,16 @@
       }
     }
   }
+  @media #{map-get($display-breakpoints, 'xs-only')} {
+    #fivepermille-section-5 {
+      .custom-btn {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        .v-btn__content {
+          height: $big-button-height * 0.6 !important;
+          width: $big-button-height * 0.6 !important;
+        }
+      }
+    }
+  }
 </style>

@@ -71,8 +71,8 @@
       text-align: right;
       right: 0;
       padding-right: inherit;
-      .red-text {
-        color: $error-color;
+      .main-text {
+        color: $secondary-color;
       }
       .big-text {
         font-family: "Crossten Bold";
