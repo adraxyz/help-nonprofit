@@ -1,0 +1,89 @@
+[
+{
+    "model": "projects.projectcategory",
+    "pk": 1,
+    "fields": {
+        "order": 0,
+        "title": "Architettura",
+        "title_it": "Architettura",
+        "title_en": "Architecture",
+        "subtitle": "bioarchitettura, efficienza energetica, gestione idrica, recupero materiali",
+        "subtitle_it": "bioarchitettura, efficienza energetica, gestione idrica, recupero materiali",
+        "subtitle_en": "bioarchitecture. energy efficiency, water management, upcycle",
+        "description": "Vogliamo abbassare l'impatto ambientale delle case esistenti. Non potendo agire sull'orientamento dovremo progettare in modo innovativo e creativo per massimizzare le caratteristiche positive degli edifici e minimizzarne i difetti. Sar\u00e0 possibile implementare sistemi di areazione naturale e/o di riscaldamento tramite delle serre bioclimatiche. Inoltre, dove possibile, recupereremo le acque piovane e le acque grigie, in modo da ridurre gli sprechi di acqua potabile. Una delle nostre priorit\u00e0 \u00e8 <b>ridurre al massimo gli sprechi di energia</b> legati ad impianti obsoleti e a perdite ad esempio installando dispositivi a basso consumo. Il fabbisogno verr\u00e0 garantito da impianti ad energia pulita. Cercheremo di <b>recuperare tutto il materiale ancora riutilizzabile</b>, sia a livello costruttivo che di mobilio. Crediamo che le case debbano essere dei facilitatori di pratiche ecologiche.",
+        "description_it": "Vogliamo abbassare l'impatto ambientale delle case esistenti. Non potendo agire sull'orientamento dovremo progettare in modo innovativo e creativo per massimizzare le caratteristiche positive degli edifici e minimizzarne i difetti. Sar\u00e0 possibile implementare sistemi di areazione naturale e/o di riscaldamento tramite delle serre bioclimatiche. Inoltre, dove possibile, recupereremo le acque piovane e le acque grigie, in modo da ridurre gli sprechi di acqua potabile. Una delle nostre priorit\u00e0 \u00e8 <b>ridurre al massimo gli sprechi di energia</b> legati ad impianti obsoleti e a perdite ad esempio installando dispositivi a basso consumo. Il fabbisogno verr\u00e0 garantito da impianti ad energia pulita. Cercheremo di <b>recuperare tutto il materiale ancora riutilizzabile</b>, sia a livello costruttivo che di mobilio. Crediamo che le case debbano essere dei facilitatori di pratiche ecologiche.",
+        "description_en": "We want to decrease the footprint of existing houses. We won't be able to act on the orientation of the house, so we need to be find a creative and innovative way to maximize the positive aspects of a building while minimizing the faults of it. We will implement natural ventilation and/or natural heating through the bioclimatic greenhouses. Furthermore, whenever possible, we will collect rain and grey waters to reduce the waste of drinkable water. One of our priority is to reduce the quantity of energy needed for a household, to do so we aim at reducing the waste related to obsolete plants and leaks as well as installing low consume devices. This energy demand will be covered by clean energy systems. Whenever possible we will reuse all the materials, both related to the construction site as well as the furniture. We believe houses must be a facilitators of ecological practices.",
+        "image": "ACRHITETTURA_optimized.png"
+    }
+},
+{
+    "model": "projects.projectcategory",
+    "pk": 2,
+    "fields": {
+        "order": 1,
+        "title": "Agricoltura e Foreste",
+        "title_it": "Agricoltura e Foreste",
+        "title_en": "Agriculture and Fortests",
+        "subtitle": "permacultura, agro-ecologia, bio-intensivo, orti sinergici, libert\u00e0 e diritti sui semi",
+        "subtitle_it": "permacultura, agro-ecologia, bio-intensivo, orti sinergici, libert\u00e0 e diritti sui semi",
+        "subtitle_en": "permaculture, agro-ecology, bio-intensive, synergistic vegetable gardens, freedom and rights on seeds",
+        "description": "Quando riceviamo in donazione un terreno valutiamo per prima cosa la possibilit\u00e0 di destinare tutta la superficie, o quota parte di essa, alla piantumazione di nuovi alberi. In secondo luogo valutiamo l'opportunit\u00e0 di rendere la superficie disponibile per sperimentazioni di agricoltura naturale.<br>Il tipo di agricoltura con cui vogliamo avere a che fare deve essere libera da fonti fossili: non vogliamo che vengano utilizzati concimi chimici, antiparassitari e altre forme di distruzione della micro-fauna del suolo. Siamo convinti che se tutti praticassero l'agro-ecologia si potrebbero sfamare, senza inquinare, tutti gli abitanti del territorio. Un'agricoltura naturale fa bene a noi e salvaguarda gli animali che vivono nel nostro stesso ecosistema.",
+        "description_it": "Quando riceviamo in donazione un terreno valutiamo per prima cosa la possibilit\u00e0 di destinare tutta la superficie, o quota parte di essa, alla piantumazione di nuovi alberi. In secondo luogo valutiamo l'opportunit\u00e0 di rendere la superficie disponibile per sperimentazioni di agricoltura naturale.<br>Il tipo di agricoltura con cui vogliamo avere a che fare deve essere libera da fonti fossili: non vogliamo che vengano utilizzati concimi chimici, antiparassitari e altre forme di distruzione della micro-fauna del suolo. Siamo convinti che se tutti praticassero l'agro-ecologia si potrebbero sfamare, senza inquinare, tutti gli abitanti del territorio. Un'agricoltura naturale fa bene a noi e salvaguarda gli animali che vivono nel nostro stesso ecosistema.",
+        "description_en": "The first thing we evaluate to do on a donated land is the possibility to reforest it. If that is not a good option we opt for natural agriculture. <br>The kind of agriculture we want to incentive is one free of fossil fuels: we do not allow the use of chemical fertilizers, pesticides and other forms of distruction of the micro-fauna living in the soil. We believe that if we all practiced the agro-ecology we could feed, without polluting, all the population of a territory. Natural agricolture it's good for our health and safeguards the animals that live in our same ecosystem.",
+        "image": "AGRICOLTURA_optimized.png"
+    }
+},
+{
+    "model": "projects.projectcategory",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "title": "Sociale",
+        "title_it": "Sociale",
+        "title_en": "Social",
+        "subtitle": "integrazione, soddisfazione dei bisogni essenziali, housing sociale, formazione, beneficenza",
+        "subtitle_it": "integrazione, soddisfazione dei bisogni essenziali, housing sociale, formazione, beneficenza",
+        "subtitle_en": "integration, satisfaction of essential needs, social housing, training, charity",
+        "description": "I problemi ambientali e sociali sono due facce di una stessa medaglia. Un uso iniquo ed eccessivo delle risorse naturali non distrugge solo gli ecosistemi naturali ma genera disuguaglianze, malcontento, quindi instabilit\u00e0 politica e miseria, in una sola parola: infelicit\u00e0.<br>Non possiamo occuparci solo di piantare alberi e ristrutturare case, c'\u00e8 una fetta sempre pi\u00f9 ampia di popolazione che soffre, \u00e8 ora di restituire loro almeno il necessario per vivere dignitosamente.",
+        "description_it": "I problemi ambientali e sociali sono due facce di una stessa medaglia. Un uso iniquo ed eccessivo delle risorse naturali non distrugge solo gli ecosistemi naturali ma genera disuguaglianze, malcontento, quindi instabilit\u00e0 politica e miseria, in una sola parola: infelicit\u00e0.<br>Non possiamo occuparci solo di piantare alberi e ristrutturare case, c'\u00e8 una fetta sempre pi\u00f9 ampia di popolazione che soffre, \u00e8 ora di restituire loro almeno il necessario per vivere dignitosamente.",
+        "description_en": "Environmental and social problems are two sides of the same coin. Unjust and excessive use of natural resources not only destroys natural ecosystems but generates inequalities, discontent, therefore political instability and misery, in one word, unhappiness. <br> We cannot deal only with planting trees and renovating houses, there is an increasingly large portion of the population suffering, it is time to give them back at least what is basic for a dignified life.",
+        "image": "SOCIALE_optimized_L2ycCQV.png"
+    }
+},
+{
+    "model": "projects.project",
+    "pk": 1,
+    "fields": {
+        "order": 0,
+        "title": "benvenuti a Tufillo",
+        "title_it": "benvenuti a Tufillo",
+        "title_en": "welcome to Tufillo",
+        "slug": "progetto-pilota",
+        "slug_it": "progetto-pilota",
+        "slug_en": "pilot-project",
+        "subtitle": "riabitiamo i piccoli borghi, diamo forza ai territori",
+        "subtitle_it": "riabitiamo i piccoli borghi, diamo forza ai territori",
+        "subtitle_en": "we re-inhabit small hamlets, we strengthen territories",
+        "description": "A Tufillo, piccolo borgo arroccato su un colle al confine tra Abruzzo e Molise, ci \u00e8 stato donato un <span style=\"font-family: 'Crossten Bold';\">antico fabbricato in pietra</span> inserito nella stretta \"spina\" del centro storico.<br>Il paese, in costante calo demografico dagli anni '50, ha pagato con lo <span style=\"font-family: 'Crossten Bold';\">spopolamento</span> il passaggio da un'economia agro-pastorale a quella industriale ed oggi conta meno di 400 abitanti.<br>HELP si pone quindi l'obiettivo di mettere a disposizione <span style=\"font-family: 'Crossten Bold';\">nuovi spazi per nuove attivit\u00e0 e nuovi abitanti</span> al fine di favorire il reinsediamento nel territorio ed il rafforzamento del tessuto economico e sociale locale.",
+        "description_it": "A Tufillo, piccolo borgo arroccato su un colle al confine tra Abruzzo e Molise, ci \u00e8 stato donato un <span style=\"font-family: 'Crossten Bold';\">antico fabbricato in pietra</span> inserito nella stretta \"spina\" del centro storico.<br>Il paese, in costante calo demografico dagli anni '50, ha pagato con lo <span style=\"font-family: 'Crossten Bold';\">spopolamento</span> il passaggio da un'economia agro-pastorale a quella industriale ed oggi conta meno di 400 abitanti.<br>HELP si pone quindi l'obiettivo di mettere a disposizione <span style=\"font-family: 'Crossten Bold';\">nuovi spazi per nuove attivit\u00e0 e nuovi abitanti</span> al fine di favorire il reinsediamento nel territorio ed il rafforzamento del tessuto economico e sociale locale.",
+        "description_en": "In Tufillo, a small village perched on a hill on the border between Abruzzo and Molise, we were given an <span style=\"font-family: 'Crossten Bold';\">ancient stone building</span> inserted in the narrow \"spine\" of the historic center. The town, in constant demographic decline since the 1950s, has paid the transition from an agro-pastoral economy to an industrial one, gradually <span style=\"font-family: 'Crossten Bold';\">depopulating</span> reaching less than 400 inhabitants today. HELP therefore sets itself the goal of creating <span style=\"font-family: 'Crossten Bold';\">new spaces available for new activities and new inhabitants</span>. By doing so HELP wants to favor resettlement in the area to strength the local economic and social fabric.",
+        "thumbnail": "ILLUSTRAZIONE_PROGETTO_optimized.png",
+        "category": null,
+        "country": "Italia",
+        "country_it": "Italia",
+        "country_en": "Italy",
+        "region": "Abruzzo",
+        "region_it": "Abruzzo",
+        "region_en": "Abruzzo",
+        "city": "Tufillo (CH)",
+        "city_it": "Tufillo (CH)",
+        "city_en": "Tufillo (CH)",
+        "address": null,
+        "address_it": null,
+        "address_en": null,
+        "latitude": "14.6271600000000000",
+        "longitude": "41.9148330000000000",
+        "budget": 250000.0
+    }
+}
+]

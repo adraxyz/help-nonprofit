@@ -96,8 +96,12 @@ class Page(models.Model):
 
 class Section(models.Model):
     page = models.ForeignKey(
-        to=Page, on_delete=models.CASCADE, related_name='sections',
+        to=Page, on_delete=models.CASCADE, related_name='sections', null=True, blank=True,
         help_text=_("The page to which the section belongs.")
+    )
+    layout = models.ForeignKey(
+        to='Layout', on_delete=models.CASCADE, related_name='sections', null=True, blank=True,
+        help_text="The layout to which the section belongs."
     )
     order = models.PositiveSmallIntegerField(
         help_text=_("Position of the section into the page (descending order).")
@@ -112,7 +116,12 @@ class Section(models.Model):
     )
 
     def __str__(self):
-        return f"{self.page.name}_section_{str(self.order)}"
+        s = f"section_{str(self.order)}"
+        if self.page:
+            s = f"{s}_page_{self.page.name}"
+        if self.layout:
+            s = f"{s}_layout_{self.layout.name}"
+        return s
 
     class Meta:
         ordering = ["order"]

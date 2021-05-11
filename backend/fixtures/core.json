@@ -1,0 +1,879 @@
+[
+{
+    "model": "core.message",
+    "pk": 1,
+    "fields": {
+        "text": "agreement",
+        "topic": "contact_form",
+        "text_to_users": "Devi accettare per continuare",
+        "text_to_users_it": "Devi accettare per continuare",
+        "text_to_users_en": "You must agree to continue"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 2,
+    "fields": {
+        "text": "email",
+        "topic": "contact_form",
+        "text_to_users": "Inserire un indirizzo e-mail valido",
+        "text_to_users_it": "Inserire un indirizzo e-mail valido",
+        "text_to_users_en": "Insert a valid e-mail address"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 3,
+    "fields": {
+        "text": "max_length",
+        "topic": "contact_form",
+        "text_to_users": "Lunghezza massima superata",
+        "text_to_users_it": "Lunghezza massima superata",
+        "text_to_users_en": "Max length exceeded"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 4,
+    "fields": {
+        "text": "required",
+        "topic": "contact_form",
+        "text_to_users": "Questo campo \u00e8 obbligatorio",
+        "text_to_users_it": "Questo campo \u00e8 obbligatorio",
+        "text_to_users_en": "This filed is required"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 5,
+    "fields": {
+        "text": "Connection unexpectedly closed",
+        "topic": null,
+        "text_to_users": "Connessione chiusa inaspettatamente, riprova pi\u00f9 tardi o segnala il problema su GitHub (https://github.com/adraxyz/help-nonprofit/issues)",
+        "text_to_users_it": "Connessione chiusa inaspettatamente, riprova pi\u00f9 tardi o segnala il problema su GitHub (https://github.com/adraxyz/help-nonprofit/issues)",
+        "text_to_users_en": "Connection unexpectedly closed try again later or open an issue on GitHub (https://github.com/adraxyz/help-nonprofit/issues)"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 6,
+    "fields": {
+        "text": "",
+        "topic": null,
+        "text_to_users": null,
+        "text_to_users_it": null,
+        "text_to_users_en": ""
+    }
+},
+{
+    "model": "core.message",
+    "pk": 7,
+    "fields": {
+        "text": "Connection unexpectedly closed: [Errno 104] Connection reset by peer",
+        "topic": null,
+        "text_to_users": "Abbiamo riscontrato problemi di connessione, riprova pi\u00f9 tardi o segnala il problema su GitHub (https://github.com/adraxyz/help-nonprofit/issues)",
+        "text_to_users_it": "Abbiamo riscontrato problemi di connessione, riprova pi\u00f9 tardi o segnala il problema su GitHub (https://github.com/adraxyz/help-nonprofit/issues)",
+        "text_to_users_en": "We are dealing with connection issues, try again later or open an issue on GitHub (https://github.com/adraxyz/help-nonprofit/issues)"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 8,
+    "fields": {
+        "text": "Subscription success",
+        "topic": null,
+        "text_to_users": "Grazie di esserti iscritto, ti terremo aggiornato su tutte le nostre news!",
+        "text_to_users_it": "Grazie di esserti iscritto, ti terremo aggiornato su tutte le nostre news!",
+        "text_to_users_en": "Thank you for your subscription, we will update you with all our progresses and news!"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 9,
+    "fields": {
+        "text": "Contact success",
+        "topic": null,
+        "text_to_users": "Grazie per averci scritto, ti risponderemo appena possibile!",
+        "text_to_users_it": "Grazie per averci scritto, ti risponderemo appena possibile!",
+        "text_to_users_en": "Thank you reaching out, we'll get back to you as soon as possible!"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 10,
+    "fields": {
+        "text": "Member Exists",
+        "topic": null,
+        "text_to_users": "La tua email risulta gi\u00e0 presente nel nostro archivio, grazie per esserti registrato!",
+        "text_to_users_it": "La tua email risulta gi\u00e0 presente nel nostro archivio, grazie per esserti registrato!",
+        "text_to_users_en": "Your email is already present in our archive, thank you for your subscription!!"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 14,
+    "fields": {
+        "text": "SMTP AUTH extension not supported by server.",
+        "topic": null,
+        "text_to_users": "Si \u00e8 verififcato un errore, riprova pi\u00f9 tardi o segnala il problema su GitHub (https://github.com/adraxyz/help-nonprofit/issues)",
+        "text_to_users_it": "Si \u00e8 verififcato un errore, riprova pi\u00f9 tardi o segnala il problema su GitHub (https://github.com/adraxyz/help-nonprofit/issues)",
+        "text_to_users_en": "An error occurred, try again later or open an issue on GitHub (https://github.com/adraxyz/help-nonprofit/issues)"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 21,
+    "fields": {
+        "text": "Forgotten Email Not Subscribed",
+        "topic": null,
+        "text_to_users": "Forgotten Email Not Subscribed",
+        "text_to_users_it": "Forgotten Email Not Subscribed",
+        "text_to_users_en": null
+    }
+},
+{
+    "model": "core.message",
+    "pk": 22,
+    "fields": {
+        "text": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials s15sm7461117edj.75 - gsmtp')",
+        "topic": null,
+        "text_to_users": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials s15sm7461117edj.75 - gsmtp')",
+        "text_to_users_it": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials s15sm7461117edj.75 - gsmtp')",
+        "text_to_users_en": null
+    }
+},
+{
+    "model": "core.message",
+    "pk": 23,
+    "fields": {
+        "text": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials j7sm8483959ejk.14 - gsmtp')",
+        "topic": null,
+        "text_to_users": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials j7sm8483959ejk.14 - gsmtp')",
+        "text_to_users_it": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials j7sm8483959ejk.14 - gsmtp')",
+        "text_to_users_en": null
+    }
+},
+{
+    "model": "core.message",
+    "pk": 24,
+    "fields": {
+        "text": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials f3sm7554439edl.23 - gsmtp')",
+        "topic": null,
+        "text_to_users": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials f3sm7554439edl.23 - gsmtp')",
+        "text_to_users_it": "(535, b'5.7.8 Username and Password not accepted. Learn more at\\n5.7.8  https://support.google.com/mail/?p=BadCredentials f3sm7554439edl.23 - gsmtp')",
+        "text_to_users_en": null
+    }
+},
+{
+    "model": "core.message",
+    "pk": 25,
+    "fields": {
+        "text": "Success",
+        "topic": "shipment_form",
+        "text_to_users": "Abbiamo ricevuto il tuo ordine!",
+        "text_to_users_it": "Abbiamo ricevuto il tuo ordine!",
+        "text_to_users_en": "We have received your order!"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 26,
+    "fields": {
+        "text": "agreement",
+        "topic": "shipment_form",
+        "text_to_users": "Devi accettare per continuare",
+        "text_to_users_it": "Devi accettare per continuare",
+        "text_to_users_en": "You must agree to continue"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 27,
+    "fields": {
+        "text": "email",
+        "topic": "shipment_form",
+        "text_to_users": "Indirizzo mail non corretto",
+        "text_to_users_it": "Indirizzo mail non corretto",
+        "text_to_users_en": "Wrong mail address"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 28,
+    "fields": {
+        "text": "max_length",
+        "topic": "shipment_form",
+        "text_to_users": "Lungheza massima superata",
+        "text_to_users_it": "Lungheza massima superata",
+        "text_to_users_en": "Maximum length exceeded"
+    }
+},
+{
+    "model": "core.message",
+    "pk": 29,
+    "fields": {
+        "text": "required",
+        "topic": "shipment_form",
+        "text_to_users": "Campo obbligatorio",
+        "text_to_users_it": "Campo obbligatorio",
+        "text_to_users_en": "This field is required"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 1,
+    "fields": {
+        "topic": "contact_form",
+        "item": "first_name",
+        "label": "nome",
+        "label_it": "nome",
+        "label_en": "first name"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 2,
+    "fields": {
+        "topic": "contact_form",
+        "item": "last_name",
+        "label": "cognome",
+        "label_it": "cognome",
+        "label_en": "last name"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 3,
+    "fields": {
+        "topic": "contact_form",
+        "item": "email",
+        "label": "email",
+        "label_it": "email",
+        "label_en": "email"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 4,
+    "fields": {
+        "topic": "contact_form",
+        "item": "where_from",
+        "label": "da dove ci scrivi",
+        "label_it": "da dove ci scrivi",
+        "label_en": "from where are you writing us?"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 5,
+    "fields": {
+        "topic": "contact_form",
+        "item": "age",
+        "label": "et\u00e0",
+        "label_it": "et\u00e0",
+        "label_en": "age"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 6,
+    "fields": {
+        "topic": "contact_form",
+        "item": "object",
+        "label": "oggetto",
+        "label_it": "oggetto",
+        "label_en": "object"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 7,
+    "fields": {
+        "topic": "contact_form",
+        "item": "message",
+        "label": "messaggio",
+        "label_it": "messaggio",
+        "label_en": "message"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 8,
+    "fields": {
+        "topic": "contact_form",
+        "item": "news_agreement",
+        "label": "voglio ricevere la newsletter",
+        "label_it": "voglio ricevere la newsletter",
+        "label_en": "I want to receive the newsletter"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 9,
+    "fields": {
+        "topic": "contact_form",
+        "item": "privacy_agreement",
+        "label": "accetto i termini del servizio",
+        "label_it": "accetto i termini del servizio",
+        "label_en": "I agree with the terms of service"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 10,
+    "fields": {
+        "topic": "contact_form",
+        "item": "submit",
+        "label": "iscrivimi",
+        "label_it": "iscrivimi",
+        "label_en": "subscribe"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 11,
+    "fields": {
+        "topic": "contact_form",
+        "item": "clear",
+        "label": "cancella",
+        "label_it": "cancella",
+        "label_en": "clear"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 12,
+    "fields": {
+        "topic": "shopping_cart",
+        "item": "title",
+        "label": "carrello",
+        "label_it": "carrello",
+        "label_en": "cart"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 13,
+    "fields": {
+        "topic": "shopping_cart",
+        "item": "purchase_order",
+        "label": "ordina",
+        "label_it": "ordina",
+        "label_en": "purchase"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 14,
+    "fields": {
+        "topic": "shopping_cart",
+        "item": "reset_cart",
+        "label": "svuota",
+        "label_it": "svuota",
+        "label_en": "clear"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 15,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "total_price",
+        "label": "totale",
+        "label_it": "totale",
+        "label_en": "total"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 16,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "shipping_fees",
+        "label": "spese di spedizione",
+        "label_it": "spese di spedizione",
+        "label_en": "shipping fees"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 17,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "continue",
+        "label": "continua",
+        "label_it": "continua",
+        "label_en": "continue"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 18,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "minimum_donation",
+        "label": "offerta minima",
+        "label_it": "offerta minima",
+        "label_en": "minimum donation"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 19,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "title",
+        "label": "dati di spedizione",
+        "label_it": "dati di spedizione",
+        "label_en": "shipping data"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 20,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "news_agreement",
+        "label": "voglio ricevere la newsletter",
+        "label_it": "voglio ricevere la newsletter",
+        "label_en": "I want to subscribe me to the newsletter"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 21,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "privacy_agreement",
+        "label": "accetto i termini del servizio",
+        "label_it": "accetto i termini del servizio",
+        "label_en": "I agree with the terms of service"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 22,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "submit",
+        "label": "conferma",
+        "label_it": "conferma",
+        "label_en": "confirm"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 23,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "phone",
+        "label": "telefono",
+        "label_it": "telefono",
+        "label_en": "phone"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 24,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "cap",
+        "label": "CAP",
+        "label_it": "CAP",
+        "label_en": "postal code"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 25,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "address_number",
+        "label": "civico",
+        "label_it": "civico",
+        "label_en": "address n."
+    }
+},
+{
+    "model": "core.label",
+    "pk": 26,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "address",
+        "label": "via",
+        "label_it": "via",
+        "label_en": "address"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 27,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "city",
+        "label": "citt\u00e0",
+        "label_it": "citt\u00e0",
+        "label_en": "city"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 28,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "province",
+        "label": "provincia",
+        "label_it": "provincia",
+        "label_en": "region"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 29,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "country",
+        "label": "stato",
+        "label_it": "stato",
+        "label_en": "country"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 30,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "email",
+        "label": "email",
+        "label_it": "email",
+        "label_en": "email"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 31,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "first_name",
+        "label": "nome",
+        "label_it": "nome",
+        "label_en": "first name"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 32,
+    "fields": {
+        "topic": "shipment_form",
+        "item": "last_name",
+        "label": "cognome",
+        "label_it": "cognome",
+        "label_en": "last name"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 33,
+    "fields": {
+        "topic": "shop_item",
+        "item": "available",
+        "label": "disponibile su",
+        "label_it": "disponibile su",
+        "label_en": "available on"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 34,
+    "fields": {
+        "topic": "shop_item",
+        "item": "product_availability",
+        "label": "disponibili",
+        "label_it": "disponibili",
+        "label_en": "available"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 35,
+    "fields": {
+        "topic": "shopping_cart",
+        "item": "back_to_store",
+        "label": "indietro",
+        "label_it": "indietro",
+        "label_en": "back"
+    }
+},
+{
+    "model": "core.label",
+    "pk": 36,
+    "fields": {
+        "topic": "shop_item",
+        "item": "go_to_store",
+        "label": "vai allo store",
+        "label_it": "vai allo store",
+        "label_en": "go to the store"
+    }
+},
+{
+    "model": "core.cookiescategory",
+    "pk": 1,
+    "fields": {
+        "name": "essential",
+        "title": "Essenziali",
+        "title_it": "Essenziali",
+        "title_en": "Essential",
+        "description": "Questi cookies sono cruciali per il funzionamento del sito, il quale non pu\u00f2 funzionare come si vorrebbe senza di essi.\r\nI cookies tecnici non raccolgono dati personali di identificazione e profilazione.",
+        "description_it": "Questi cookies sono cruciali per il funzionamento del sito, il quale non pu\u00f2 funzionare come si vorrebbe senza di essi.\r\nI cookies tecnici non raccolgono dati personali di identificazione e profilazione.",
+        "description_en": "Necessary cookies are crucial for the basic functions of the website and the website will not work in its intended way without them.\r\nThese cookies do not store any personally identifiable data."
+    }
+},
+{
+    "model": "core.cookiescategory",
+    "pk": 2,
+    "fields": {
+        "name": "performance",
+        "title": "Prestazioni e funzionalit\u00e0",
+        "title_it": "Prestazioni e funzionalit\u00e0",
+        "title_en": "Performance and functionality",
+        "description": "Questi cookies sono usati per migliorare le prestazioni e le funzionalit\u00e0 del sito ma non sono essenziali per il suo utilizzo. Ad ogni modo, senza questi cookies, alcune funzionalit\u00e0 (come ad esempio i video) potrebbero non essere disponibili.",
+        "description_it": "Questi cookies sono usati per migliorare le prestazioni e le funzionalit\u00e0 del sito ma non sono essenziali per il suo utilizzo. Ad ogni modo, senza questi cookies, alcune funzionalit\u00e0 (come ad esempio i video) potrebbero non essere disponibili.",
+        "description_en": "These cookies are used to enhance the performance and functionality of our websites but are non-essential to their use. However, without these cookies, certain functionality (like videos) may become unavailable."
+    }
+},
+{
+    "model": "core.cookiescategory",
+    "pk": 3,
+    "fields": {
+        "name": "analytics",
+        "title": "Analisi e personalizzazione",
+        "title_it": "Analisi e personalizzazione",
+        "title_en": "Analytics and customization",
+        "description": "Questi cookie raccolgono informazioni che vengono usate in forma aggregata per aiutarci a capire come vengono utilizzati i nostri siti Web o l'efficacia delle nostre campagne di marketing o per aiutarci a personalizzare i nostri siti Web per te.",
+        "description_it": "Questi cookie raccolgono informazioni che vengono usate in forma aggregata per aiutarci a capire come vengono utilizzati i nostri siti Web o l'efficacia delle nostre campagne di marketing o per aiutarci a personalizzare i nostri siti Web per te.",
+        "description_en": "These cookies collect information that is used either in aggregate form to help us understand how our websites are being used or how effective our marketing campaigns are, or to help us customize our websites for you."
+    }
+},
+{
+    "model": "core.cookiescategory",
+    "pk": 4,
+    "fields": {
+        "name": "advertising",
+        "title": "Pubblicit\u00e0",
+        "title_it": "Pubblicit\u00e0",
+        "title_en": "Advertising",
+        "description": "Questi cookie vengono utilizzati per rendere i messaggi pubblicitari pi\u00f9 pertinenti per te. Svolgono funzioni come impedire la riapparizione continua dello stesso annuncio, garantire che gli annunci vengano visualizzati correttamente per gli inserzionisti e, in alcuni casi, selezionare annunci pubblicitari basati sui tuoi interessi.",
+        "description_it": "Questi cookie vengono utilizzati per rendere i messaggi pubblicitari pi\u00f9 pertinenti per te. Svolgono funzioni come impedire la riapparizione continua dello stesso annuncio, garantire che gli annunci vengano visualizzati correttamente per gli inserzionisti e, in alcuni casi, selezionare annunci pubblicitari basati sui tuoi interessi.",
+        "description_en": "These cookies are used to make advertising messages more relevant to you. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed for advertisers, and in some cases selecting advertisements that are based on your interests."
+    }
+},
+{
+    "model": "core.cookiescategory",
+    "pk": 5,
+    "fields": {
+        "name": "social_networking",
+        "title": "Social network",
+        "title_it": "Social network",
+        "title_en": "Social networking",
+        "description": "Questi cookie vengono utilizzati per consentirti di condividere pagine e contenuti che ritieni interessanti sui nostri siti Web tramite social network di terze parti e altri siti Web. Questi cookie possono anche essere utilizzati a scopi pubblicitari.",
+        "description_it": "Questi cookie vengono utilizzati per consentirti di condividere pagine e contenuti che ritieni interessanti sui nostri siti Web tramite social network di terze parti e altri siti Web. Questi cookie possono anche essere utilizzati a scopi pubblicitari.",
+        "description_en": "These cookies are used to enable you to share pages and content that you find interesting on our websites through third party social networking and other websites. These cookies may also be used for advertising purposes."
+    }
+},
+{
+    "model": "core.cookiescategory",
+    "pk": 6,
+    "fields": {
+        "name": "unclassified",
+        "title": "Cookie non classificati",
+        "title_it": "Cookie non classificati",
+        "title_en": "Unclassified cookies",
+        "description": "Questi sono cookie che non sono stati ancora classificati. Stiamo classificando questi cookie con l'aiuto dei loro fornitori.",
+        "description_it": "Questi sono cookie che non sono stati ancora classificati. Stiamo classificando questi cookie con l'aiuto dei loro fornitori.",
+        "description_en": "These are cookies that have not yet been categorized. We are in the process of classifying these cookies with the help of their providers."
+    }
+},
+{
+    "model": "core.cookiesprovider",
+    "pk": 1,
+    "fields": {
+        "name": "help",
+        "title": "help-nonprofit.org",
+        "title_it": "help-nonprofit.org",
+        "title_en": "help-nonprofit.org",
+        "description": "HELP Onlus - Human Evolution for Landscape Protection",
+        "description_it": "HELP Onlus - Human Evolution for Landscape Protection",
+        "description_en": "",
+        "default": true,
+        "readonly": true,
+        "category": 1
+    }
+},
+{
+    "model": "core.cookiesprovider",
+    "pk": 2,
+    "fields": {
+        "name": "google_analytics",
+        "title": "Google Analytics",
+        "title_it": "Google Analytics",
+        "title_en": null,
+        "description": "Google Analytics \u00e8 un servizio di web analytics gratuito fornito da Google che consente di analizzare delle dettagliate statistiche sui visitatori di un sito web. Il servizio \u00e8 usato per il marketing su internet e dai webmaster.",
+        "description_it": "Google Analytics \u00e8 un servizio di web analytics gratuito fornito da Google che consente di analizzare delle dettagliate statistiche sui visitatori di un sito web. Il servizio \u00e8 usato per il marketing su internet e dai webmaster.",
+        "description_en": "Google Analytics is a web analytics service offered by Google that tracks and reports website traffic, currently as a platform inside the Google Marketing Platform brand.",
+        "default": false,
+        "readonly": false,
+        "category": 3
+    }
+},
+{
+    "model": "core.cookiesprovider",
+    "pk": 3,
+    "fields": {
+        "name": "google_universal_analytics",
+        "title": "Google Universal Analytics",
+        "title_it": "Google Universal Analytics",
+        "title_en": null,
+        "description": "Google Universal Analytics offre tutta le funzionalit\u00e0 di Google Analytics aggiungendoci nuove funzioni quali la reportistica per il web, SDK per smartphone, il Measurement protocol e il tracciamento multidevice.",
+        "description_it": "Google Universal Analytics offre tutta le funzionalit\u00e0 di Google Analytics aggiungendoci nuove funzioni quali la reportistica per il web, SDK per smartphone, il Measurement protocol e il tracciamento multidevice.",
+        "description_en": "Google Universal Analytics offers all the features of Google Analytics by adding new functions such as the reporting for the web, the SDK for smartphones, the Measurement protocol and the multidevice tracking.",
+        "default": false,
+        "readonly": false,
+        "category": 2
+    }
+},
+{
+    "model": "core.cookiesprovider",
+    "pk": 4,
+    "fields": {
+        "name": "facebook",
+        "title": "Facebook",
+        "title_it": "Facebook",
+        "title_en": null,
+        "description": "Il pixel di monitoraggio delle conversioni di Facebook \u00e8 uno strumento utile per monitorare l'andamento di una campagna pubblicitaria Facebook e verificarne l\u2019efficacia.",
+        "description_it": "Il pixel di monitoraggio delle conversioni di Facebook \u00e8 uno strumento utile per monitorare l'andamento di una campagna pubblicitaria Facebook e verificarne l\u2019efficacia.",
+        "description_en": "The Facebook conversion tracking pixel is a useful tool for monitoring the progress of a Facebook advertising campaign and checking its effectiveness.",
+        "default": false,
+        "readonly": false,
+        "category": 4
+    }
+},
+{
+    "model": "core.cookie",
+    "pk": 1,
+    "fields": {
+        "name": "_ga",
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "purpose": "Questo cookie \u00e8 installato da Google Analytics. Il cookie viene utilizzato per calcolare i dati di visitatori, sessioni e campagne e tenere traccia dell'utilizzo del sito per il rapporto di analisi del sito. I cookie memorizzano le informazioni in modo anonimo e assegnano un numero generato casualmente per identificare visitatori unici.",
+        "purpose_it": "Questo cookie \u00e8 installato da Google Analytics. Il cookie viene utilizzato per calcolare i dati di visitatori, sessioni e campagne e tenere traccia dell'utilizzo del sito per il rapporto di analisi del sito. I cookie memorizzano le informazioni in modo anonimo e assegnano un numero generato casualmente per identificare visitatori unici.",
+        "purpose_en": "This cookie is installed by Google Analytics. The cookie is used to calculate visitor, session, campaign data and keep track of site usage for the site's analytics report. The cookies store information anonymously and assign a randomly generated number to identify unique visitors.",
+        "provider": 2,
+        "duration": "2 anni",
+        "duration_it": "2 anni",
+        "duration_en": "2 years"
+    }
+},
+{
+    "model": "core.cookie",
+    "pk": 2,
+    "fields": {
+        "name": "_gid",
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "purpose": "Questo cookie \u00e8 installato da Google Analytics. Il cookie viene utilizzato per archiviare informazioni su come i visitatori utilizzano un sito Web e aiuta a creare un rapporto analitico sull'andamento del sito Web. I dati tra cui il numero di visitatori, la fonte da cui provengono e le pagine visitate sono raccolti in forma anonima.",
+        "purpose_it": "Questo cookie \u00e8 installato da Google Analytics. Il cookie viene utilizzato per archiviare informazioni su come i visitatori utilizzano un sito Web e aiuta a creare un rapporto analitico sull'andamento del sito Web. I dati tra cui il numero di visitatori, la fonte da cui provengono e le pagine visitate sono raccolti in forma anonima.",
+        "purpose_en": "This cookie is installed by Google Analytics. The cookie is used to store information of how visitors use a website and helps in creating an analytics report of how the wbsite is doing. The data collected including the number visitors, the source where they have come from, and the pages viisted in an anonymous form.",
+        "provider": 2,
+        "duration": "1 giorno",
+        "duration_it": "1 giorno",
+        "duration_en": "1 day"
+    }
+},
+{
+    "model": "core.cookie",
+    "pk": 3,
+    "fields": {
+        "name": "_gat",
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "purpose": "Questo cookie \u00e8 installato da Google Universal Analytics per limitare la percentuale di richieste al fine di limitare la raccolta di dati su siti ad alto traffico.",
+        "purpose_it": "Questo cookie \u00e8 installato da Google Universal Analytics per limitare la percentuale di richieste al fine di limitare la raccolta di dati su siti ad alto traffico.",
+        "purpose_en": "This cookies is installed by Google Universal Analytics to throttle the request rate to limit the colllection of data on high traffic sites.",
+        "provider": 3,
+        "duration": "1 minuto",
+        "duration_it": "1 minuto",
+        "duration_en": "1 minute"
+    }
+},
+{
+    "model": "core.cookie",
+    "pk": 4,
+    "fields": {
+        "name": "_fbp",
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "purpose": "Questo cookie \u00e8 impostato da Facebook, dopo aver visitato questo sito Web, per fornire pubblicit\u00e0 quando sono su Facebook o su una piattaforma digitale alimentata dalla pubblicit\u00e0 di Facebook.",
+        "purpose_it": "Questo cookie \u00e8 impostato da Facebook, dopo aver visitato questo sito Web, per fornire pubblicit\u00e0 quando sono su Facebook o su una piattaforma digitale alimentata dalla pubblicit\u00e0 di Facebook.",
+        "purpose_en": "This cookie is set by Facebook to deliver advertisement when they are on Facebook or a digital platform powered by Facebook advertising after visiting this website.",
+        "provider": 4,
+        "duration": "2 mesi",
+        "duration_it": "2 mesi",
+        "duration_en": "2 months"
+    }
+},
+{
+    "model": "core.cookie",
+    "pk": 5,
+    "fields": {
+        "name": "fr",
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "purpose": "Il cookie \u00e8 impostato da Facebook per mostrare pubblicit\u00e0 pertinenti agli utenti e misurare e migliorare le pubblicit\u00e0. Il cookie traccia anche il comportamento dell'utente sul Web su siti che hanno pixel di Facebook o social plugin di Facebook.",
+        "purpose_it": "Il cookie \u00e8 impostato da Facebook per mostrare pubblicit\u00e0 pertinenti agli utenti e misurare e migliorare le pubblicit\u00e0. Il cookie traccia anche il comportamento dell'utente sul Web su siti che hanno pixel di Facebook o social plugin di Facebook.",
+        "purpose_en": "The cookie is set by Facebook to show relevant advertisments to the users and measure and improve the advertisements. The cookie also tracks the behavior of the user across the web on sites that have Facebook pixel or Facebook social plugin.",
+        "provider": 4,
+        "duration": "2 mesi",
+        "duration_it": "2 mesi",
+        "duration_en": "2 months"
+    }
+},
+{
+    "model": "core.cookie",
+    "pk": 6,
+    "fields": {
+        "name": "csrftoken",
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "purpose": "Cookie tecnico per la protezione Cross Site Request Forgery (CSRF).",
+        "purpose_it": "Cookie tecnico per la protezione Cross Site Request Forgery (CSRF).",
+        "purpose_en": "Technical cookie for the Cross Site Request Forgery (CSRF) protection.",
+        "provider": 1,
+        "duration": "1 sessione",
+        "duration_it": "1 sessione",
+        "duration_en": "1 session"
+    }
+},
+{
+    "model": "core.cookie",
+    "pk": 7,
+    "fields": {
+        "name": "i18n_redirected",
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "purpose": "Il sito Web di HELP tenta di reindirizzare gli utenti alla lingua preferita rilevando la lingua del browser. Questo cookie viene impostato dopo il primo reindirizzamento e impedisce il reindirizzamento degli utenti ogni volta che visitano il sito.",
+        "purpose_it": "Il sito Web di HELP tenta di reindirizzare gli utenti alla lingua preferita rilevando la lingua del browser. Questo cookie viene impostato dopo il primo reindirizzamento e impedisce il reindirizzamento degli utenti ogni volta che visitano il sito.",
+        "purpose_en": "HELP web site attempts to redirect users to their preferred language by detecting their browser's language. This cookie is set after the first redirection and it prevents redirecting users every time they visit the app.",
+        "provider": 1,
+        "duration": "1 sessione",
+        "duration_it": "1 sessione",
+        "duration_en": "1 session"
+    }
+}
+]

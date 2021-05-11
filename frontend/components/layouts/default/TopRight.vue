@@ -20,10 +20,31 @@
         {{ christmas_button.text_1 }}
       </v-btn>-->
 
+      <!-- WW store button -->
+      <v-btn id="top-right-store-button"
+             :href="store_button.href"
+             :target="store_button.target"
+             v-if="store_button.active"
+             class="mt-4 d-none d-lg-inline-flex error-button"
+             tile dark outlined nuxt active-class="no-active">
+        {{ store_button.text_0 }}
+      </v-btn>
+
       <!-- Burger button -->
       <v-app-bar-nav-icon id="burger-button"
                           class="d-lg-none white-button"
                           @click="drawer=true" outlined/>
+
+      <!-- WW store button mobile -->
+      <v-btn id="top-right-store-button-md"
+             :href="store_button.href"
+             :target="store_button.target"
+             v-if="store_button.active"
+             class="mt-4 d-block d-lg-none error-button button-shadow-error-left"
+             fab dark nuxt small active-class="no-active"
+             width="37" height="37" color="primary">
+        <v-icon size="24" class="store-button-icon">{{ store_icon }}</v-icon>
+      </v-btn>
 
       <!-- Christmas button mobile
       <v-btn id="top-right-christmas-button-md"
@@ -86,6 +107,18 @@
           </v-btn>
         </v-col>-->
 
+        <!-- WW store drawer button -->
+        <v-col cols="12" class="text-center extra-button-col" align-self="center">
+          <v-btn id="drawer-store-button"
+                 :href="store_button.href"
+                 :target="store_button.target"
+                 v-if="store_button.active"
+                 class="nav-button white"
+                 tile nuxt active-class="no-active">
+            {{ store_button.text_0 }}
+          </v-btn>
+        </v-col>
+
       </v-row>
 
       <v-row class="drawer-navigation-row d-inline-block" no-gutters>
@@ -118,12 +151,13 @@ import SocialIcons from "./SocialIcons";
 import LanguagesSwitcher from "./LanguagesSwitcher";
 import ShoppingCart from "./ShoppingCart";
 import { mapState } from 'vuex';
-import { mdiGift, mdiArrowLeft } from "@mdi/js"
+import { mdiGift, mdiArrowLeft, mdiTshirtCrew } from "@mdi/js"
 
 export default {
   name: "TopLeft",
   props: {
     navs: Array,
+    section: Object,
     contact_button: Object,
     donation_button: Object,
     christmas_button: Object
@@ -138,10 +172,20 @@ export default {
     drawer_height: 0,
     checkRoute: checkRoute,
     gift_icon: mdiGift,
-    left_arrow_icon: mdiArrowLeft
+    left_arrow_icon: mdiArrowLeft,
+    store_icon: mdiTshirtCrew
   }),
   computed: {
-    ...mapState(['privacy_policy', 'cookies_policy', 'terms_of_use', 'shopping_cart_labels'])
+    ...mapState(['privacy_policy', 'cookies_policy', 'terms_of_use', 'shopping_cart_labels']),
+    store_button() {
+      if (this.section) {
+        let btn = this.section.buttons.find(b => b.order == 0)
+        if (btn) {
+          return btn
+        }
+      }
+      return {active: false}
+    }
   },
   methods: {
     onResize () {
@@ -175,7 +219,17 @@ export default {
       font-size: large;
       border-width: 0px !important;
     }
+    #top-right-store-button {
+      background-color: $primary-color !important;
+      box-shadow: -$box-shadow-side $box-shadow-bottom $error-color !important;
+      font-size: large;
+      border-width: 0px !important;
+    }
     .christmas-button-icon {
+      width: $circle-icon-size !important;
+      height: $circle-icon-size !important;
+    }
+    .store-button-icon {
       width: $circle-icon-size !important;
       height: $circle-icon-size !important;
     }
@@ -213,6 +267,11 @@ export default {
       font-family: "Crossten ExtraBold";
     }
     #drawer-christmas-button {
+      box-shadow: -$box-shadow-side $box-shadow-bottom $error-color !important;
+      font-family: "Crossten ExtraBold";
+      border: 2px solid black !important;
+    }
+    #drawer-store-button {
       box-shadow: -$box-shadow-side $box-shadow-bottom $error-color !important;
       font-family: "Crossten ExtraBold";
       border: 2px solid black !important;
@@ -336,6 +395,9 @@ export default {
           margin-left: 10px !important;
         }
         #drawer-christmas-button {
+          margin-left: 15px !important;
+        }
+        #drawer-store-button {
           margin-left: 15px !important;
         }
       }

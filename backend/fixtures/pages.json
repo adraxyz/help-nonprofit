@@ -1,0 +1,3943 @@
+[
+{
+    "model": "pages.page",
+    "pk": 1,
+    "fields": {
+        "order": 0,
+        "name": "home",
+        "name_it": "home",
+        "name_en": "home",
+        "title": "casa",
+        "title_it": "casa",
+        "title_en": "home",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 2,
+    "fields": {
+        "order": 1,
+        "name": "get-involved",
+        "name_it": "get-involved",
+        "name_en": "get-involved",
+        "title": "partecipa",
+        "title_it": "partecipa",
+        "title_en": "get involved",
+        "navigation": true,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "name": "projects",
+        "name_it": "projects",
+        "name_en": "projects",
+        "title": "progetti",
+        "title_it": "progetti",
+        "title_en": "projects",
+        "navigation": true,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 4,
+    "fields": {
+        "order": 3,
+        "name": "about",
+        "name_it": "about",
+        "name_en": "about",
+        "title": "chi e cosa",
+        "title_it": "chi e cosa",
+        "title_en": "who and what",
+        "navigation": true,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 5,
+    "fields": {
+        "order": 4,
+        "name": "donations",
+        "name_it": "donations",
+        "name_en": "donations",
+        "title": "donazioni",
+        "title_it": "donazioni",
+        "title_en": "donations",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 6,
+    "fields": {
+        "order": 5,
+        "name": "contacts",
+        "name_it": "contacts",
+        "name_en": "contacts",
+        "title": "contatti",
+        "title_it": "contatti",
+        "title_en": "contacts",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 7,
+    "fields": {
+        "order": 6,
+        "name": "donations--5x1000",
+        "name_it": "donations--5x1000",
+        "name_en": "donations--5x1000",
+        "title": "5x1000",
+        "title_it": "5x1000",
+        "title_en": "5x1000",
+        "navigation": true,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 8,
+    "fields": {
+        "order": 7,
+        "name": "projects--progetto-pilota",
+        "name_it": "projects--progetto-pilota",
+        "name_en": "projects--pilot-project",
+        "title": "dettagli del progetto pilota",
+        "title_it": "dettagli del progetto pilota",
+        "title_en": "pilot projects details",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 9,
+    "fields": {
+        "order": 8,
+        "name": "donations--christmas-2020",
+        "name_it": "donations--christmas-2020",
+        "name_en": "donations--christmas-2020",
+        "title": "natale 2020",
+        "title_it": "natale 2020",
+        "title_en": "christmas 2020",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 10,
+    "fields": {
+        "order": 9,
+        "name": "christmas-2020--casa",
+        "name_it": "christmas-2020--casa",
+        "name_en": "christmas-2020--house",
+        "title": "casa",
+        "title_it": "casa",
+        "title_en": "house",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 11,
+    "fields": {
+        "order": 10,
+        "name": "christmas-2020--architettare-bw",
+        "name_it": "christmas-2020--architettare-bw",
+        "name_en": "christmas-2020--architettare-bw",
+        "title": "architettare b&w",
+        "title_it": "architettare b&w",
+        "title_en": "architettare b&w",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 12,
+    "fields": {
+        "order": 11,
+        "name": "christmas-2020--architettare-color",
+        "name_it": "christmas-2020--architettare-color",
+        "name_en": "christmas-2020--architettare-color",
+        "title": "architettare a colori",
+        "title_it": "architettare a colori",
+        "title_en": "colored architettare",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 13,
+    "fields": {
+        "order": 12,
+        "name": "christmas-2020--agenda-illustrata",
+        "name_it": "christmas-2020--agenda-illustrata",
+        "name_en": "christmas-2020--illustrated-agenda",
+        "title": "agenda illustrata",
+        "title_it": "agenda illustrata",
+        "title_en": "illustrated agenda",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 14,
+    "fields": {
+        "order": 13,
+        "name": "christmas-2020--casetta-da-montare",
+        "name_it": "christmas-2020--casetta-da-montare",
+        "name_en": "christmas-2020--house-assemble",
+        "title": "casetta calendario da montare",
+        "title_it": "casetta calendario da montare",
+        "title_en": "house calendar to assemble",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 15,
+    "fields": {
+        "order": 14,
+        "name": "christmas-2020--casetta-calendario",
+        "name_it": "christmas-2020--casetta-calendario",
+        "name_en": "christmas-2020--house-calendar",
+        "title": "casetta calendario",
+        "title_it": "casetta calendario",
+        "title_en": "house calendar",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 16,
+    "fields": {
+        "order": 15,
+        "name": "christmas-2020--illustrazione-help",
+        "name_it": "christmas-2020--illustrazione-help",
+        "name_en": "christmas-2020--help-illustration",
+        "title": "illustrazione HELP",
+        "title_it": "illustrazione HELP",
+        "title_en": "HELP illustration",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 17,
+    "fields": {
+        "order": 16,
+        "name": "christmas-2020--pacchetto-superdonatore",
+        "name_it": "christmas-2020--pacchetto-superdonatore",
+        "name_en": "christmas-2020--super-donor-pack",
+        "title": "pacchetto super donatore",
+        "title_it": "pacchetto super donatore",
+        "title_en": "super donor pack",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 18,
+    "fields": {
+        "order": 17,
+        "name": "christmas-2020--illustrazione-digitale",
+        "name_it": "christmas-2020--illustrazione-digitale",
+        "name_en": "christmas-2020--digital-illustration",
+        "title": "illustrazione digitale",
+        "title_it": "illustrazione digitale",
+        "title_en": "digital illustration",
+        "navigation": false,
+        "layout": 1
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 1,
+    "fields": {
+        "page": 1,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 2,
+    "fields": {
+        "page": 1,
+        "order": 1,
+        "title": "il funzionamento",
+        "title_it": "il funzionamento",
+        "title_en": "how it works",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 3,
+    "fields": {
+        "page": 1,
+        "order": 2,
+        "title": "i nostri impatti",
+        "title_it": "i nostri impatti",
+        "title_en": "impacts",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 4,
+    "fields": {
+        "page": 1,
+        "order": 3,
+        "title": "in concreto",
+        "title_it": "in concreto",
+        "title_en": "specifically",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 5,
+    "fields": {
+        "page": 1,
+        "order": 4,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 6,
+    "fields": {
+        "page": 4,
+        "order": 0,
+        "title": "il team",
+        "title_it": "il team",
+        "title_en": "the team",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 7,
+    "fields": {
+        "page": 4,
+        "order": 2,
+        "title": "come funziona",
+        "title_it": "come funziona",
+        "title_en": "how it works",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 8,
+    "fields": {
+        "page": 4,
+        "order": 3,
+        "title": "dove siamo",
+        "title_it": "dove siamo",
+        "title_en": "where we are",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 9,
+    "fields": {
+        "page": 4,
+        "order": 4,
+        "title": "come useremo i fondi",
+        "title_it": "come useremo i fondi",
+        "title_en": "how we will spent the funds",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 10,
+    "fields": {
+        "page": 4,
+        "order": 5,
+        "title": "vuoi saperne di pi\u00f9?",
+        "title_it": "vuoi saperne di pi\u00f9?",
+        "title_en": "read more",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 11,
+    "fields": {
+        "page": 5,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 12,
+    "fields": {
+        "page": 5,
+        "order": 1,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 13,
+    "fields": {
+        "page": 5,
+        "order": 2,
+        "title": "come donare",
+        "title_it": "come donare",
+        "title_en": "how to donate",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 14,
+    "fields": {
+        "page": 5,
+        "order": 4,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 15,
+    "fields": {
+        "page": 2,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 16,
+    "fields": {
+        "page": 2,
+        "order": 1,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 17,
+    "fields": {
+        "page": 2,
+        "order": 2,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 18,
+    "fields": {
+        "page": 7,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 19,
+    "fields": {
+        "page": 7,
+        "order": 1,
+        "title": "donare il 5x1000 \u00e8 facile",
+        "title_it": "donare il 5x1000 \u00e8 facile",
+        "title_en": "donationg your 5x1000 it's easy",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 20,
+    "fields": {
+        "page": 7,
+        "order": 2,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 21,
+    "fields": {
+        "page": 7,
+        "order": 3,
+        "title": "quanto vale il tuo 5x1000?",
+        "title_it": "quanto vale il tuo 5x1000?",
+        "title_en": "what your 5x100 is worth?",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 22,
+    "fields": {
+        "page": 3,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 23,
+    "fields": {
+        "page": 3,
+        "order": 1,
+        "title": "ecco cosa ci piace fare",
+        "title_it": "ecco cosa ci piace fare",
+        "title_en": "here's what we like to do",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 24,
+    "fields": {
+        "page": 3,
+        "order": 2,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 25,
+    "fields": {
+        "page": 8,
+        "order": 0,
+        "title": "scopri i dettagli ...",
+        "title_it": "scopri i dettagli ...",
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 26,
+    "fields": {
+        "page": 8,
+        "order": 2,
+        "title": "il contesto",
+        "title_it": "il contesto",
+        "title_en": "the context",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 27,
+    "fields": {
+        "page": 8,
+        "order": 3,
+        "title": "stato di fatto",
+        "title_it": "stato di fatto",
+        "title_en": "state of the art",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 28,
+    "fields": {
+        "page": 8,
+        "order": 4,
+        "title": "il progetto",
+        "title_it": "il progetto",
+        "title_en": "the project",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 29,
+    "fields": {
+        "page": 8,
+        "order": 5,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 30,
+    "fields": {
+        "page": 6,
+        "order": 0,
+        "title": "contatti",
+        "title_it": "contatti",
+        "title_en": "contacts",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 31,
+    "fields": {
+        "page": 4,
+        "order": 1,
+        "title": "perch\u00e8?",
+        "title_it": "perch\u00e8?",
+        "title_en": "why?",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 32,
+    "fields": {
+        "page": 5,
+        "order": 3,
+        "title": "donare conviene",
+        "title_it": "donare conviene",
+        "title_en": "donating it's also good for you",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 34,
+    "fields": {
+        "page": 9,
+        "order": 0,
+        "title": "lontani dagli occhi ma non dal<br>CUORE",
+        "title_it": "lontani dagli occhi ma non dal<br>CUORE",
+        "title_en": "lontani dagli occhi ma non dal<br>CUORE",
+        "subtitle": "a <b>Natale</b> scegli un regalo originale ed ecologico per i tuoi cari. <br>Clicca su <b>+</b> per aggiungerlo al carrello, inserisci i dati per la <b>spedizione</b>, effettua la <b>donazione</b> ed il gioco \u00e8 fatto!<br>Per segnalare problemi o per altre richieste scrivi a <br>gianni@help-nonprofit.org",
+        "subtitle_it": "a <b>Natale</b> scegli un regalo originale ed ecologico per i tuoi cari. <br>Clicca su <b>+</b> per aggiungerlo al carrello, inserisci i dati per la <b>spedizione</b>, effettua la <b>donazione</b> ed il gioco \u00e8 fatto!<br>Per segnalare problemi o per altre richieste scrivi a <br>gianni@help-nonprofit.org",
+        "subtitle_en": "Out of sight but not out of warm thoughts. This <b>Christmas</b> choose an original and ecological gift for your loved ones. Click on + to add it to your cart, enter your <b>shipping</b> information, make the <b>donation</b> and you're done! <br>To report problems or for other requests write to <br>gianni@help-nonprofit.org"
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 35,
+    "fields": {
+        "page": 9,
+        "order": 1,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.section",
+    "pk": 36,
+    "fields": {
+        "page": 9,
+        "order": 2,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 1,
+    "fields": {
+        "section": 1,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "7.000.000",
+        "title_it": "7.000.000",
+        "title_en": "7.000.000",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "case vuote",
+        "content_it": "case vuote",
+        "content_en": "the number of empty houses in Italy"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 2,
+    "fields": {
+        "section": 1,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "54.000",
+        "title_it": "54.000",
+        "title_en": "54.000",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "senzatetto",
+        "content_it": "senzatetto",
+        "content_en": "homeless in Italy"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 3,
+    "fields": {
+        "section": 1,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "140.000",
+        "title_it": "140.000",
+        "title_en": "140.000",
+        "subtitle": "m<sup>2</sup>/giorno",
+        "subtitle_it": "m<sup>2</sup>/giorno",
+        "subtitle_en": "m<sup>2</sup>/day",
+        "content": "di suolo cementificato",
+        "content_it": "di suolo cementificato",
+        "content_en": "the amount of soil consumed in Italy"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 4,
+    "fields": {
+        "section": 1,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "title": "\u00e8 tempo di agire",
+        "title_it": "\u00e8 tempo di agire",
+        "title_en": "it's time to take action",
+        "subtitle": "aiutaci a recuperare l'abbandono",
+        "subtitle_it": "aiutaci a recuperare l'abbandono",
+        "subtitle_en": "help us recover the abandonment",
+        "content": "noi abbiamo un'idea, tu la puoi realizzare!",
+        "content_it": "noi abbiamo un'idea, tu la puoi realizzare!",
+        "content_en": "we have an idea, you can make it happen!"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 6,
+    "fields": {
+        "section": 2,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "acquisire",
+        "title_it": "acquisire",
+        "title_en": "acquire",
+        "subtitle": "immobili",
+        "subtitle_it": "immobili",
+        "subtitle_en": "abandoned",
+        "content": "inutilizzati",
+        "content_it": "inutilizzati",
+        "content_en": "real estates"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 7,
+    "fields": {
+        "section": 2,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "rigenerare",
+        "title_it": "rigenerare",
+        "title_en": "reactivate",
+        "subtitle": "in chiave",
+        "subtitle_it": "in chiave",
+        "subtitle_en": "ecologically",
+        "content": "ecologica",
+        "content_it": "ecologica",
+        "content_en": "."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 8,
+    "fields": {
+        "section": 2,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "assegnare",
+        "title_it": "assegnare",
+        "title_en": "assign",
+        "subtitle": "ai pi\u00f9",
+        "subtitle_it": "ai pi\u00f9",
+        "subtitle_en": "to the",
+        "content": "bisognosi",
+        "content_it": "bisognosi",
+        "content_en": "most in need"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 9,
+    "fields": {
+        "section": 4,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Al confine tra Abruzzo e Molise sta nascendo il nostro primo progetto.<br>Stiamo definendo,  insieme a tutti gli stakeholders locali, le ipotesi progettuali per un'antica casa di paese. Le idee finora discusse sono: una piccola <b>sartoria artigianale di recupero</b>, un <b>laboratorio</b> a norma per la trasformazione dei prodotti agricoli e una <b>residenza</b> per un piccolo nucleo familiare.",
+        "content_it": "Al confine tra Abruzzo e Molise sta nascendo il nostro primo progetto.<br>Stiamo definendo,  insieme a tutti gli stakeholders locali, le ipotesi progettuali per un'antica casa di paese. Le idee finora discusse sono: una piccola <b>sartoria artigianale di recupero</b>, un <b>laboratorio</b> a norma per la trasformazione dei prodotti agricoli e una <b>residenza</b> per un piccolo nucleo familiare.",
+        "content_en": "In a tiny little town at the edge of Abruzzo and Molise our first project is coming to life.<br>We are defining the design hypothesis for an old town house. We developed a draft project following the community's needs and the ideas that came up are a small <b>tailor laboratory to use scrap materials</b>, a <b>food laboratory</b> for regulated food processing and a <b>residential unit</b> for a small family. With the executive project we'll define the winning idea."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 10,
+    "fields": {
+        "section": 5,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "\u00abavrai constatato che il mondo, quando non \u00e8 malato, \u00e8 buono, e se non lo \u00e8, essendo soltanto malato, ha bisogno, per guarire, di tutto il nostro intelligente amore\u00bb<br><span class=\"citation-author\">Anna Maria Ortese</span>",
+        "content_it": "\u00abavrai constatato che il mondo, quando non \u00e8 malato, \u00e8 buono, e se non lo \u00e8, essendo soltanto malato, ha bisogno, per guarire, di tutto il nostro intelligente amore\u00bb<br><span class=\"citation-author\">Anna Maria Ortese</span>",
+        "content_en": "\u00abyou must have noticed that the world, if not ill, it is good, and if it is not, being only sick, it needs, to heal, all our intelligent love\u00bb<br><span class=\"citation-author\">Anna Maria Ortese</span>"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 11,
+    "fields": {
+        "section": 6,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "Gualtiero",
+        "title_it": "Gualtiero",
+        "title_en": "Gualtiero",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Senior designer, l'esperienza del team",
+        "content_it": "Senior designer, l'esperienza del team",
+        "content_en": "Senior designer, the experience in the team"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 12,
+    "fields": {
+        "section": 6,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "Anna",
+        "title_it": "Anna",
+        "title_en": "Anna",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Laureata in architettura e capo dei progetti",
+        "content_it": "Laureata in architettura e capo dei progetti",
+        "content_en": "Architectural graduate and head of the projects"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 13,
+    "fields": {
+        "section": 6,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "Chiara",
+        "title_it": "Chiara",
+        "title_en": "Chiara",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Architetta, grafica e fundraiser",
+        "content_it": "Architetta, grafica e fundraiser",
+        "content_en": "Architect, graphic and fundraiser"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 14,
+    "fields": {
+        "section": 6,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "title": "Gianni",
+        "title_it": "Gianni",
+        "title_en": "Gianni",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Laureato in ingegneria civile e sviluppatore",
+        "content_it": "Laureato in ingegneria civile e sviluppatore",
+        "content_en": "Civil engineer and developer"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 15,
+    "fields": {
+        "section": 6,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "title": "Claudia",
+        "title_it": "Claudia",
+        "title_en": "Claudia",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Antropologa, counselor, responsabile relazioni e collaborazioni",
+        "content_it": "Antropologa, counselor, responsabile relazioni e collaborazioni",
+        "content_en": "Anthropologist, counselor and public relations manager"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 16,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "Attori locali",
+        "title_it": "Attori locali",
+        "title_en": "identify",
+        "subtitle": "identificazione",
+        "subtitle_it": "identificazione",
+        "subtitle_en": "local actors",
+        "content": "La nascita di un progetto parte con l'identificazione degli <b>attori locali</b> con cui co-progettare gli interventi da realizzare. A loro sar\u00e0 affidata la gestione finale. La reciproca conoscenza \u00e8 il primo indispensabile mattone per la costruzione di una proficua collaborazione.",
+        "content_it": "La nascita di un progetto parte con l'identificazione degli <b>attori locali</b> con cui co-progettare gli interventi da realizzare. A loro sar\u00e0 affidata la gestione finale. La reciproca conoscenza \u00e8 il primo indispensabile mattone per la costruzione di una proficua collaborazione.",
+        "content_en": "The birth of a project starts with identifying <b> local actors </b> with whom we co-plan the interventions to be carried out. They will be entrusted with the final management of the project. Mutual knowledge is the first indispensable building block of a fruitful collaboration."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 17,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "progetto preliminare",
+        "title_it": "progetto preliminare",
+        "title_en": "master plan",
+        "subtitle": "co-progettazione",
+        "subtitle_it": "co-progettazione",
+        "subtitle_en": "participatory planning",
+        "content": "Individuati gli stakeholders interessati si procede con la stesura di un progetto preliminare. In questa fase verranno definiti i macro-obiettivi dell'intervento, i beneficiari e si far\u00e0 una stima di massima del budget da realizzare.",
+        "content_it": "Individuati gli stakeholders interessati si procede con la stesura di un progetto preliminare. In questa fase verranno definiti i macro-obiettivi dell'intervento, i beneficiari e si far\u00e0 una stima di massima del budget da realizzare.",
+        "content_en": "Once the interested stakeholders have been identified, we develop a preliminary draft. In this phase we will define the macro-objectives of the intervention, the beneficiaries and a rough estimate of the budget to be raised."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 18,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "fondi",
+        "title_it": "fondi",
+        "title_en": "raise",
+        "subtitle": "raccolta",
+        "subtitle_it": "raccolta",
+        "subtitle_en": "funds",
+        "content": "Definito il progetto e il relativo budget siamo in grado di attivare le nostre campagne di raccolta fondi nonch\u00e8 di partecipare a bandi e concorsi.",
+        "content_it": "Definito il progetto e il relativo budget siamo in grado di attivare le nostre campagne di raccolta fondi nonch\u00e8 di partecipare a bandi e concorsi.",
+        "content_en": "Once the project and the related budget have been defined, we are able to activate our fundraising campaigns as well as participate in contests and competitions."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 19,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "title": "progetto esecutivo",
+        "title_it": "progetto esecutivo",
+        "title_en": "implement",
+        "subtitle": "progettazione",
+        "subtitle_it": "progettazione",
+        "subtitle_en": "executive project",
+        "content": "Raggiunto il budget si inizia la progettazione esecutiva. In questa fase si definiranno i dettagli di ogni aspetto progettuale, si assumeranno le professionalit\u00e0 necessarie e si attiveranno tutte le collaborazioni definite in fase di progettazione preliminare.",
+        "content_it": "Raggiunto il budget si inizia la progettazione esecutiva. In questa fase si definiranno i dettagli di ogni aspetto progettuale, si assumeranno le professionalit\u00e0 necessarie e si attiveranno tutte le collaborazioni definite in fase di progettazione preliminare.",
+        "content_en": "Once the budget is reached, the executive planning begins. In this phase, the details of each design aspect will be defined, the necessary professional skills will be employed and all the collaborations defined in the preliminary design phase will be activated."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 20,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "title": "beni rigenerati",
+        "title_it": "beni rigenerati",
+        "title_en": "recovered goods",
+        "subtitle": "realizzazione recupero",
+        "subtitle_it": "realizzazione recupero",
+        "subtitle_en": "renovation",
+        "content": "La vera e propria fase di cantiere porter\u00e0 alla realizzazione concreta dell'intervento di recupero e rigenerazione dei beni abbandonati. Tutto verr\u00e0 eseguito cercando di massimizzare il riciclo e il riuso di materiali e nell'ottica di minimizzare l'impatto ambientale di ogni aspetto esecutivo.",
+        "content_it": "La vera e propria fase di cantiere porter\u00e0 alla realizzazione concreta dell'intervento di recupero e rigenerazione dei beni abbandonati. Tutto verr\u00e0 eseguito cercando di massimizzare il riciclo e il riuso di materiali e nell'ottica di minimizzare l'impatto ambientale di ogni aspetto esecutivo.",
+        "content_en": "Everything will be done maximizing the recycle and reuse of materials and to minimize the environmental impacts of each executive aspect, both during the work site and the life of the buidilng once reactivated."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 21,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 5,
+        "title": "beneficiari",
+        "title_it": "beneficiari",
+        "title_en": "beneficiaries",
+        "subtitle": "assegnazione beni recuperati",
+        "subtitle_it": "assegnazione beni recuperati",
+        "subtitle_en": "assignment of renovated good",
+        "content": "I beni rigenerati verranno assegnati ai beneficiari individuati in fase di co-progettazione preliminare. Siamo un ente di beneficenza, i primi a beneficiare delle nostre azioni saranno i pi\u00f9 bisognosi.",
+        "content_it": "I beni rigenerati verranno assegnati ai beneficiari individuati in fase di co-progettazione preliminare. Siamo un ente di beneficenza, i primi a beneficiare delle nostre azioni saranno i pi\u00f9 bisognosi.",
+        "content_en": "The renovated goods will be assigned to the beneficiaries identified in the preliminary phase (#1). The first to benefit from our actions will be the most in need."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 22,
+    "fields": {
+        "section": 8,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "sede legale",
+        "title_it": "sede legale",
+        "title_en": "registered office",
+        "subtitle": "via roma 46 Chiusa di San Michele (TO)",
+        "subtitle_it": "via roma 46 Chiusa di San Michele (TO)",
+        "subtitle_en": "via roma 46 Chiusa di San Michele (TO)",
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 23,
+    "fields": {
+        "section": 8,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "sede operativa",
+        "title_it": "sede operativa",
+        "title_en": "operational headquarters",
+        "subtitle": "via San Vito 5 Tufillo (CH)",
+        "subtitle_it": "via San Vito 5 Tufillo (CH)",
+        "subtitle_en": null,
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 24,
+    "fields": {
+        "section": 9,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "comunicazione e fundraising",
+        "title_it": "comunicazione e fundraising",
+        "title_en": "communication and fundraising",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Parte dei fondi sono destinati alle attivit\u00e0 di fundraising e comunicazione in modo da consentire continuit\u00e0 e respiro ai progetti.",
+        "content_it": "Parte dei fondi sono destinati alle attivit\u00e0 di fundraising e comunicazione in modo da consentire continuit\u00e0 e respiro ai progetti.",
+        "content_en": "Part of the raised funds will be reinvested in fundraising activities. This is fundamental for a non-profit organization in order to continue its growth and to sustain its activities. To succeed we also need to invest in communication."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 25,
+    "fields": {
+        "section": 9,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "stipendi e costi di struttura",
+        "title_it": "stipendi e costi di struttura",
+        "title_en": "salaries and structural costs",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Per riuscire a perseguire le nostre finalit\u00e0 abbiamo bisogno di un team motivato, intraprendente e, cosa non secondaria, in grado di poter investire il 100% delle proprie energie in questo progetto. Ogni lavoratore deve essere equamente retribuito ma considera che i ricavi degli enti non-profit non possono essere ridistribuiti tra i soci!",
+        "content_it": "Per riuscire a perseguire le nostre finalit\u00e0 abbiamo bisogno di un team motivato, intraprendente e, cosa non secondaria, in grado di poter investire il 100% delle proprie energie in questo progetto. Ogni lavoratore deve essere equamente retribuito ma considera che i ricavi degli enti non-profit non possono essere ridistribuiti tra i soci!",
+        "content_en": "Being a non-profit organization does not mean working for free, it means that workers' wages are fixed and all management surpluses will be reinvested in other activities and not redistributed among the members. <br> Therefore to be able to pursue our goals and give our contribution we need to be able to have a team that is motivated, enterprising and able to invest 100% of its energy in this project. In other words, we need to be able to pay them."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 26,
+    "fields": {
+        "section": 9,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "realizzazione interventi",
+        "title_it": "realizzazione interventi",
+        "title_en": "core activities",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "La maggior parte dei fondi raccolti andr\u00e0 a coprire i costi delle attivit\u00e0 primarie quali le ristrutturazioni, le riforestazioni e tutti gli interventi relativi al rafforzamento delle comunit\u00e0 e dei territori. Investire cos\u00ec tanto nei progetti ci aiuta ad essere veloci ed efficaci, il mondo non ha pi\u00f9 molto tempo per invertire la rotta, dobbiamo concentrare tutti gli sforzi nella realizzazione concreta degli interventi.",
+        "content_it": "La maggior parte dei fondi raccolti andr\u00e0 a coprire i costi delle attivit\u00e0 primarie quali le ristrutturazioni, le riforestazioni e tutti gli interventi relativi al rafforzamento delle comunit\u00e0 e dei territori. Investire cos\u00ec tanto nei progetti ci aiuta ad essere veloci ed efficaci, il mondo non ha pi\u00f9 molto tempo per invertire la rotta, dobbiamo concentrare tutti gli sforzi nella realizzazione concreta degli interventi.",
+        "content_en": "The big majority of the funds will cover the costs of our primary activities such as renovations, reforestations and all the interventions related to the reactivation of communities. Investing so much in projects will help us to be fast and effective. The world does is out of time, we must concentrate all efforts on the concrete implementation of our interventions."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 27,
+    "fields": {
+        "section": 11,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "La tua donazione sar\u00e0 la rinascita di",
+        "title_it": "La tua donazione sar\u00e0 la rinascita di",
+        "title_en": "Your donation will be the rebirth of",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "comunit\u00e0,territori,economie,foreste,borghi,parchi,giardini,ruderi,orti",
+        "content_it": "comunit\u00e0,territori,economie,foreste,borghi,parchi,giardini,ruderi,orti",
+        "content_en": "communities,territories,economies,forests,hamlets,parks,gardens,houses,farms"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 28,
+    "fields": {
+        "section": 12,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "20\u20ac",
+        "title_it": "20\u20ac",
+        "title_en": "20\u20ac",
+        "subtitle": "con",
+        "subtitle_it": "con",
+        "subtitle_en": "with",
+        "content": "acquisti attrezzi per i lavoratori",
+        "content_it": "acquisti attrezzi per i lavoratori",
+        "content_en": "you're purchasing tools for the construction site"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 29,
+    "fields": {
+        "section": 12,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "50\u20ac",
+        "title_it": "50\u20ac",
+        "title_en": "50\u20ac",
+        "subtitle": "con",
+        "subtitle_it": "con",
+        "subtitle_en": "with",
+        "content": "stai dando il bianco in una stanza",
+        "content_it": "stai dando il bianco in una stanza",
+        "content_en": "you're painting a room"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 30,
+    "fields": {
+        "section": 12,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "150\u20ac",
+        "title_it": "150\u20ac",
+        "title_en": "150\u20ac",
+        "subtitle": "con",
+        "subtitle_it": "con",
+        "subtitle_en": "with",
+        "content": "stai installando una nuova finestra",
+        "content_it": "stai installando una nuova finestra",
+        "content_en": "you're installing a new window"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 31,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "carta di credito o PayPal",
+        "title_it": "carta di credito o PayPal",
+        "title_en": "credit card or PayPal",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "<span style=\"font-family: 'Crossten Bold';\">clicca</span> qui sotto e verrai portato sulla pagina di PayPal.<br>Ricorda che non \u00e8 necessario avere un account PayPal, basta anche una semplice carta di credito o carta prepagata.",
+        "content_it": "<span style=\"font-family: 'Crossten Bold';\">clicca</span> qui sotto e verrai portato sulla pagina di PayPal.<br>Ricorda che non \u00e8 necessario avere un account PayPal, basta anche una semplice carta di credito o carta prepagata.",
+        "content_en": "<span style=\"font-family: 'Crossten Bold';\">click</span> on the button here and you will be redirected on the PayPal page.<br>Be aware you do not need to have a PayPal account, you can also use your credit and debit card."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 32,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "bonifico",
+        "title_it": "bonifico",
+        "title_en": "transfer",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "<div style=\"display: flex;align-items: start !important;\">\r\n  <div class=\"iban-first-col\">\r\n    usa queste credenziali per un bonifico tramite la tua banca, online e offline\r\n  </div>\r\n  <div class=\"iban-second-col\">\r\n    Intestazione: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">HELP ONLUS</span>\r\n    Causale: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">Donazione</span>\r\n    SWIFT/BIC: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">283423098</span>\r\n  </div>\r\n</div>\r\n<div class=\"iban-container\">\r\n  <div class=\"iban-label\"><span>IBAN:</span></div>\r\n  <div><span style=\"font-family: 'Crossten Bold';\">IT43I0521630532000000099215</span></div>\r\n</div>",
+        "content_it": "<div style=\"display: flex;align-items: start !important;\">\r\n  <div class=\"iban-first-col\">\r\n    usa queste credenziali per un bonifico tramite la tua banca, online e offline\r\n  </div>\r\n  <div class=\"iban-second-col\">\r\n    Intestazione: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">HELP ONLUS</span>\r\n    Causale: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">Donazione</span>\r\n    SWIFT/BIC: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">283423098</span>\r\n  </div>\r\n</div>\r\n<div class=\"iban-container\">\r\n  <div class=\"iban-label\"><span>IBAN:</span></div>\r\n  <div><span style=\"font-family: 'Crossten Bold';\">IT43I0521630532000000099215</span></div>\r\n</div>",
+        "content_en": "<div style=\"display: flex;align-items: start !important;\">\r\n  <div class=\"iban-first-col\">\r\n    use these credentials to make a bank transfer, online and offline\r\n  </div>\r\n  <div class=\"iban-second-col\">\r\n    Header: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">HELP ONLUS</span>\r\n    Causal: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">Free Donation</span>\r\n    SWIFT/BIC: \r\n    <span class=\"d-block pb-2\" style=\"font-family: 'Crossten Bold';\">283423098</span>\r\n  </div>\r\n</div>\r\n<div class=\"iban-container\">\r\n  <div class=\"iban-label\"><span>IBAN:</span></div>\r\n  <div><span style=\"font-family: 'Crossten Bold';\">IT43I0521630532000000099215</span></div>\r\n</div>"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 33,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "facebook",
+        "title_it": "facebook",
+        "title_en": "facebook",
+        "subtitle": "clicca sul bottone qui sotto, verrai portato sulla nostra pagina Facebook, da l\u00ec clicca su DONA",
+        "subtitle_it": "clicca sul bottone qui sotto, verrai portato sulla nostra pagina Facebook, da l\u00ec clicca su DONA",
+        "subtitle_en": "click on the button here and you will be redirect to the facebook page. There you can click on the DONATE button at the top right corner.",
+        "content": "Con Facebook non ci saranno commissioni, il 100% di quello che doni si trasformer\u00e0 in aiuto concreto!",
+        "content_it": "Con Facebook non ci saranno commissioni, il 100% di quello che doni si trasformer\u00e0 in aiuto concreto!",
+        "content_en": "If you donate through Facebook there will be no commissions, 100% of what you give will get to us!"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 34,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "title": "Satispay",
+        "title_it": "Satispay",
+        "title_en": "Satispay",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Clicca sul bottone qui sotto e dona attraverso il tuo account Satispay.",
+        "content_it": "Clicca sul bottone qui sotto e dona attraverso il tuo account Satispay.",
+        "content_en": "Click on the button below to donate through your Satispay account."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 35,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "title": "x1000",
+        "title_it": "x1000",
+        "title_en": "x1000",
+        "subtitle": "La tua firma rappresenta la speranza per qualcuno di ricevere una casa.",
+        "subtitle_it": "La tua firma rappresenta la speranza per qualcuno di ricevere una casa.",
+        "subtitle_en": "Your signature represents hope for someone to receive a house",
+        "content": "Usa questo codice fiscale nella dichiarazione dei redditi:\r\n<span class=\"iban-container\" style=\"font-family:'Crossten Bold';margin-top: 2vh;display: block;\">95637410010</span>",
+        "content_it": "Usa questo codice fiscale nella dichiarazione dei redditi:\r\n<span class=\"iban-container\" style=\"font-family:'Crossten Bold';margin-top: 2vh;display: block;\">95637410010</span>",
+        "content_en": "Use this fiscal code in your tax return:\r\n<span class=\"iban-container\" style=\"font-family:'Crossten Bold';display: block;margin-top: 2vh;\">95637410010</span>"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 36,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 5,
+        "title": "partnership",
+        "title_it": "partnership",
+        "title_en": "partnership",
+        "subtitle": "hai un'azienda? Intraprendi un percorso di responsabilizzazione del tuo business e trasmetti il grande valore umano alla base della tua impresa",
+        "subtitle_it": "hai un'azienda? Intraprendi un percorso di responsabilizzazione del tuo business e trasmetti il grande valore umano alla base della tua impresa",
+        "subtitle_en": "do you own a company? partner with us to increase your <b>Corporate Social Responsibility</b>. Show your great human value on which you stand",
+        "content": "Mostra ai tuoi clienti il beneficio delle tue donazioni grazie alla nostra gestione trasparente dei fondi. Verrai sponsorizzato su tutti i nostri canali!",
+        "content_it": "Mostra ai tuoi clienti il beneficio delle tue donazioni grazie alla nostra gestione trasparente dei fondi. Verrai sponsorizzato su tutti i nostri canali!",
+        "content_en": "Show to your clients the beneficial use of your donations thanks to our transparent management of funds and be sponsored on our channels!"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 37,
+    "fields": {
+        "section": 14,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Guarda come il tuo contributo si concretizza seguendo il nascere e l'evolvere dei cantieri. Seguici sui social e iscriviti alla newsletter per rimanere sempre aggiornato!",
+        "content_it": "Guarda come il tuo contributo si concretizza seguendo il nascere e l'evolvere dei cantieri. Seguici sui social e iscriviti alla newsletter per rimanere sempre aggiornato!",
+        "content_en": "See how your contribution is concrete by entering the work sites with us. Follow us on social media and subscribe to the newsletter to see the beginning and the development of the projects!"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 39,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "dona del tempo: diventa volontario",
+        "title_it": "dona del tempo: diventa volontario",
+        "title_en": "donate time: be a volunteer",
+        "subtitle": "Siamo alla ricerca di persone con la nostra stessa visione e passione che abbiano un po\u2019 di tempo da dedicarci",
+        "subtitle_it": "Siamo alla ricerca di persone con la nostra stessa visione e passione che abbiano un po\u2019 di tempo da dedicarci",
+        "subtitle_en": "We are looking for people that share our vision of the world and have some spear time to give",
+        "content": "Contattaci per avere maggiori informazioni, i volontari sono per noi una risorsa preziosa e ci teniamo a valorizzarli al massimo. Grazie in anticipo!",
+        "content_it": "Contattaci per avere maggiori informazioni, i volontari sono per noi una risorsa preziosa e ci teniamo a valorizzarli al massimo. Grazie in anticipo!",
+        "content_en": "Contact us for more information, volunteers are a precious resource for us and we want value them. Thanks in advance!"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 40,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "hai una casa o un terreno inutilizzati?",
+        "title_it": "hai una casa o un terreno inutilizzati?",
+        "title_en": "do you have an underused house or land?",
+        "subtitle": "Case e terreni inutilizzati possono rappresentare una grande risorsa, non sprechiamola!",
+        "subtitle_it": "Case e terreni inutilizzati possono rappresentare una grande risorsa, non sprechiamola!",
+        "subtitle_en": "Abandoned houses and land can be a great resource, let's not waste them it!",
+        "content": "Contattaci per ricevere informazioni su come donare un immobile. Saremo lieti di discutere e analizzare tutti i dettagli. Scopri come il tuo contributo sar\u00e0 la scintilla del cambiamento, insieme potremo realizzare progetti fantastici!",
+        "content_it": "Contattaci per ricevere informazioni su come donare un immobile. Saremo lieti di discutere e analizzare tutti i dettagli. Scopri come il tuo contributo sar\u00e0 la scintilla del cambiamento, insieme potremo realizzare progetti fantastici!",
+        "content_en": "Contact us to receive information on how to donate a property, we will be glad to discuss all the details with you. See how your contribution will be able to sparkle change, together we can do wonderful things!"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 41,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "proponi un progetto",
+        "title_it": "proponi un progetto",
+        "title_en": "suggest a project",
+        "subtitle": "Hai una grande idea ma non sai come realizzarla? partiamo col condividerla",
+        "subtitle_it": "Hai una grande idea ma non sai come realizzarla? partiamo col condividerla",
+        "subtitle_en": "Do you have a great idea but you don't know how to make it happen? let's start by sharing it",
+        "content": "Scrivici tutte le informazioni relative alla tua idea, non importa se \u00e8 ancora un pensiero o se sembra troppo difficile, insieme troveremo il modo di realizzarla",
+        "content_it": "Scrivici tutte le informazioni relative alla tua idea, non importa se \u00e8 ancora un pensiero o se sembra troppo difficile, insieme troveremo il modo di realizzarla",
+        "content_en": "Tell us all the information related to your idea, it doesn't matter if it is still a thought or if it seems too difficult, together we will find a way to make it real"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 42,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "title": "sei un ente non profit?",
+        "title_it": "sei un ente non profit?",
+        "title_en": "are you a non profit organisation?",
+        "subtitle": "Uniamo le forze",
+        "subtitle_it": "Uniamo le forze",
+        "subtitle_en": "Let's join forces",
+        "content": "Siamo sempre in cerca di altre realt\u00e0 del terzo settore con cui collaborare e confrontarci. Se sei interessato ad una collaborazione, scrivici le tue idee e i tuoi valori, ti risponderemo presto. E nel frattempo ti aggiungeremo al nostro network solidale",
+        "content_it": "Siamo sempre in cerca di altre realt\u00e0 del terzo settore con cui collaborare e confrontarci. Se sei interessato ad una collaborazione, scrivici le tue idee e i tuoi valori, ti risponderemo presto. E nel frattempo ti aggiungeremo al nostro network solidale",
+        "content_en": "We are always looking for other NPOs to start new collaborations and to share thoughts and dreams. If you're interested in a partnership write us your ideas and your values, we'll be back to you soon. In the meanwhile we will add you to our solidarity network"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 43,
+    "fields": {
+        "section": 17,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "\u00abIo sono consapevole, del tutto consapevole di far parte del sistema e cerco di cavarne il meglio possibile usando la libert\u00e0 di cui dispongo per dare il mio contributo ad un miglioramento ed avanzamento dell'attuale situazione.\u00bb <br><span style=\"font-family: Crossten Thin Italic;\">Herbert Marcuse</span>",
+        "content_it": "\u00abIo sono consapevole, del tutto consapevole di far parte del sistema e cerco di cavarne il meglio possibile usando la libert\u00e0 di cui dispongo per dare il mio contributo ad un miglioramento ed avanzamento dell'attuale situazione.\u00bb <br><span style=\"font-family: Crossten Thin Italic;\">Herbert Marcuse</span>",
+        "content_en": "\u00abI am aware, completely aware, to be part of the system and I try to take the best of it using the freedom I have in order to give my contribution to better the ongoing situation.\u00bb <br><span style=\"font-family: Crossten Thin Italic;\">Herbert Marcuse</span>"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 44,
+    "fields": {
+        "section": 15,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": "Scopri come possiamo collaborare",
+        "subtitle_it": "Scopri come possiamo collaborare",
+        "subtitle_en": "Find out how we can collaborate",
+        "content": "0-Vorresti impegnarti nel sociale?|1-Hai una vecchia casa inutilizzata?|2-Hai un'azienda?|3-Sei un ente non profit?",
+        "content_it": "0-Vorresti impegnarti nel sociale?|1-Hai una vecchia casa inutilizzata?|2-Hai un'azienda?|3-Sei un ente non profit?",
+        "content_en": "0-Would you like to volunteer?|1-Do you have an old underused house?|2-Own a company?|3-Are you a nonprofit organisation?"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 45,
+    "fields": {
+        "section": 18,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "Codice Fiscale",
+        "title_it": "Codice Fiscale",
+        "title_en": "Fiscal Code",
+        "subtitle": "95637410010",
+        "subtitle_it": "95637410010",
+        "subtitle_en": "95637410010",
+        "content": "Non abbandonare il tuo 5x1000",
+        "content_it": "Non abbandonare il tuo 5x1000",
+        "content_en": "Don't abandoned your 5x1000"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 46,
+    "fields": {
+        "section": 19,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "cerca",
+        "title_it": "cerca",
+        "title_en": "look for",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Nel modello Unico, nel 730, o nel CU, cerca <b>\"Scelta per la destinazione del cinque per mille dell\u2019Irpef\"</b>",
+        "content_it": "Nel modello Unico, nel 730, o nel CU, cerca <b>\"Scelta per la destinazione del cinque per mille dell\u2019Irpef\"</b>",
+        "content_en": "<b>\"Scelta per la destinazione del cinque per mille dell\u2019Irpef\"</b> in the Modello Unico, the 730 or the CU"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 47,
+    "fields": {
+        "section": 19,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "firma",
+        "title_it": "firma",
+        "title_en": "sign",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Metti la tua firma sotto la sezione \"SOSTEGNO DEL VOLONTARIATO E DELLE ALTRE ORGANIZZAZIONI NON LUCRATIVE DI UTILITA\u2019 SOCIALE etc...\"",
+        "content_it": "Metti la tua firma sotto la sezione \"SOSTEGNO DEL VOLONTARIATO E DELLE ALTRE ORGANIZZAZIONI NON LUCRATIVE DI UTILITA\u2019 SOCIALE etc...\"",
+        "content_en": "Sign under the section \"SOSTEGNO DEL VOLONTARIATO E DELLE ALTRE ORGANIZZAZIONI NON LUCRATIVE DI UTILITA\u2019 SOCIALE etc...\""
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 48,
+    "fields": {
+        "section": 19,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "codice fiscale",
+        "title_it": "codice fiscale",
+        "title_en": "fiscal code",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Inserisci questo codice fiscale nei riquadri sottostanti in cui si dice \u201cCodice Fiscale Beneficiario\u201d:<br><b>95637410010</b>",
+        "content_it": "Inserisci questo codice fiscale nei riquadri sottostanti in cui si dice \u201cCodice Fiscale Beneficiario\u201d:<br><b>95637410010</b>",
+        "content_en": "Put this fiscal code into the predefined boxes, where you find \u201cCodice Fiscale Beneficiario\u201d:<br><b>95637410010</b>"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 49,
+    "fields": {
+        "section": 20,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "cos'\u00e8 il 5x1000?",
+        "title_it": "cos'\u00e8 il 5x1000?",
+        "title_en": "what is 5x1000?",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "\u00c9 la quota del 5 per mille della imposta sul reddito delle persone fisiche (Irpef), che pu\u00f2 essere destinata compilando l\u2019apposita sezione del modello Redditi Persone fisiche o modello 730 o scheda allegata alla Certificazione unica.",
+        "content_it": "\u00c9 la quota del 5 per mille della imposta sul reddito delle persone fisiche (Irpef), che pu\u00f2 essere destinata compilando l\u2019apposita sezione del modello Redditi Persone fisiche o modello 730 o scheda allegata alla Certificazione unica.",
+        "content_en": "It's the 5 per thousand part of the income tax of individuals (Irpef). It can be dedicated to NPOs through the Modello Redditi Persone Fisiche, the 730 model or the Certificazione Unica."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 50,
+    "fields": {
+        "section": 20,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "cosa comporta?",
+        "title_it": "cosa comporta?",
+        "title_en": "what does it mean for me?",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Solo una scelta.<br>\r\nA differenza delle donazioni in denaro destinare il 5x1000 non comporta nessuna spesa aggiuntiva. Scegliere a chi destinarlo \u00e8 una forma di sostegno alle tue organizzazioni preferite in modo semplice e non oneroso.",
+        "content_it": "Solo una scelta.<br>\r\nA differenza delle donazioni in denaro destinare il 5x1000 non comporta nessuna spesa aggiuntiva. Scegliere a chi destinarlo \u00e8 una forma di sostegno alle tue organizzazioni preferite in modo semplice e non oneroso.",
+        "content_en": "Just a choice.<br>\r\nDifferently from the other kinds of donations this one does not entail more money. Deciding to whom your 5x1000 will go it's a \"free\" way to support your favorite non-profit."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 51,
+    "fields": {
+        "section": 20,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "sai che puoi destinare il 5x1000 anche senza fare la dichiarazione dei redditi?",
+        "title_it": "sai che puoi destinare il 5x1000 anche senza fare la dichiarazione dei redditi?",
+        "title_en": "you know you can define your 5x1000 even without the dichiarazione dei redditi?",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Basta compilare una dichiarazione sostituiva e inviarla all\u2019Agenzia delle Entrate con le preferenze per il 2, 5 e 8x1000. Scarica il modello cliccando <a target=\"_blank\" href=\"https://www.agenziaentrate.gov.it/portale/web/guest/scelte-dell-8-5-e-2-per-mille-dell-irpef-2020/modelli-e-istruzioni\">qui</a>",
+        "content_it": "Basta compilare una dichiarazione sostituiva e inviarla all\u2019Agenzia delle Entrate con le preferenze per il 2, 5 e 8x1000. Scarica il modello cliccando <a target=\"_blank\" href=\"https://www.agenziaentrate.gov.it/portale/web/guest/scelte-dell-8-5-e-2-per-mille-dell-irpef-2020/modelli-e-istruzioni\">qui</a>",
+        "content_en": "Just fill out the forms and send them to the Agenzia delle Entrate with your preferences for the 2,5 and 8x1000. Find out more and download the form at this link<a target=\"_blank\" href=\"https://www.agenziaentrate.gov.it/portale/web/guest/scelte-dell-8-5-e-2-per-mille-dell-irpef-2020/modelli-e-istruzioni\">qui</a>"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 52,
+    "fields": {
+        "section": 21,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "Inserisci il tuo<br><b>Reddito Annuo Lordo</b>",
+        "title_it": "Inserisci il tuo<br><b>Reddito Annuo Lordo</b>",
+        "title_en": "Insert your<br><b>Annual Gross Income</b>",
+        "subtitle": "Il tuo 5x1000 vale",
+        "subtitle_it": "Il tuo 5x1000 vale",
+        "subtitle_en": "Your 5x1000 is worth",
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 53,
+    "fields": {
+        "section": 24,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "\u00abL'uomo \u00e8 il ministro della Natura, non possiamo comandare la Natura se non obbedendo ad essa\u00bb <br><span class=\"citation-author\">Francesco Bacone</span>",
+        "content_it": "\u00abL'uomo \u00e8 il ministro della Natura, non possiamo comandare la Natura se non obbedendo ad essa\u00bb <br><span class=\"citation-author\">Francesco Bacone</span>",
+        "content_en": "\u00abHumans are the ministers of Nature, we cannot command Nature without obeying to it\u00bb <br><span class=\"citation-author\">Francesco Bacone</span>"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 54,
+    "fields": {
+        "section": 29,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 55,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "La struttura su cui andremo ad intervenire presenta una <span style=\"font-family: 'Crossten Bold';\">buona condizione generale</span> e una volumetria sufficiente per poter ipotizzare una sua trasformazione. Interamente in pietra e legno, \u00e8 stata realizzata con tecniche costruttive tradizionali, le mura perimetrali sono solide e senza lesioni, le aperture sono molto ridotte quindi la luce penetra a fatica in alcuni ambienti. Le altezze dei solai sono variabili e le porte d\u2019ingresso molto basse per gli standard moderni.<br> \r\nAlcuni architravi in legno sono deteriorati, gli impianti totalmente assenti cos\u00ec come gli allacci alla rete elettrica, all\u2019acquedotto e al sistema fognario. Negli anni il tetto ha subito lesioni e un cedimento locale ha causato la rottura di parte del controsoffitto in canne e calce del primo piano.",
+        "content_it": "La struttura su cui andremo ad intervenire presenta una <span style=\"font-family: 'Crossten Bold';\">buona condizione generale</span> e una volumetria sufficiente per poter ipotizzare una sua trasformazione. Interamente in pietra e legno, \u00e8 stata realizzata con tecniche costruttive tradizionali, le mura perimetrali sono solide e senza lesioni, le aperture sono molto ridotte quindi la luce penetra a fatica in alcuni ambienti. Le altezze dei solai sono variabili e le porte d\u2019ingresso molto basse per gli standard moderni.<br> \r\nAlcuni architravi in legno sono deteriorati, gli impianti totalmente assenti cos\u00ec come gli allacci alla rete elettrica, all\u2019acquedotto e al sistema fognario. Negli anni il tetto ha subito lesioni e un cedimento locale ha causato la rottura di parte del controsoffitto in canne e calce del primo piano.",
+        "content_en": "The structure has a <span style=\"font-family: 'Crossten Bold';\">good general condition</span> and sufficient volume to hypothesize its transformation. It was entirely built in stone and wood with traditional construction techniques, the perimeter walls are solid and without injuries, the openings are very small and the light penetrates with difficulty in some parts of the volume. The heights of the floors are variable and the entrance doors are also very low so that they do not fit modern standards.<br>\r\nThe wooden lintels are deteriorate, the hydraulic and electrical systems are totally absent and the connections to the electricity network, the aqueduct and the sewage system are to be done. Over the years the roof has suffered injuries and a local subsidence has caused the breakdown of part of the false ceiling in reeds and lime on the first floor."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 56,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Risalendo dal mare Adriatico il corso del fiume Trigno, spunta lateralmente una costellazione di piccoli paesini posizionati sulle cime di irti pendii. La frenesia, il rumore e l'arido cemento della zona costiera lasciano gradatamente il posto a campi coltivati su dolci colline ornate di ginestre, poi a boscaglia poi ad una fitta vegetazione di salici, lecci e pioppi. Ad animare il contesto una grande variet\u00e0 di fauna selvatica e i sorrisi degli abitanti di queste comunit\u00e0 che, attaccati alla loro terra, hanno preferito restare e conservare quel <span style=\"font-family: 'Crossten Bold';\">patrimonio culturale</span> che fa di ogni paesino un unicum straordinario.\r\n<br>Posizionato su un colle a circa 550 metri di altitudine, Tufillo ha cercato di mantenersi vivo e di non arrendersi allo spopolamento promuovendo iniziative virtuose, cercando di valorizzare il patrimonio culturale locale e aprendosi all\u2019ingresso di nuovi abitanti.",
+        "content_it": "Risalendo dal mare Adriatico il corso del fiume Trigno, spunta lateralmente una costellazione di piccoli paesini posizionati sulle cime di irti pendii. La frenesia, il rumore e l'arido cemento della zona costiera lasciano gradatamente il posto a campi coltivati su dolci colline ornate di ginestre, poi a boscaglia poi ad una fitta vegetazione di salici, lecci e pioppi. Ad animare il contesto una grande variet\u00e0 di fauna selvatica e i sorrisi degli abitanti di queste comunit\u00e0 che, attaccati alla loro terra, hanno preferito restare e conservare quel <span style=\"font-family: 'Crossten Bold';\">patrimonio culturale</span> che fa di ogni paesino un unicum straordinario.\r\n<br>Posizionato su un colle a circa 550 metri di altitudine, Tufillo ha cercato di mantenersi vivo e di non arrendersi allo spopolamento promuovendo iniziative virtuose, cercando di valorizzare il patrimonio culturale locale e aprendosi all\u2019ingresso di nuovi abitanti.",
+        "content_en": "Coming from the Adriatic Sea, following the river Trigno, we will find a constellation of small hamlets nested a the top of steep slopes. The frenzy, the noise and the arid concrete of the cost are gradually replaced with cultivated lands on rolling hills decorated with gorse. Later substitute by bushes and then a dense forest of willow trees, holm oak and poplar trees. To animate this natural frame a vast variety of wild life and the smiles of the inhabitants of these communities. These people, being very fond of their land, did not emigrate and decided to safeguard their <span style=\"font-family: 'Crossten Bold';\">cultural heritage</span>. An heritage so diverse that each village has its own uniqueness.  \r\n<br>Tufillo can be found on a hill of about 550m oh height. Struggling to stay alive against a gradual depopulation, Tufillo is now scene of experiments of alternative life styles and integration between old and new citizens. A theatre where innovation and traditions combine."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 57,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "design",
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "L\u2019obiettivo dell\u2019intervento \u00e8 quello di trasformare l\u2019attuale struttura in un\u2019<span style=\"font-family: 'Crossten Bold';\">abitazione confortevole ed ecologica</span>. Gli spazi sono ridotti quindi si dovr\u00e0 sfruttare al massimo ogni cm disponibile. In quest'ottica verr\u00e0 realizzata un scala interna di collegamento tra piano terra e piano primo che riduca al massimo l'impronta a terra e che permetta di alloggiare, nel volume sottostante, alcuni servizi.\r\nAltri interventi saranno volti a <span style=\"font-family: 'Crossten Bold';\">migliorare le prestazioni illuminotecniche ed energetiche</span> dell'edificio al fine di rendere gli ambienti vivibili e migliorare l'efficienza della struttura. Il tetto, danneggiato, verr\u00e0 interamente sostituito con una struttura leggera non spingente che limiti il trasferimento di sollecitazioni sui muri perimetrali. I materiali verranno riutilizzati per quanto possibile nel rispetto delle normative esistenti.",
+        "content_it": "L\u2019obiettivo dell\u2019intervento \u00e8 quello di trasformare l\u2019attuale struttura in un\u2019<span style=\"font-family: 'Crossten Bold';\">abitazione confortevole ed ecologica</span>. Gli spazi sono ridotti quindi si dovr\u00e0 sfruttare al massimo ogni cm disponibile. In quest'ottica verr\u00e0 realizzata un scala interna di collegamento tra piano terra e piano primo che riduca al massimo l'impronta a terra e che permetta di alloggiare, nel volume sottostante, alcuni servizi.\r\nAltri interventi saranno volti a <span style=\"font-family: 'Crossten Bold';\">migliorare le prestazioni illuminotecniche ed energetiche</span> dell'edificio al fine di rendere gli ambienti vivibili e migliorare l'efficienza della struttura. Il tetto, danneggiato, verr\u00e0 interamente sostituito con una struttura leggera non spingente che limiti il trasferimento di sollecitazioni sui muri perimetrali. I materiali verranno riutilizzati per quanto possibile nel rispetto delle normative esistenti.",
+        "content_en": "L\u2019obiettivo dell\u2019intervento \u00e8 quello di trasformare l\u2019attuale struttura in un\u2019<span style=\"font-family: 'Crossten Bold';\">abitazione confortevole ed ecologica</span>. Gli spazi sono ridotti quindi si dovr\u00e0 sfruttare al massimo ogni cm disponibile. In quest'ottica verr\u00e0 realizzata un scala interna di collegamento tra piano terra e piano primo che riduca al massimo l'impronta a terra e che permetta di alloggiare, nel volume sottostante, alcuni servizi.\r\nAltri interventi saranno volti a <span style=\"font-family: 'Crossten Bold';\">migliorare le prestazioni illuminotecniche ed energetiche</span> dell'edificio al fine di rendere gli ambienti vivibili e migliorare l'efficienza della struttura. IL tetto, danneggiato, verr\u00e0 interamente sostituito con una struttura leggera non spingente che limiti il trasferimento di sollecitazioni sui muri perimetrali. I materiali verranno riutilizzati per quanto possibile nel rispetto delle normative esistenti."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 58,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "design",
+        "order": 1,
+        "title": "piano 1",
+        "title_it": "piano 1",
+        "title_en": "1st floor",
+        "subtitle": "camera da letto",
+        "subtitle_it": "camera da letto",
+        "subtitle_en": "bedroom",
+        "content": "camera da letto",
+        "content_it": "camera da letto",
+        "content_en": "bedroom"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 59,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "design",
+        "order": 3,
+        "title": "piano 0",
+        "title_it": "piano 0",
+        "title_en": "ground floor",
+        "subtitle": "cucina",
+        "subtitle_it": "cucina",
+        "subtitle_en": "kitchen",
+        "content": "zona living con cucina e bagno",
+        "content_it": "zona living con cucina e bagno",
+        "content_en": "living area with kitchen and bathroom"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 62,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "nome",
+        "title_it": "nome",
+        "title_en": "name",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 63,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "cognome",
+        "title_it": "cognome",
+        "title_en": "last name",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 64,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": "e-mail",
+        "title_it": "e-mail",
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 65,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "title": "oggetto",
+        "title_it": "oggetto",
+        "title_en": "object",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "richiesta informazioni,voglio proporre un progetto,ho un immobile inutilizzato,voglio donare il mio tempo come volontario,altro",
+        "content_it": "richiesta informazioni,voglio proporre un progetto,ho un immobile inutilizzato,voglio donare il mio tempo come volontario,altro",
+        "content_en": "request information,I want to propose a project,I have an unused property,I want to donate my time as a volunteer,other"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 66,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "title": "messaggio",
+        "title_it": "messaggio",
+        "title_en": "message",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 67,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 5,
+        "title": "voglio iscrivermi alla newsletter",
+        "title_it": "voglio iscrivermi alla newsletter",
+        "title_en": "I want to subscribe me to the newsletter",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 68,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 6,
+        "title": "accetto i termini del servizio",
+        "title_it": "accetto i termini del servizio",
+        "title_en": "I agree with the terms of service",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": null,
+        "content_it": null,
+        "content_en": null
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 69,
+    "fields": {
+        "section": 31,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Ogni volta che sentivamo parlare di catastrofe ambientale e di ingiustizie sociali provavamo un profondo senso di impotenza e di rabbia.<br>In questo mondo se non fai parte della soluzione fai parte del problema e bisogna scegliere da che parte stare. Allora ci abbiamo provato, abbiamo cominciato da noi stessi. Abbiamo iniziato a fare la spesa in modo diverso, a diminuire i consumi e gli sprechi, a relazionarci in modo diverso, a non essere indifferenti alla sofferenza degli altri.<br>In questo processo abbiamo constatato quanto sia difficile agire in linea con le proprie idee, soprattutto quando la routine occupa la maggior parte del tempo.<br>Volevamo dedicarci al 100% al miglioramento della condizione umana e non pi\u00f9 relegarla al tempo libero, volevamo farne il nostro lavoro!",
+        "content_it": "Ogni volta che sentivamo parlare di catastrofe ambientale e di ingiustizie sociali provavamo un profondo senso di impotenza e di rabbia.<br>In questo mondo se non fai parte della soluzione fai parte del problema e bisogna scegliere da che parte stare. Allora ci abbiamo provato, abbiamo cominciato da noi stessi. Abbiamo iniziato a fare la spesa in modo diverso, a diminuire i consumi e gli sprechi, a relazionarci in modo diverso, a non essere indifferenti alla sofferenza degli altri.<br>In questo processo abbiamo constatato quanto sia difficile agire in linea con le proprie idee, soprattutto quando la routine occupa la maggior parte del tempo.<br>Volevamo dedicarci al 100% al miglioramento della condizione umana e non pi\u00f9 relegarla al tempo libero, volevamo farne il nostro lavoro!",
+        "content_en": "Every time we heard about a natural catastrophe or of some social injustice we felt powerless and angry. <br>In this world if you're not part of the solution, you are part of the problem and we need to choose on which side we want to be. So we did, we decided to try starting from lives. We started from the way we consumed, without looking the other way and being aware of the suffering of others.<br>And this is when we found out how difficult it is to be coherent with oneself, especially when the everyday routine occupied most of our time.<br>We wanted to dedicate 100% of ourself to the bettering of the human condition. And not just in our spear time, we wanted this to be our job!"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 70,
+    "fields": {
+        "section": 31,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Il <b>20 agosto 2019</b> nasce <b>HELP</b>, acronimo di <b>Human Evolution for Landscape Protection</b>, associazione <b>ONLUS</b> con finalit\u00e0 di protezione ambientale, beneficenza e formazione.<br>HELP sintetizza quella che, secondo noi fondatori, pu\u00f2 essere una formula vincente per affrontare i gravi problemi ambientali e sociali del nostro tempo.<br>L'uomo (Human) pu\u00f2 evolvere (Evolution) in ogni aspetto della vita affinch\u00e8 la sua azione possa rivelarsi protettiva (Protection) nei confronti del paesaggio (Landscape), inteso come ambiente naturale ed architettonico.",
+        "content_it": "Il <b>20 agosto 2019</b> nasce <b>HELP</b>, acronimo di <b>Human Evolution for Landscape Protection</b>, associazione <b>ONLUS</b> con finalit\u00e0 di protezione ambientale, beneficenza e formazione.<br>HELP sintetizza quella che, secondo noi fondatori, pu\u00f2 essere una formula vincente per affrontare i gravi problemi ambientali e sociali del nostro tempo.<br>L'uomo (Human) pu\u00f2 evolvere (Evolution) in ogni aspetto della vita affinch\u00e8 la sua azione possa rivelarsi protettiva (Protection) nei confronti del paesaggio (Landscape), inteso come ambiente naturale ed architettonico.",
+        "content_en": "On <b>August 20th 2019</b> <b>HELP</b> was born. HELP is the acronym of <b>Human Evolution for Landscape Protection</b> and we are a <b>ONLUS</b> that operates for the protection of the environment, charity and education. <br>HELP synthesise what, in our view, can be the winning formula to tackle important environmental and social problems.<br>Humans can Evolve in every aspects of their life so that their actions can be Protective of the Landscape, both natural and architectural."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 71,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 6,
+        "title": "donazione di immobili",
+        "title_it": "donazione di immobili",
+        "title_en": "donation of real estate",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "Una casa o un terreno inutilizzati possono rappresentare una grande opportunit\u00e0 per chi non ha nulla, contattaci e insieme daremo una nuova vita a questi spazi. <br>\r\nChiamaci al<span style=\"display: block;line-height:150%;font-family: 'Crossten Bold';\" class=\"iban-container\">+393493684295</span> e raccontaci cosa ti piacerebbe che diventassero",
+        "content_it": "Una casa o un terreno inutilizzati possono rappresentare una grande opportunit\u00e0 per chi non ha nulla, contattaci e insieme daremo una nuova vita a questi spazi. <br>\r\nChiamaci al<span style=\"display: block;line-height:150%;font-family: 'Crossten Bold';\" class=\"iban-container\">+393493684295</span> e raccontaci cosa ti piacerebbe che diventassero",
+        "content_en": "An abandoned house or an underused land can represent a great opportunity for those who have nothing, contact us, together we can find a new life for these unused goods. \r\n<br>Call us!<span style=\"display: block;line-height:150%;font-family: 'Crossten Bold';\" class=\"iban-container\">+393493684295</span>"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 72,
+    "fields": {
+        "section": 32,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "detrazioni & deduzioni",
+        "title_it": "detrazioni & deduzioni",
+        "title_en": "deductions",
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "<span style=\"font-family: 'Crossten Bold';\">Detrazioni</span><br>\r\nPuoi <b>detrarre</b> un importo pari al <b>30%</b> dell\u2019erogazione, in denaro o in natura, per un importo complessivo non superiore a <b>\u20ac 30.000</b> in ciascun periodo d\u2019imposta. La detrazione \u00e8 consentita, per le erogazioni liberali in denaro, a condizione che il versamento sia eseguito tramite banca o uffici postali ovvero mediante altri sistemi di pagamento tracciabili.<br>\r\n<span style=\"font-family: 'Crossten Bold';\">Deduzioni</span><br>\r\nPuoi <b>dedurre</b> il <b>100%</b> dell'importo erogato nel limite del <b>10%</b> del tuo reddito complessivo dichiarato.<br>\r\n<br> In ogni caso, consulta il tuo commercialista per maggiori informazioni e per individuare la soluzione migliore per il tuo caso.",
+        "content_it": "<span style=\"font-family: 'Crossten Bold';\">Detrazioni</span><br>\r\nPuoi <b>detrarre</b> un importo pari al <b>30%</b> dell\u2019erogazione, in denaro o in natura, per un importo complessivo non superiore a <b>\u20ac 30.000</b> in ciascun periodo d\u2019imposta. La detrazione \u00e8 consentita, per le erogazioni liberali in denaro, a condizione che il versamento sia eseguito tramite banca o uffici postali ovvero mediante altri sistemi di pagamento tracciabili.<br>\r\n<span style=\"font-family: 'Crossten Bold';\">Deduzioni</span><br>\r\nPuoi <b>dedurre</b> il <b>100%</b> dell'importo erogato nel limite del <b>10%</b> del tuo reddito complessivo dichiarato.<br>\r\n<br> In ogni caso, consulta il tuo commercialista per maggiori informazioni e per individuare la soluzione migliore per il tuo caso.",
+        "content_en": "If you work in Italy your can <b>deduct</b> the <b>30%</b> of your donation, both happened in money or nature, for a maximum of <b>\u20ac 30.000</b> for each year.To be able to deduct it you must provide proof, so it has to be done in a traceable way.<br>\r\nOr you can <b>deduct</b> <b>100%</b> of your donation for a maximum of the <b>10%</b> of your gross annual income<br> <br>\r\nAnyway consult your accountant to find the best solution for you!"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 73,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "title": "diventa nostra azienda partner",
+        "title_it": "diventa nostra azienda partner",
+        "title_en": "become our partner",
+        "subtitle": "Essere un'impresa responsabile, attiva nel campo della solidariet\u00e0 e della tutela ambientale far\u00e0 bene anche al tuo business",
+        "subtitle_it": "Essere un'impresa responsabile, attiva nel campo della solidariet\u00e0 e della tutela ambientale far\u00e0 bene anche al tuo business",
+        "subtitle_en": "Being a responsible company, supporting charitable activities and promoting environment protection practices will benefit your business too",
+        "content": "Coinvolgi la tua azienda nella promozione di cause e progetti ad elevato valore sociale, contattaci e troveremo le modalit\u00e0 di partnership pi\u00f9 opportune per migliorare la qualit\u00e0 del tuo business e dare forza alle nostre iniziative.",
+        "content_it": "Coinvolgi la tua azienda nella promozione di cause e progetti ad elevato valore sociale, contattaci e troveremo le modalit\u00e0 di partnership pi\u00f9 opportune per migliorare la qualit\u00e0 del tuo business e dare forza alle nostre iniziative.",
+        "content_en": "Engage your company promoting causes and projects with an high social value. Call us and we will find the best way to partner up; we'll strengthen your business and our initiatives at the same time."
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 75,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "design",
+        "order": 2,
+        "title": "piano 1",
+        "title_it": "piano 1",
+        "title_en": "1st floor",
+        "subtitle": "studio",
+        "subtitle_it": "studio",
+        "subtitle_en": "studio",
+        "content": "piccolo studiolo",
+        "content_it": "piccolo studiolo",
+        "content_en": "small studio"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 76,
+    "fields": {
+        "section": 35,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "donazione minima",
+        "title_it": "donazione minima",
+        "title_en": "minimum donation",
+        "subtitle": "disponibili",
+        "subtitle_it": "disponibili",
+        "subtitle_en": "available",
+        "content": "vai allo store",
+        "content_it": "vai allo store",
+        "content_en": "visit the store"
+    }
+},
+{
+    "model": "pages.text",
+    "pk": 77,
+    "fields": {
+        "section": 36,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "content": "... e buone feste!",
+        "content_it": "... e buone feste!",
+        "content_en": "... and merry christmas!"
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 1,
+    "fields": {
+        "section": null,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "HELP_LOGO_optimized.png",
+        "content_it": "HELP_LOGO_optimized.png",
+        "content_en": "",
+        "alt_content": "HELP_LOGO_WHITE_optimized.png",
+        "alt_content_it": "HELP_LOGO_WHITE_optimized.png",
+        "alt_content_en": "",
+        "alt": "logo",
+        "alt_it": "logo",
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 2,
+    "fields": {
+        "section": 1,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "HOME_1A_FOLD_PRIMA_alzato_optimized_UBy25LN.png",
+        "content_it": "HOME_1A_FOLD_PRIMA_alzato_optimized_UBy25LN.png",
+        "content_en": "",
+        "alt_content": "HOME_1B_FOLD_DOPO_alzato_optimized_rKYCMjc.png",
+        "alt_content_it": "HOME_1B_FOLD_DOPO_alzato_optimized_rKYCMjc.png",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 3,
+    "fields": {
+        "section": 2,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "HOME_2AFUNZIONAMENTO_ACQUISIRE_optimized_rG1gwHk.png",
+        "content_it": "HOME_2AFUNZIONAMENTO_ACQUISIRE_optimized_rG1gwHk.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 4,
+    "fields": {
+        "section": 2,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "content": "HOME_2B_FUNZIONAMENTO_RIGENERARE_optimized_5pVRXXl.png",
+        "content_it": "HOME_2B_FUNZIONAMENTO_RIGENERARE_optimized_5pVRXXl.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 5,
+    "fields": {
+        "section": 2,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "content": "HOME_2C_ASSEGNARE_opt_rJmY2RP.png",
+        "content_it": "HOME_2C_ASSEGNARE_opt_rJmY2RP.png",
+        "content_en": "HOME_2C_ASSEGNARE_opt.png",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 6,
+    "fields": {
+        "section": 3,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "HOME_3_IMPATTI_IT_optimized.png",
+        "content_it": "HOME_3_IMPATTI_IT_optimized.png",
+        "content_en": "HOME_3_IMPATTI_EN_optimized_Bkw1qLP.png",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 7,
+    "fields": {
+        "section": 4,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "casa20mqdef-5_optimized_FTiVRvZ.jpg",
+        "content_it": "casa20mqdef-5_optimized_FTiVRvZ.jpg",
+        "content_en": "casa20mqdef-5_optimized_SCkqDlJ.jpg",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 8,
+    "fields": {
+        "section": 6,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "1_TEAM_optimized.png",
+        "content_it": "1_TEAM_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 9,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "2_Funzionamento_Steps_1_optimized.png",
+        "content_it": "2_Funzionamento_Steps_1_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 10,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "content": "2_Funzionamento_Steps_2_optimized.png",
+        "content_it": "2_Funzionamento_Steps_2_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 11,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "content": "2_Funzionamento_Steps_3_optimized.png",
+        "content_it": "2_Funzionamento_Steps_3_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 12,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "content": "2_Funzionamento_Steps_4_optimized.png",
+        "content_it": "2_Funzionamento_Steps_4_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 13,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "content": "2_Funzionamento_Steps_5_optimized.png",
+        "content_it": "2_Funzionamento_Steps_5_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 14,
+    "fields": {
+        "section": 7,
+        "project": null,
+        "project_section": null,
+        "order": 5,
+        "content": "2_Funzionamento_Steps_6_optimized.png",
+        "content_it": "2_Funzionamento_Steps_6_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 15,
+    "fields": {
+        "section": 8,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "8_TEAM_DOVESIAMO_optimized.png",
+        "content_it": "8_TEAM_DOVESIAMO_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 16,
+    "fields": {
+        "section": 9,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "9_TEAM_USORISORSE_optimized.png",
+        "content_it": "9_TEAM_USORISORSE_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 17,
+    "fields": {
+        "section": 12,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "20_NEW_Lc9U1VI.png",
+        "content_it": "20_NEW_Lc9U1VI.png",
+        "content_en": "20_NEW.png",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 18,
+    "fields": {
+        "section": 12,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "content": "50_NEW_K2q1b06.png",
+        "content_it": "50_NEW_K2q1b06.png",
+        "content_en": "50_NEW.png",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 19,
+    "fields": {
+        "section": 12,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "content": "150_NEW_Z7mrWwl.png",
+        "content_it": "150_NEW_Z7mrWwl.png",
+        "content_en": "150_NEW.png",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 20,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "DONA_RUDERE_LOW_uhyXAst.jpg",
+        "content_it": "DONA_RUDERE_LOW_uhyXAst.jpg",
+        "content_en": "DONA_RUDERE_LOW.jpg",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 21,
+    "fields": {
+        "section": 15,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "1_PARTECIPA_COPERTINA_optimized.png",
+        "content_it": "1_PARTECIPA_COPERTINA_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 22,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "2_PARTECIPA_TEMPO_optimized.png",
+        "content_it": "2_PARTECIPA_TEMPO_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 23,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "content": "3_PARTECIPA_IMMOBILE_optimized.png",
+        "content_it": "3_PARTECIPA_IMMOBILE_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 24,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "content": "4_PARTECIPA_PROPONIPROGETTO_optimized.png",
+        "content_it": "4_PARTECIPA_PROPONIPROGETTO_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 25,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "content": "5_PARTECIPA_NONPROFIT_optimized.png",
+        "content_it": "5_PARTECIPA_NONPROFIT_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 26,
+    "fields": {
+        "section": 18,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "1_5x1000_cover_optimized.png",
+        "content_it": "1_5x1000_cover_optimized.png",
+        "content_en": "",
+        "alt_content": "Mobile_5x10003_optimized.png",
+        "alt_content_it": "Mobile_5x10003_optimized.png",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 27,
+    "fields": {
+        "section": 19,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "5x1000_Section_1_0_optimized.png",
+        "content_it": "5x1000_Section_1_0_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 28,
+    "fields": {
+        "section": 19,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "content": "5x1000_Section_1_1_optimized.png",
+        "content_it": "5x1000_Section_1_1_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 29,
+    "fields": {
+        "section": 19,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "content": "5x1000_Section_1_2_optimized.png",
+        "content_it": "5x1000_Section_1_2_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 30,
+    "fields": {
+        "section": 20,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "5_5x1000_8_optimized.png",
+        "content_it": "5_5x1000_8_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 31,
+    "fields": {
+        "section": 20,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "content": "6_5x1000_9_optimized.png",
+        "content_it": "6_5x1000_9_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 32,
+    "fields": {
+        "section": 20,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "content": "7_5x1000_7_optimized.png",
+        "content_it": "7_5x1000_7_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 33,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "design",
+        "order": 0,
+        "content": "casa20mqdef-5_optimized_SQJgEBL.jpg",
+        "content_it": "casa20mqdef-5_optimized_SQJgEBL.jpg",
+        "content_en": "casa20mqdef-5_optimized.jpg",
+        "alt_content": "mobil_casa20mqdef2_optimized_vroYqAM.jpg",
+        "alt_content_it": "mobil_casa20mqdef2_optimized_vroYqAM.jpg",
+        "alt_content_en": "mobil_casa20mqdef2_optimized.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 34,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 0,
+        "content": "esterni_vicoxxiv_optimized_o6ul6uy.jpg",
+        "content_it": "esterni_vicoxxiv_optimized_o6ul6uy.jpg",
+        "content_en": "esterni_vicoxxiv_optimized_ARnlI3e.jpg",
+        "alt_content": "mini_esterni_vicoxxiv_optimized_aSyLB9p.jpg",
+        "alt_content_it": "mini_esterni_vicoxxiv_optimized_aSyLB9p.jpg",
+        "alt_content_en": "mini_esterni_vicoxxiv_optimized_TYM0h17.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 35,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 1,
+        "content": "opt_caffettiera_vertical_cFD1rQP.jpg",
+        "content_it": "opt_caffettiera_vertical_cFD1rQP.jpg",
+        "content_en": "opt_caffettiera_vertical.jpg",
+        "alt_content": "caffettiera_vertical_optimized_ls6d8OQ.jpg",
+        "alt_content_it": "caffettiera_vertical_optimized_ls6d8OQ.jpg",
+        "alt_content_en": "caffettiera_vertical_optimized.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 36,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 2,
+        "content": "esterni_architrave_vertical_optimized_1_rc0yK73.jpg",
+        "content_it": "esterni_architrave_vertical_optimized_1_rc0yK73.jpg",
+        "content_en": "esterni_architrave_vertical_optimized_1.jpg",
+        "alt_content": "esterni_architrave_vertical_optimized_2Idl3RG.jpg",
+        "alt_content_it": "esterni_architrave_vertical_optimized_2Idl3RG.jpg",
+        "alt_content_en": "esterni_architrave_vertical_optimized.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 37,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "design",
+        "order": 1,
+        "content": "iso_casa_20mq_optimized_P46fCg5.jpg",
+        "content_it": "iso_casa_20mq_optimized_P46fCg5.jpg",
+        "content_en": "iso_casa_20mq_optimized.jpg",
+        "alt_content": "iso_casa_20mq_optimized_2n8L6bB.jpg",
+        "alt_content_it": "iso_casa_20mq_optimized_2n8L6bB.jpg",
+        "alt_content_en": "iso_casa_20mq_optimized_7auDO3P.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 38,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 3,
+        "content": "esterni_tetto_optimized_VwIB8Rr.jpg",
+        "content_it": "esterni_tetto_optimized_VwIB8Rr.jpg",
+        "content_en": "",
+        "alt_content": "mini_esterni_tetto_optimized.jpg",
+        "alt_content_it": "mini_esterni_tetto_optimized.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 39,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 4,
+        "content": "pt_interno_solaio_optimized_qaXuWZH.jpg",
+        "content_it": "pt_interno_solaio_optimized_qaXuWZH.jpg",
+        "content_en": "",
+        "alt_content": "mini_pt_interno_solaio_optimized.jpg",
+        "alt_content_it": "mini_pt_interno_solaio_optimized.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 40,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 0,
+        "content": "CONTESTO_CHIESA_OUTFOCUS_vertical.jpg",
+        "content_it": "CONTESTO_CHIESA_OUTFOCUS_vertical.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_chiesa_outfocus_vertical.jpg",
+        "alt_content_it": "mini_contesto_chiesa_outfocus_vertical.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 41,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 1,
+        "content": "CONTESTO_CUNICOLO_vertical.jpg",
+        "content_it": "CONTESTO_CUNICOLO_vertical.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_cunicolo_vertical.jpg",
+        "alt_content_it": "mini_contesto_cunicolo_vertical.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 42,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 2,
+        "content": "CONTESTO_PAESAGGIO.jpg",
+        "content_it": "CONTESTO_PAESAGGIO.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_paesaggio.jpg",
+        "alt_content_it": "mini_contesto_paesaggio.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 43,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 3,
+        "content": "CONTESTO_VISTA_CHIESA.jpg",
+        "content_it": "CONTESTO_VISTA_CHIESA.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_vista_chiesa.jpg",
+        "alt_content_it": "mini_contesto_vista_chiesa.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 44,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 4,
+        "content": "CONTESTO_STRADA_vertical.jpg",
+        "content_it": "CONTESTO_STRADA_vertical.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_strada_vertical.jpg",
+        "alt_content_it": "mini_contesto_strada_vertical.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 45,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 5,
+        "content": "CONTESTO_PIAZZA_vertical.jpg",
+        "content_it": "CONTESTO_PIAZZA_vertical.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_piazza_vertical.jpg",
+        "alt_content_it": "mini_contesto_piazza_vertical.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 46,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 7,
+        "content": "CONTESTO_PONTE_vertical.jpg",
+        "content_it": "CONTESTO_PONTE_vertical.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_ponte_vertical.jpg",
+        "alt_content_it": "mini_contesto_ponte_vertical.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 47,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 8,
+        "content": "CONTESTO_TETTOCADUTO.jpg",
+        "content_it": "CONTESTO_TETTOCADUTO.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_tettocaduto.jpg",
+        "alt_content_it": "mini_contesto_tettocaduto.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 48,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 9,
+        "content": "CONTESTO_TRAMONTO_vertical.jpg",
+        "content_it": "CONTESTO_TRAMONTO_vertical.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_tramonto_vertical.jpg",
+        "alt_content_it": "mini_contesto_tramonto_vertical.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 49,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 10,
+        "content": "CONTESTO_VENDITA_vertical.jpg",
+        "content_it": "CONTESTO_VENDITA_vertical.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_vendita_vertical.jpg",
+        "alt_content_it": "mini_contesto_vendita_vertical.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 50,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 11,
+        "content": "CONTESTO_PAESAGGIOTUFILLO.jpg",
+        "content_it": "CONTESTO_PAESAGGIOTUFILLO.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_paesaggiotufillo.jpg",
+        "alt_content_it": "mini_contesto_paesaggiotufillo.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 51,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "context",
+        "order": 6,
+        "content": "CONTESTO_FACCIATA_ABBANDONO_vertical.jpg",
+        "content_it": "CONTESTO_FACCIATA_ABBANDONO_vertical.jpg",
+        "content_en": "",
+        "alt_content": "mini_contesto_facciata_abbandono_vertical.jpg",
+        "alt_content_it": "mini_contesto_facciata_abbandono_vertical.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 52,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "CONTATTI_letterina_optimized.gif",
+        "content_it": "CONTATTI_letterina_optimized.gif",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 53,
+    "fields": {
+        "section": 22,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "Progetti_FOLD__tree_new.png",
+        "content_it": "Progetti_FOLD__tree_new.png",
+        "content_en": "",
+        "alt_content": "Progetti_FOLD_new_mobile_optimized.png",
+        "alt_content_it": "Progetti_FOLD_new_mobile_optimized.png",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 55,
+    "fields": {
+        "section": 32,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "Dona_Detrazioni_optimized.png",
+        "content_it": "Dona_Detrazioni_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 56,
+    "fields": {
+        "section": 16,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "content": "Partecipa_Azienda_optimized.png",
+        "content_it": "Partecipa_Azienda_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 57,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 5,
+        "content": "esterni_crepa_vertical_optimized_Zm2j8L9.jpg",
+        "content_it": "esterni_crepa_vertical_optimized_Zm2j8L9.jpg",
+        "content_en": "esterni_crepa_vertical_optimized.jpg",
+        "alt_content": "esterni_crepa_vertical_optimized_EOOzDTL.jpg",
+        "alt_content_it": "esterni_crepa_vertical_optimized_EOOzDTL.jpg",
+        "alt_content_en": "esterni_crepa_vertical_optimized_OwgQflE.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 58,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 6,
+        "content": "esterni_scorcio_vertical_optimized_ZMRKlAh.jpg",
+        "content_it": "esterni_scorcio_vertical_optimized_ZMRKlAh.jpg",
+        "content_en": "esterni_scorcio_vertical_optimized.jpg",
+        "alt_content": "esterni_scorcio_vertical_optimized_BarMNVb.jpg",
+        "alt_content_it": "esterni_scorcio_vertical_optimized_BarMNVb.jpg",
+        "alt_content_en": "esterni_scorcio_vertical_optimized_2I8pK7k.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 59,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 7,
+        "content": "p1_interno_dettaglio_vertical_optimized_Oh7WT7U.jpg",
+        "content_it": "p1_interno_dettaglio_vertical_optimized_Oh7WT7U.jpg",
+        "content_en": "p1_interno_dettaglio_vertical_optimized.jpg",
+        "alt_content": "p1_interno_dettaglio_vertical_optimized_YMpJr3e.jpg",
+        "alt_content_it": "p1_interno_dettaglio_vertical_optimized_YMpJr3e.jpg",
+        "alt_content_en": "p1_interno_dettaglio_vertical_optimized_1spb6X7.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 60,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 8,
+        "content": "p1_interno_camino_vertical_optimized_BlPu5VX.jpg",
+        "content_it": "p1_interno_camino_vertical_optimized_BlPu5VX.jpg",
+        "content_en": "p1_interno_camino_vertical_optimized.jpg",
+        "alt_content": "p1_interno_camino_vertical_optimized_g7wywKF.jpg",
+        "alt_content_it": "p1_interno_camino_vertical_optimized_g7wywKF.jpg",
+        "alt_content_en": "p1_interno_camino_vertical_optimized_lLqYAN6.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 61,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 9,
+        "content": "pt_interno_porta_vertical_optimized_d9WMrQ9.jpg",
+        "content_it": "pt_interno_porta_vertical_optimized_d9WMrQ9.jpg",
+        "content_en": "pt_interno_porta_vertical_optimized.jpg",
+        "alt_content": "pt_interno_porta_vertical_optimized_dXX8P1K.jpg",
+        "alt_content_it": "pt_interno_porta_vertical_optimized_dXX8P1K.jpg",
+        "alt_content_en": "pt_interno_porta_vertical_optimized_BpRMKgG.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 62,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 10,
+        "content": "p1_interno_solaio1_vertical_optimized_NmITopy.jpg",
+        "content_it": "p1_interno_solaio1_vertical_optimized_NmITopy.jpg",
+        "content_en": "p1_interno_solaio1_vertical_optimized.jpg",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "p1_interno_solaio1_vertical_optimized_PU5AsVB.jpg",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 63,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": "state_of_art",
+        "order": 11,
+        "content": "esterni_finestra_optimized_e87NuQR.jpg",
+        "content_it": "esterni_finestra_optimized_e87NuQR.jpg",
+        "content_en": "",
+        "alt_content": "mini_esterni_finestra_optimized.jpg",
+        "alt_content_it": "mini_esterni_finestra_optimized.jpg",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.image",
+    "pk": 64,
+    "fields": {
+        "section": 34,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "content": "natale-cover_optimized.png",
+        "content_it": "natale-cover_optimized.png",
+        "content_en": "",
+        "alt_content": "",
+        "alt_content_it": "",
+        "alt_content_en": "",
+        "alt": null,
+        "alt_it": null,
+        "alt_en": null
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 1,
+    "fields": {
+        "section": null,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "to": "/donations",
+        "href": null,
+        "target": null,
+        "text_0": null,
+        "text_0_it": null,
+        "text_0_en": null,
+        "text_1": "dona",
+        "text_1_it": "dona",
+        "text_1_en": "donate",
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 2,
+    "fields": {
+        "section": null,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "to": "/contacts",
+        "href": null,
+        "target": null,
+        "text_0": null,
+        "text_0_it": null,
+        "text_0_en": null,
+        "text_1": "contattaci",
+        "text_1_it": "contattaci",
+        "text_1_en": "contact us",
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 3,
+    "fields": {
+        "section": 1,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "to": "/donations",
+        "href": null,
+        "target": null,
+        "text_0": "Fai partire il cantiere!",
+        "text_0_it": "Fai partire il cantiere!",
+        "text_0_en": "Let the work begin!",
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 4,
+    "fields": {
+        "section": 4,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "to": "/projects",
+        "href": null,
+        "target": null,
+        "text_0": "scopri di pi\u00f9",
+        "text_0_it": "scopri di pi\u00f9",
+        "text_0_en": "learn more",
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 5,
+    "fields": {
+        "section": 10,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "to": "/",
+        "href": null,
+        "target": "_blank",
+        "text_0": "scarica",
+        "text_0_it": "scarica",
+        "text_0_en": "download",
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 6,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "to": "/donations--5x1000",
+        "href": null,
+        "target": null,
+        "text_0": "SCOPRI COME",
+        "text_0_it": "SCOPRI COME",
+        "text_0_en": "LEARN HOW",
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 8,
+    "fields": {
+        "section": null,
+        "project": 1,
+        "project_section": null,
+        "order": 0,
+        "to": "/contacts",
+        "href": null,
+        "target": null,
+        "text_0": "approfondisci",
+        "text_0_it": "approfondisci",
+        "text_0_en": "learn more",
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 9,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "to": "/",
+        "href": null,
+        "target": null,
+        "text_0": "invia",
+        "text_0_it": "invia",
+        "text_0_en": "send",
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 10,
+    "fields": {
+        "section": 30,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "to": "/",
+        "href": null,
+        "target": null,
+        "text_0": "cancella",
+        "text_0_it": "cancella",
+        "text_0_en": "clear",
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 11,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "to": "/",
+        "href": "GJR2QQWW54Z6G",
+        "target": null,
+        "text_0": "DONA",
+        "text_0_it": "DONA",
+        "text_0_en": null,
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 12,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "to": "/",
+        "href": "https://www.facebook.com/helpnoprofit",
+        "target": "_blank",
+        "text_0": "FACEBOOK",
+        "text_0_it": "FACEBOOK",
+        "text_0_en": null,
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 13,
+    "fields": {
+        "section": 13,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "to": "/",
+        "href": "https://tag.satispay.com/HELPnonprofit",
+        "target": "_blank",
+        "text_0": "SATISPAY",
+        "text_0_it": "SATISPAY",
+        "text_0_en": "SATISPAY",
+        "text_1": null,
+        "text_1_it": null,
+        "text_1_en": null,
+        "icon": null,
+        "active": false
+    }
+},
+{
+    "model": "pages.button",
+    "pk": 14,
+    "fields": {
+        "section": null,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "to": "/donations--christmas-2020",
+        "href": null,
+        "target": null,
+        "text_0": null,
+        "text_0_it": null,
+        "text_0_en": null,
+        "text_1": "natale 2020",
+        "text_1_it": "natale 2020",
+        "text_1_en": "christmas 2020",
+        "icon": null,
+        "active": true
+    }
+},
+{
+    "model": "pages.document",
+    "pk": 1,
+    "fields": {
+        "section": 10,
+        "project": null,
+        "project_section": null,
+        "order": 0,
+        "title": "statuto",
+        "title_it": "statuto",
+        "title_en": "statute",
+        "subtitle": "scarica",
+        "subtitle_it": "scarica",
+        "subtitle_en": "download",
+        "description": "i nostri valori e i nostri principi",
+        "description_it": "i nostri valori e i nostri principi",
+        "description_en": "our values and principles",
+        "file": "STATUTO.pdf",
+        "file_it": "STATUTO.pdf",
+        "file_en": "",
+        "type": null
+    }
+},
+{
+    "model": "pages.document",
+    "pk": 2,
+    "fields": {
+        "section": 10,
+        "project": null,
+        "project_section": null,
+        "order": 1,
+        "title": "bilancio",
+        "title_it": "bilancio",
+        "title_en": "financial balance",
+        "subtitle": "presto disponibile",
+        "subtitle_it": "presto disponibile",
+        "subtitle_en": "available soon",
+        "description": "i nostri numeri",
+        "description_it": "i nostri numeri",
+        "description_en": "our numbers",
+        "file": "",
+        "file_it": "",
+        "file_en": "",
+        "type": null
+    }
+},
+{
+    "model": "pages.document",
+    "pk": 3,
+    "fields": {
+        "section": null,
+        "project": null,
+        "project_section": null,
+        "order": 2,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "description": null,
+        "description_it": null,
+        "description_en": null,
+        "file": "PRIVACY_POLICY.pdf",
+        "file_it": "PRIVACY_POLICY.pdf",
+        "file_en": "",
+        "type": "privacy_policy"
+    }
+},
+{
+    "model": "pages.document",
+    "pk": 4,
+    "fields": {
+        "section": null,
+        "project": null,
+        "project_section": null,
+        "order": 3,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "description": null,
+        "description_it": null,
+        "description_en": null,
+        "file": "TERMS_OF_USE.pdf",
+        "file_it": "TERMS_OF_USE.pdf",
+        "file_en": "",
+        "type": "terms_of_use"
+    }
+},
+{
+    "model": "pages.document",
+    "pk": 5,
+    "fields": {
+        "section": null,
+        "project": null,
+        "project_section": null,
+        "order": 4,
+        "title": null,
+        "title_it": null,
+        "title_en": null,
+        "subtitle": null,
+        "subtitle_it": null,
+        "subtitle_en": null,
+        "description": null,
+        "description_it": null,
+        "description_en": null,
+        "file": "COOKIE_POLICY.pdf",
+        "file_it": "COOKIE_POLICY.pdf",
+        "file_en": "",
+        "type": "cookies_policy"
+    }
+},
+{
+    "model": "pages.footer",
+    "pk": 1,
+    "fields": {
+        "corporate_full_name": "Human Evolution for Landscape Protection",
+        "corporate_short_name": "HELP Onlus",
+        "footer_1_col_title": "contribuisci",
+        "footer_1_col_title_it": "contribuisci",
+        "footer_1_col_title_en": "contribute",
+        "footer_2_col_title": "newsletter",
+        "footer_2_col_title_it": "newsletter",
+        "footer_2_col_title_en": "newsletter",
+        "footer_3_col_title": "seguici",
+        "footer_3_col_title_it": "seguici",
+        "footer_3_col_title_en": "follow us",
+        "donation_title": "sostienici",
+        "donation_title_it": "sostienici",
+        "donation_title_en": "support us",
+        "transparency_title": "trasparenza",
+        "transparency_title_it": "trasparenza",
+        "transparency_title_en": "transparency",
+        "footer_1_col_text": "I nostri progetti sono Open Source, utilizzabili, consultabili e modificabili da tutti gratuitamente.<br><br>Trovi il codice di questo sito su <a style=\"font-family: 'Crossten Bold';\" target=\"_blank\" href=\"https://github.com/adraxyz/help-nonprofit\">GitHub</a>, dai un'occhiata alle nostre issues e aiutaci ad offrire un'esperienza di navigazione sempre migliore!",
+        "footer_1_col_text_it": "I nostri progetti sono Open Source, utilizzabili, consultabili e modificabili da tutti gratuitamente.<br><br>Trovi il codice di questo sito su <a style=\"font-family: 'Crossten Bold';\" target=\"_blank\" href=\"https://github.com/adraxyz/help-nonprofit\">GitHub</a>, dai un'occhiata alle nostre issues e aiutaci ad offrire un'esperienza di navigazione sempre migliore!",
+        "footer_1_col_text_en": "Our projects are Open Source, feel free to use, study and change them. <br> \r\n<br> You can find the source code of this website on <a style=\"font-family: 'Crossten Bold';\" target=\"_blank\" href=\"https://github.com/adraxyz/help-nonprofit\">GitHub</a>, go check our issues and help us to give a better user experience on our site!",
+        "footer_2_col_text": "Resta sempre aggiornato sulle nostre iniziative",
+        "footer_2_col_text_it": "Resta sempre aggiornato sulle nostre iniziative",
+        "footer_2_col_text_en": "Stay tuned with all our initiatives!",
+        "footer_3_col_text": "Non perderti contenuti interessanti, be social ;)",
+        "footer_3_col_text_it": "Non perderti contenuti interessanti, be social ;)",
+        "footer_3_col_text_en": "Don't miss out on the cool stuff, be social ;)",
+        "document_0": 1,
+        "document_1": null,
+        "subscribe_btn_text": "iscriviti",
+        "subscribe_btn_text_it": "iscriviti",
+        "subscribe_btn_text_en": "subscribe",
+        "email": "info@help-nonprofit.org",
+        "fiscal_code": "95637410010",
+        "registered_office": "Via Roma 46, Chiusa di San Michele (TO)",
+        "registered_office_it": "Via Roma 46, Chiusa di San Michele (TO)",
+        "registered_office_en": "Via Roma 46, Chiusa di San Michele (TO)"
+    }
+},
+{
+    "model": "pages.social",
+    "pk": 1,
+    "fields": {
+        "order": 0,
+        "platform": "facebook",
+        "link": "https://www.facebook.com/helpnoprofit"
+    }
+},
+{
+    "model": "pages.social",
+    "pk": 2,
+    "fields": {
+        "order": 1,
+        "platform": "instagram",
+        "link": "https://www.instagram.com/help_noprofit"
+    }
+},
+{
+    "model": "pages.social",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "platform": "linkedin",
+        "link": "https://it.linkedin.com/organization-guest/company/helpnonprofit"
+    }
+},
+{
+    "model": "pages.layout",
+    "pk": 1,
+    "fields": {
+        "name": "default",
+        "logo": 1,
+        "donation_button": 1,
+        "christmas_button": 14,
+        "contact_button": 2,
+        "footer": 1
+    }
+},
+{
+    "model": "pages.metatag",
+    "pk": 1,
+    "fields": {
+        "hid": "description",
+        "name": "description",
+        "content": "HELP - Human Evolution for Landscape Protection - Non-profit charity organization for social and environmental protection",
+        "content_it": "HELP - Human Evolution for Landscape Protection - Non-profit charity organization for social and environmental protection",
+        "content_en": null,
+        "layout": 1,
+        "page": null,
+        "section": null,
+        "text": null,
+        "image": null,
+        "video": null,
+        "document": null
+    }
+},
+{
+    "model": "pages.metatag",
+    "pk": 2,
+    "fields": {
+        "hid": "apple-mobile-web-app-title",
+        "name": "apple-mobile-web-app-title",
+        "content": "HELP - Human Evolution for Landscape Protection - Non profit charity organization for social and environmental protection",
+        "content_it": "HELP - Human Evolution for Landscape Protection - Non profit charity organization for social and environmental protection",
+        "content_en": null,
+        "layout": 1,
+        "page": null,
+        "section": null,
+        "text": null,
+        "image": null,
+        "video": null,
+        "document": null
+    }
+},
+{
+    "model": "pages.metatag",
+    "pk": 3,
+    "fields": {
+        "hid": "og:type",
+        "name": "og:type",
+        "content": "HELP - Human Evolution for Landscape Protection - Website",
+        "content_it": "HELP - Human Evolution for Landscape Protection - Website",
+        "content_en": null,
+        "layout": null,
+        "page": null,
+        "section": null,
+        "text": null,
+        "image": null,
+        "video": null,
+        "document": null
+    }
+},
+{
+    "model": "pages.metatag",
+    "pk": 4,
+    "fields": {
+        "hid": "og:title",
+        "name": "og:title",
+        "content": "HELP - Human Evolution for Landscape Protection",
+        "content_it": "HELP - Human Evolution for Landscape Protection",
+        "content_en": null,
+        "layout": null,
+        "page": null,
+        "section": null,
+        "text": null,
+        "image": null,
+        "video": null,
+        "document": null
+    }
+},
+{
+    "model": "pages.metatag",
+    "pk": 5,
+    "fields": {
+        "hid": "og:site_name",
+        "name": "og:site_name",
+        "content": "HELP - Human Evolution for Landscape Protection",
+        "content_it": "HELP - Human Evolution for Landscape Protection",
+        "content_en": null,
+        "layout": null,
+        "page": null,
+        "section": null,
+        "text": null,
+        "image": null,
+        "video": null,
+        "document": null
+    }
+},
+{
+    "model": "pages.metatag",
+    "pk": 6,
+    "fields": {
+        "hid": "og:description",
+        "name": "og:description",
+        "content": "HELP - Human Evolution for Landscape Protection - Non-profit charity organization for social and environmental protection",
+        "content_it": "HELP - Human Evolution for Landscape Protection - Non-profit charity organization for social and environmental protection",
+        "content_en": null,
+        "layout": null,
+        "page": null,
+        "section": null,
+        "text": null,
+        "image": null,
+        "video": null,
+        "document": null
+    }
+},
+{
+    "model": "pages.cookiessnackbar",
+    "pk": 1,
+    "fields": {
+        "title": "Informativa",
+        "title_it": "Informativa",
+        "title_en": null,
+        "info_text": "Questo sito utilizza cookies per migliorare l'esperienza di navigazione, per personalizzare annunci e per analizzare il traffico sul sito. Per questi motivi, potremmo condividere i dati d'utilizzo del sito con i nostri partner. Facendo click su \"Accetto\" acconsenti la memorizzazione sul tuo dispositivo di tutte le tecnologie descritte nella nostra <a href=\"media/COOKIE_POLICY.pdf\" target=\"_blank\">Cookies Policy</a>. \u00c8 possibile modificare le impostazioni dei cookies in qualsiasi momento facendo click su \"Preferenze cookies\". Leggi la nostra <a href=\"media/PRIVACY_POLICY.pdf\" target=\"_blank\">Privacy Policy</a> e i nostri <a href=\"media/TERMS_OF_USE.pdf\" target=\"_blank\">Termini di utilizzo</a> per tutti i dettagli.",
+        "info_text_it": "Questo sito utilizza cookies per migliorare l'esperienza di navigazione, per personalizzare annunci e per analizzare il traffico sul sito. Per questi motivi, potremmo condividere i dati d'utilizzo del sito con i nostri partner. Facendo click su \"Accetto\" acconsenti la memorizzazione sul tuo dispositivo di tutte le tecnologie descritte nella nostra <a href=\"media/COOKIE_POLICY.pdf\" target=\"_blank\">Cookies Policy</a>. \u00c8 possibile modificare le impostazioni dei cookies in qualsiasi momento facendo click su \"Preferenze cookies\". Leggi la nostra <a href=\"media/PRIVACY_POLICY.pdf\" target=\"_blank\">Privacy Policy</a> e i nostri <a href=\"media/TERMS_OF_USE.pdf\" target=\"_blank\">Termini di utilizzo</a> per tutti i dettagli.",
+        "info_text_en": "We use cookies to improve user experience, personalized adverts, and analyze website traffic.\r\nFor these reasons, we may share your site usage data with our social media, advertising and analytics partners. By clicking \u201cAccept\u201d you consent to store on your device all the technologies described in our\r\n<a href=\"media/COOKIE_POLICY.pdf\" target=\"_blank\">Cookie Policy</a>.\r\n<br>You can change your cookies settings at any time by clicking \u201cCookies preferences\u201d.\r\nPlease read our <a href=\"media/TERMS_OF_USE.pdf\" target=\"_blank\">Terms of Use</a> and\r\n<a href=\"media/PRIVACY_POLICY.pdf\" target=\"_blank\">Privacy Policy</a> for full details.",
+        "accept_button_label": "Accetto",
+        "accept_button_label_it": "Accetto",
+        "accept_button_label_en": "Accept",
+        "cookies_preferences_link_label": "Preferenze cookies",
+        "cookies_preferences_link_label_it": "Preferenze cookies",
+        "cookies_preferences_link_label_en": "Cookies preferences"
+    }
+},
+{
+    "model": "pages.cookiespreferences",
+    "pk": 1,
+    "fields": {
+        "title": "Preferenze cookies",
+        "title_it": "Preferenze cookies",
+        "title_en": "Cookies preferences",
+        "info_text": "Usiamo diverse tipologie di cookies per ottimizzare la tua esperienza sul nostro sito. Clicca sulle categorie sottostanti per sapere di pi\u00f9 sul loro scopo. Puoi scegliere quali tipologie di cookies permettere e puoi cambiare la tua scelta in ogni momento.\r\nRicorda che disabilitando i cookies la tua esperienza sul sito pu\u00f2 essere compromessa.\r\nPuoi scoprire maggiori dettagli su come utilizziamo i cookies leggendo la nostra \r\n<a href=\"media/COOKIES_POLICY.pdf\" target=\"_blank\">Cookie Policy</a>.",
+        "info_text_it": "Usiamo diverse tipologie di cookies per ottimizzare la tua esperienza sul nostro sito. Clicca sulle categorie sottostanti per sapere di pi\u00f9 sul loro scopo. Puoi scegliere quali tipologie di cookies permettere e puoi cambiare la tua scelta in ogni momento.\r\nRicorda che disabilitando i cookies la tua esperienza sul sito pu\u00f2 essere compromessa.\r\nPuoi scoprire maggiori dettagli su come utilizziamo i cookies leggendo la nostra \r\n<a href=\"media/COOKIES_POLICY.pdf\" target=\"_blank\">Cookie Policy</a>.",
+        "info_text_en": "We use different types of cookies to optimize your experience on our website.\r\nClick on the categories below to learn more about their purpose.\r\nYou may choose which types of cookies to allow and can change your preferences at any time.\r\nRemember that disabling cookies may affect your experience on the website.\r\nYou can learn more about how we use cookies by visiting our\r\n<a href=\"media/COOKIES_POLICY.pdf\" target=\"_blank\">Cookie Policy</a>.",
+        "save_button_label": "Salva preferenze",
+        "save_button_label_it": "Salva preferenze",
+        "save_button_label_en": "Save preferences",
+        "reject_all_button_label": "Rifiuto tutto",
+        "reject_all_button_label_it": "Rifiuto tutto",
+        "reject_all_button_label_en": "Reject all",
+        "accept_all_button_label": "Accetto tutto",
+        "accept_all_button_label_it": "Accetto tutto",
+        "accept_all_button_label_en": "Accept all"
+    }
+}
+]

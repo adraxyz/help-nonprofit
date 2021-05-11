@@ -105,6 +105,7 @@ class SocialSerializer(serializers.ModelSerializer):
 
 class LayoutSerializer(serializers.ModelSerializer):
     pages = PageSerializer(many=True, read_only=True)
+    sections = SectionSerializer(many=True, read_only=True)
     logo = ImageSerializer(read_only=True)
     donation_button = ButtonSerializer(read_only=True)
     christmas_button = ButtonSerializer(read_only=True)
@@ -114,7 +115,7 @@ class LayoutSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Layout
-        fields = ['name', 'pages', 'logo', 'donation_button', 'christmas_button',
+        fields = ['name', 'pages', 'sections', 'logo', 'donation_button', 'christmas_button',
                   'contact_button', 'meta_tags', 'footer']
         lookup_field = 'name'
 

@@ -10,6 +10,7 @@
     <NavBar :navs="default_layout.pages"/>
 
     <TopRight :navs="default_layout.pages"
+              :section="top_right_section"
               :donation_button="default_layout.donation_button"
               :christmas_button="default_layout.christmas_button"
               :contact_button="default_layout.contact_button"/>
@@ -86,6 +87,9 @@
       ...mapState(['locale', 'default_layout', 'logo']),
       hideMiddleRight() {
         return this.$vuetify.breakpoint.mdAndDown || this.hideSocialIcons
+      },
+      top_right_section() {
+        return this.default_layout.sections.find(s => s.title == 'top_right')
       }
     },
     methods: {
