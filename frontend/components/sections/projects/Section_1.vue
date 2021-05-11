@@ -33,7 +33,8 @@
     },
     computed: {
       sortedCategories() {
-        return this.categories.sort((a, b) => (a.order > b.order) ? 1 : -1)
+        let sorted_categories = this.categories.map(obj => ({...obj}));
+        return sorted_categories.sort((a, b) => (a.order > b.order) ? 1 : -1)
       }
     },
     head() {
